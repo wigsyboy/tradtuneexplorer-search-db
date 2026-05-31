@@ -30,3 +30,4 @@ This repository currently contains:
 No tune data, recordings, or other content from The Session are included in this repository.
 
 TradTuneExplorer uses data sourced from The Session. Users wishing to populate the database should obtain data directly from The Session and comply with the applicable licensing terms.
+https://github.com/adactio/TheSession-data/blob/main/LICENSE.md
