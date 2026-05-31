@@ -1,4 +1,4 @@
-# TheSession.TradTuneExplorer Search Database
+# TradTuneExplorer Search Database
 
 This repository contains the PostgreSQL database schema used by TradTuneExplorer.
 
