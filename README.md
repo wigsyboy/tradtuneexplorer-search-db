@@ -145,6 +145,43 @@ Materialized views are refreshed independently to support fast interactive explo
 
 ---
 
+## API Endpoints & Documentation
+
+Trad Tune Explorer exposes its database analytics, melody search engines, and set-building tools via a public JSON API.
+
+### API Documentation & Swagger UI
+Interactive documentation and Swagger UI are available at:
+* **Live API Docs**: [https://thesession.tradtuneexplorer.com/api/docs/swagger-ui.html](https://thesession.tradtuneexplorer.com/api/docs/swagger-ui.html)
+* **OpenAPI Specification**: You can find the OpenAPI schema definition locally inside the main web repository.
+
+### API Servers & Base URLs
+* **Public Server (Rate-limited, Free)**: `https://api.tradtuneexplorer.com/public-api`
+  * *Rate limits*: Strict rate-limiting is applied (1 request/sec average, burst 3 per client IP). Exceeding this returns an HTTP `429 Too Many Requests` error.
+* **Production/Internal Server**: `https://api.tradtuneexplorer.com/webhook`
+  * *Usage*: Internal or authenticated endpoints used by the main application stack.
+
+### Key Endpoint Categories
+1. **Tune Explorer & Discovery**
+   * `/session/analytics/tunes/forgotten-classics` - Rediscover recorded tunes that have faded from modern session repertoire.
+   * `/session/analytics/tunes/hidden-gems` - Discover highly-rated tunes that are rarely played in sessions.
+   * `/session/analytics/tunes/most-influential` - Combine recording footprints with session popularity.
+   * `/session/analytics/tunes/most-recorded` - Rank tunes by total commercial tracks.
+   * `/session/analytics/tunes/session-staples` - Real-world session popularity rankings.
+2. **Melody & Audio Snippet Identification**
+   * `/session/tunes/snippet/match` - Exact 2-bar melody search.
+   * `/session/tunes/snippet/match/fuzzysingle` - Single 2-bar fuzzy snippet search.
+   * `/session/tunes/snippet/match/fuzzy` - Multi-window fuzzy melody matching.
+3. **Transition Analytics (Tune Flow)**
+   * `/session/artist/pathways` - Map collaboration networks showing artist connections.
+   * `/session/analytics/tunes/most-versatile` - Find tunes that transition fluidly between different keys/tunes.
+4. **Member Repertoire & Practice Tools**
+   * `/session/tunes/summary` - Batch tune metadata lookup.
+   * `/session/collection/overlap` - Calculate Jaccard similarity and overlaps between tune collections.
+
+For custom integrations or to request an API key with higher limits, contact `martin@tradtuneexplorer.com`.
+
+---
+
 ## Data
 
 This repository intentionally contains **database structure only** and does **not** include:
