@@ -2,12 +2,12 @@
 -- PostgreSQL database dump
 --
 
-\restrict AcHyvabd243DQlLG6e65ba3RusjOprYtduY8ncnALcpRd7sGbUv9PLjC9hoDbH4
+\restrict 62Okatk4b6MIOMvH5gczR9F6ZaVUDaJLTDLByi334Qn2siYA1FRxcmzGxcur6GL
 
 -- Dumped from database version 16.4
 -- Dumped by pg_dump version 16.14
 
--- Started on 2026-07-08 19:16:39
+-- Started on 2026-07-12 14:20:12
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -830,7 +830,7 @@ matches AS (
         q.rhythm_fingerprint AS query_rhythm_fingerprint,
         (f.rhythm_fingerprint = q.rhythm_fingerprint) AS exact_rhythm_match
     FROM q
-    JOIN thesession.mv_melody_2bar_fragments f
+    JOIN thesession.mv_melody_2bar_fragments_v5 f
       ON f.interval_fingerprint = q.interval_fingerprint
     WHERE (p_rhythm_mode <> 'hard' OR f.rhythm_fingerprint = q.rhythm_fingerprint)
       AND (p_type IS NULL OR lower(f.type) = lower(p_type))
@@ -8538,11 +8538,11 @@ ALTER TABLE ONLY thesession.session_set_items_raw
     ADD CONSTRAINT session_set_items_raw_tuneset_fkey FOREIGN KEY (tuneset) REFERENCES thesession.session_sets_raw(tuneset) ON DELETE CASCADE;
 
 
--- Completed on 2026-07-08 19:16:46
+-- Completed on 2026-07-12 14:20:19
 
 --
 -- PostgreSQL database dump complete
 --
 
-\unrestrict AcHyvabd243DQlLG6e65ba3RusjOprYtduY8ncnALcpRd7sGbUv9PLjC9hoDbH4
+\unrestrict 62Okatk4b6MIOMvH5gczR9F6ZaVUDaJLTDLByi334Qn2siYA1FRxcmzGxcur6GL
 
