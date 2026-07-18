@@ -2,12 +2,12 @@
 -- PostgreSQL database dump
 --
 
-\restrict 62Okatk4b6MIOMvH5gczR9F6ZaVUDaJLTDLByi334Qn2siYA1FRxcmzGxcur6GL
+\restrict W9hriDSQZZnDrCyEADjVKCIitKgZSAdTK6oxPoYCI53SC2mlH4r6Xak1nKBv1vm
 
 -- Dumped from database version 16.4
 -- Dumped by pg_dump version 16.14
 
--- Started on 2026-07-12 14:20:12
+-- Started on 2026-07-18 21:19:45
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -31,7 +31,7 @@ CREATE SCHEMA thesession;
 ALTER SCHEMA thesession OWNER TO folkguitar;
 
 --
--- TOC entry 1168 (class 1255 OID 807356)
+-- TOC entry 1170 (class 1255 OID 807356)
 -- Name: abc_clean_for_melody(text); Type: FUNCTION; Schema: thesession; Owner: folkguitar
 --
 
@@ -82,7 +82,7 @@ $$;
 ALTER FUNCTION thesession.abc_clean_for_melody(p_abc text) OWNER TO folkguitar;
 
 --
--- TOC entry 1169 (class 1255 OID 807357)
+-- TOC entry 1171 (class 1255 OID 807357)
 -- Name: abc_token_pitch(text); Type: FUNCTION; Schema: thesession; Owner: folkguitar
 --
 
@@ -121,7 +121,7 @@ $$;
 ALTER FUNCTION thesession.abc_token_pitch(p_token text) OWNER TO folkguitar;
 
 --
--- TOC entry 1179 (class 1255 OID 862099)
+-- TOC entry 1181 (class 1255 OID 862099)
 -- Name: abc_token_repeat_count(text, integer); Type: FUNCTION; Schema: thesession; Owner: folkguitar
 --
 
@@ -144,7 +144,7 @@ $$;
 ALTER FUNCTION thesession.abc_token_repeat_count(p_token text, p_max_repeat integer) OWNER TO folkguitar;
 
 --
--- TOC entry 1170 (class 1255 OID 807358)
+-- TOC entry 1172 (class 1255 OID 807358)
 -- Name: abc_token_rhythm(text); Type: FUNCTION; Schema: thesession; Owner: folkguitar
 --
 
@@ -168,7 +168,7 @@ $$;
 ALTER FUNCTION thesession.abc_token_rhythm(p_token text) OWNER TO folkguitar;
 
 --
--- TOC entry 1181 (class 1255 OID 869091)
+-- TOC entry 1183 (class 1255 OID 869091)
 -- Name: compare_melody_edit_distance(text, text); Type: FUNCTION; Schema: thesession; Owner: folkguitar
 --
 
@@ -245,7 +245,7 @@ $$;
 ALTER FUNCTION thesession.compare_melody_edit_distance(p_query_abc text, p_candidate_abc text) OWNER TO folkguitar;
 
 --
--- TOC entry 1185 (class 1255 OID 870477)
+-- TOC entry 1187 (class 1255 OID 870477)
 -- Name: compare_melody_edit_distance_from_intervals(text, text); Type: FUNCTION; Schema: thesession; Owner: folkguitar
 --
 
@@ -320,7 +320,7 @@ $$;
 ALTER FUNCTION thesession.compare_melody_edit_distance_from_intervals(p_query_intervals text, p_candidate_abc text) OWNER TO folkguitar;
 
 --
--- TOC entry 1177 (class 1255 OID 858758)
+-- TOC entry 1179 (class 1255 OID 858758)
 -- Name: compare_melody_fingerprints(text, text); Type: FUNCTION; Schema: thesession; Owner: folkguitar
 --
 
@@ -440,7 +440,7 @@ $$;
 ALTER FUNCTION thesession.compare_melody_fingerprints(p_abc_1 text, p_abc_2 text) OWNER TO folkguitar;
 
 --
--- TOC entry 1178 (class 1255 OID 858759)
+-- TOC entry 1180 (class 1255 OID 858759)
 -- Name: compare_melody_ngram_overlap(text, text, integer); Type: FUNCTION; Schema: thesession; Owner: folkguitar
 --
 
@@ -627,7 +627,7 @@ $$;
 ALTER FUNCTION thesession.compare_melody_ngram_overlap(p_abc_1 text, p_abc_2 text, p_ngram_size integer) OWNER TO folkguitar;
 
 --
--- TOC entry 1172 (class 1255 OID 807391)
+-- TOC entry 1174 (class 1255 OID 807391)
 -- Name: melody_2bar_fingerprint_from_abc(text); Type: FUNCTION; Schema: thesession; Owner: folkguitar
 --
 
@@ -679,7 +679,7 @@ $$;
 ALTER FUNCTION thesession.melody_2bar_fingerprint_from_abc(p_abc text) OWNER TO folkguitar;
 
 --
--- TOC entry 1180 (class 1255 OID 862100)
+-- TOC entry 1182 (class 1255 OID 862100)
 -- Name: melody_2bar_fuzzy_fingerprint_from_abc(text); Type: FUNCTION; Schema: thesession; Owner: folkguitar
 --
 
@@ -736,7 +736,7 @@ $$;
 ALTER FUNCTION thesession.melody_2bar_fuzzy_fingerprint_from_abc(p_abc text) OWNER TO folkguitar;
 
 --
--- TOC entry 1176 (class 1255 OID 858754)
+-- TOC entry 1178 (class 1255 OID 858754)
 -- Name: melody_coarse_interval_fingerprint(text); Type: FUNCTION; Schema: thesession; Owner: folkguitar
 --
 
@@ -764,7 +764,7 @@ $$;
 ALTER FUNCTION thesession.melody_coarse_interval_fingerprint(p_interval_fingerprint text) OWNER TO folkguitar;
 
 --
--- TOC entry 1175 (class 1255 OID 858753)
+-- TOC entry 1177 (class 1255 OID 858753)
 -- Name: melody_contour_fingerprint(text); Type: FUNCTION; Schema: thesession; Owner: folkguitar
 --
 
@@ -790,7 +790,7 @@ $$;
 ALTER FUNCTION thesession.melody_contour_fingerprint(p_interval_fingerprint text) OWNER TO folkguitar;
 
 --
--- TOC entry 1171 (class 1255 OID 807359)
+-- TOC entry 1173 (class 1255 OID 807359)
 -- Name: melody_interval_fingerprint(integer[]); Type: FUNCTION; Schema: thesession; Owner: folkguitar
 --
 
@@ -812,7 +812,7 @@ $$;
 ALTER FUNCTION thesession.melody_interval_fingerprint(p_pitches integer[]) OWNER TO folkguitar;
 
 --
--- TOC entry 1173 (class 1255 OID 807435)
+-- TOC entry 1175 (class 1255 OID 807435)
 -- Name: search_melody_2bar(text, text, text, text, integer); Type: FUNCTION; Schema: thesession; Owner: folkguitar
 --
 
@@ -920,7 +920,7 @@ $$;
 ALTER FUNCTION thesession.search_melody_2bar(p_abc text, p_rhythm_mode text, p_type text, p_meter text, p_limit integer) OWNER TO folkguitar;
 
 --
--- TOC entry 1190 (class 1255 OID 889768)
+-- TOC entry 1192 (class 1255 OID 889768)
 -- Name: search_melody_2bar_fuzzy_stage2_v5(text, text, text, text, integer); Type: FUNCTION; Schema: thesession; Owner: folkguitar
 --
 
@@ -1344,7 +1344,7 @@ $$;
 ALTER FUNCTION thesession.search_melody_2bar_fuzzy_stage2_v5(p_abc text, p_rhythm_mode text, p_type text, p_meter text, p_limit integer) OWNER TO folkguitar;
 
 --
--- TOC entry 407 (class 1255 OID 339894)
+-- TOC entry 409 (class 1255 OID 339894)
 -- Name: slugify_unaccent(text); Type: FUNCTION; Schema: thesession; Owner: folkguitar
 --
 
@@ -1366,7 +1366,7 @@ $$;
 ALTER FUNCTION thesession.slugify_unaccent(input text) OWNER TO folkguitar;
 
 --
--- TOC entry 410 (class 1255 OID 339907)
+-- TOC entry 412 (class 1255 OID 339907)
 -- Name: trg_set_slug_session_tunes_raw(); Type: FUNCTION; Schema: thesession; Owner: folkguitar
 --
 
@@ -1386,7 +1386,7 @@ $$;
 ALTER FUNCTION thesession.trg_set_slug_session_tunes_raw() OWNER TO folkguitar;
 
 --
--- TOC entry 409 (class 1255 OID 339897)
+-- TOC entry 411 (class 1255 OID 339897)
 -- Name: trg_set_slug_set_items(); Type: FUNCTION; Schema: thesession; Owner: folkguitar
 --
 
@@ -1406,7 +1406,7 @@ $$;
 ALTER FUNCTION thesession.trg_set_slug_set_items() OWNER TO folkguitar;
 
 --
--- TOC entry 408 (class 1255 OID 339895)
+-- TOC entry 410 (class 1255 OID 339895)
 -- Name: trg_set_slug_tune_popularity(); Type: FUNCTION; Schema: thesession; Owner: folkguitar
 --
 
@@ -1423,7 +1423,7 @@ $$;
 ALTER FUNCTION thesession.trg_set_slug_tune_popularity() OWNER TO folkguitar;
 
 --
--- TOC entry 1167 (class 1255 OID 436199)
+-- TOC entry 1169 (class 1255 OID 436199)
 -- Name: update_timestamp(); Type: FUNCTION; Schema: thesession; Owner: folkguitar
 --
 
@@ -1440,7 +1440,7 @@ $$;
 ALTER FUNCTION thesession.update_timestamp() OWNER TO folkguitar;
 
 --
--- TOC entry 1174 (class 1255 OID 807822)
+-- TOC entry 1176 (class 1255 OID 807822)
 -- Name: zz_old_search_melody_2bar_fuzzy(text, text, text, text, integer); Type: FUNCTION; Schema: thesession; Owner: folkguitar
 --
 
@@ -1853,7 +1853,7 @@ $$;
 ALTER FUNCTION thesession.zz_old_search_melody_2bar_fuzzy(p_abc text, p_rhythm_mode text, p_type text, p_meter text, p_limit integer) OWNER TO folkguitar;
 
 --
--- TOC entry 1186 (class 1255 OID 870578)
+-- TOC entry 1188 (class 1255 OID 870578)
 -- Name: zz_old_search_melody_2bar_fuzzy_stage2(text, text, text, text, integer); Type: FUNCTION; Schema: thesession; Owner: folkguitar
 --
 
@@ -2276,9 +2276,46 @@ $$;
 
 ALTER FUNCTION thesession.zz_old_search_melody_2bar_fuzzy_stage2(p_abc text, p_rhythm_mode text, p_type text, p_meter text, p_limit integer) OWNER TO folkguitar;
 
+--
+-- TOC entry 357 (class 1259 OID 1158822)
+-- Name: api_keys_id_seq; Type: SEQUENCE; Schema: thesession; Owner: folkguitar
+--
+
+CREATE SEQUENCE thesession.api_keys_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE thesession.api_keys_id_seq OWNER TO folkguitar;
+
 SET default_tablespace = '';
 
 SET default_table_access_method = heap;
+
+--
+-- TOC entry 358 (class 1259 OID 1158823)
+-- Name: api_keys; Type: TABLE; Schema: thesession; Owner: folkguitar
+--
+
+CREATE TABLE thesession.api_keys (
+    id bigint DEFAULT nextval('thesession.api_keys_id_seq'::regclass) NOT NULL,
+    key_hash character varying(64) NOT NULL,
+    key_prefix character varying(16) NOT NULL,
+    user_name text NOT NULL,
+    user_email text NOT NULL,
+    user_type character varying(50) NOT NULL,
+    status character varying(20) DEFAULT 'active'::character varying NOT NULL,
+    created_at timestamp with time zone DEFAULT now() NOT NULL,
+    last_used_at timestamp with time zone,
+    CONSTRAINT chk_api_keys_status CHECK (((status)::text = ANY (ARRAY[('active'::character varying)::text, ('suspended'::character varying)::text, ('revoked'::character varying)::text]))),
+    CONSTRAINT chk_api_keys_user_type CHECK (((user_type)::text = ANY (ARRAY[('public-api'::character varying)::text, ('commercial'::character varying)::text, ('internal'::character varying)::text])))
+);
+
+
+ALTER TABLE thesession.api_keys OWNER TO folkguitar;
 
 --
 -- TOC entry 300 (class 1259 OID 442114)
@@ -2319,7 +2356,7 @@ CREATE SEQUENCE thesession.feature_request_id_seq
 ALTER SEQUENCE thesession.feature_request_id_seq OWNER TO folkguitar;
 
 --
--- TOC entry 5196 (class 0 OID 0)
+-- TOC entry 5211 (class 0 OID 0)
 -- Dependencies: 299
 -- Name: feature_request_id_seq; Type: SEQUENCE OWNED BY; Schema: thesession; Owner: folkguitar
 --
@@ -2381,6 +2418,51 @@ CREATE MATERIALIZED VIEW thesession.mv_artist_name_search AS
 
 
 ALTER MATERIALIZED VIEW thesession.mv_artist_name_search OWNER TO folkguitar;
+
+--
+-- TOC entry 5212 (class 0 OID 0)
+-- Dependencies: 326
+-- Name: COLUMN mv_artist_name_search.artist_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_name_search.artist_name IS 'Name of the recording artist';
+
+
+--
+-- TOC entry 5213 (class 0 OID 0)
+-- Dependencies: 326
+-- Name: COLUMN mv_artist_name_search.artist_name_lc; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_name_search.artist_name_lc IS 'Lowercase name of the artist/performer (for index-friendly search)';
+
+
+--
+-- TOC entry 5214 (class 0 OID 0)
+-- Dependencies: 326
+-- Name: COLUMN mv_artist_name_search.recording_rows; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_name_search.recording_rows IS 'Total tracks/recordings associated with this artist in the database';
+
+
+--
+-- TOC entry 5215 (class 0 OID 0)
+-- Dependencies: 326
+-- Name: COLUMN mv_artist_name_search.recordings; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_name_search.recordings IS 'Count of unique recordings/tracks by this artist';
+
+
+--
+-- TOC entry 5216 (class 0 OID 0)
+-- Dependencies: 326
+-- Name: COLUMN mv_artist_name_search.distinct_tunes; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_name_search.distinct_tunes IS 'Count of distinct traditional tunes recorded by this artist';
+
 
 --
 -- TOC entry 325 (class 1259 OID 784366)
@@ -2448,6 +2530,141 @@ CREATE MATERIALIZED VIEW thesession.mv_artist_transition_features AS
 
 
 ALTER MATERIALIZED VIEW thesession.mv_artist_transition_features OWNER TO folkguitar;
+
+--
+-- TOC entry 5217 (class 0 OID 0)
+-- Dependencies: 325
+-- Name: COLUMN mv_artist_transition_features.artist_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_transition_features.artist_name IS 'Name of the recording artist';
+
+
+--
+-- TOC entry 5218 (class 0 OID 0)
+-- Dependencies: 325
+-- Name: COLUMN mv_artist_transition_features.source_tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_transition_features.source_tune_id IS 'ID of the source_tune';
+
+
+--
+-- TOC entry 5219 (class 0 OID 0)
+-- Dependencies: 325
+-- Name: COLUMN mv_artist_transition_features.source_tune_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_transition_features.source_tune_name IS 'Name of the source_tune';
+
+
+--
+-- TOC entry 5220 (class 0 OID 0)
+-- Dependencies: 325
+-- Name: COLUMN mv_artist_transition_features.target_tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_transition_features.target_tune_id IS 'ID of the target_tune';
+
+
+--
+-- TOC entry 5221 (class 0 OID 0)
+-- Dependencies: 325
+-- Name: COLUMN mv_artist_transition_features.target_tune_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_transition_features.target_tune_name IS 'Name of the target_tune';
+
+
+--
+-- TOC entry 5222 (class 0 OID 0)
+-- Dependencies: 325
+-- Name: COLUMN mv_artist_transition_features.transition_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_transition_features.transition_count IS 'Count of transitions';
+
+
+--
+-- TOC entry 5223 (class 0 OID 0)
+-- Dependencies: 325
+-- Name: COLUMN mv_artist_transition_features.distinct_recordings; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_transition_features.distinct_recordings IS 'Number of unique recordings by the artist containing this tune transition';
+
+
+--
+-- TOC entry 5224 (class 0 OID 0)
+-- Dependencies: 325
+-- Name: COLUMN mv_artist_transition_features.distinct_tracks; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_transition_features.distinct_tracks IS 'Number of unique tracks by the artist containing this tune transition';
+
+
+--
+-- TOC entry 5225 (class 0 OID 0)
+-- Dependencies: 325
+-- Name: COLUMN mv_artist_transition_features.artist_total_transitions; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_transition_features.artist_total_transitions IS 'Total set transitions recorded by this artist in the database';
+
+
+--
+-- TOC entry 5226 (class 0 OID 0)
+-- Dependencies: 325
+-- Name: COLUMN mv_artist_transition_features.global_transition_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_transition_features.global_transition_count IS 'Global number of times this tune transition occurs across all artists';
+
+
+--
+-- TOC entry 5227 (class 0 OID 0)
+-- Dependencies: 325
+-- Name: COLUMN mv_artist_transition_features.artist_transition_pct; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_transition_features.artist_transition_pct IS 'Percentage of this artist''s transitions that are this specific tune transition';
+
+
+--
+-- TOC entry 5228 (class 0 OID 0)
+-- Dependencies: 325
+-- Name: COLUMN mv_artist_transition_features.global_transition_pct; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_transition_features.global_transition_pct IS 'Global percentage of this tune transition across all artists';
+
+
+--
+-- TOC entry 5229 (class 0 OID 0)
+-- Dependencies: 325
+-- Name: COLUMN mv_artist_transition_features.lift_score; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_transition_features.lift_score IS 'Association rule lift score measuring how much more often this transition occurs for this artist than globally';
+
+
+--
+-- TOC entry 5230 (class 0 OID 0)
+-- Dependencies: 325
+-- Name: COLUMN mv_artist_transition_features.weighted_score; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_transition_features.weighted_score IS 'Calculated score weighting transition count and lift';
+
+
+--
+-- TOC entry 5231 (class 0 OID 0)
+-- Dependencies: 325
+-- Name: COLUMN mv_artist_transition_features.rarity_weight; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_transition_features.rarity_weight IS 'Weighting value based on tune or transition rarity';
+
 
 --
 -- TOC entry 327 (class 1259 OID 785038)
@@ -2547,6 +2764,87 @@ CREATE MATERIALIZED VIEW thesession.mv_artist_pathway_related_artists AS
 ALTER MATERIALIZED VIEW thesession.mv_artist_pathway_related_artists OWNER TO folkguitar;
 
 --
+-- TOC entry 5232 (class 0 OID 0)
+-- Dependencies: 327
+-- Name: COLUMN mv_artist_pathway_related_artists.artist_a; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_pathway_related_artists.artist_a IS 'Name of the source artist';
+
+
+--
+-- TOC entry 5233 (class 0 OID 0)
+-- Dependencies: 327
+-- Name: COLUMN mv_artist_pathway_related_artists.artist_b; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_pathway_related_artists.artist_b IS 'Name of the related/destination artist';
+
+
+--
+-- TOC entry 5234 (class 0 OID 0)
+-- Dependencies: 327
+-- Name: COLUMN mv_artist_pathway_related_artists.source_tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_pathway_related_artists.source_tune_id IS 'ID of the tune recorded by artist A';
+
+
+--
+-- TOC entry 5235 (class 0 OID 0)
+-- Dependencies: 327
+-- Name: COLUMN mv_artist_pathway_related_artists.source_tune_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_pathway_related_artists.source_tune_name IS 'Name of the tune recorded by artist A';
+
+
+--
+-- TOC entry 5236 (class 0 OID 0)
+-- Dependencies: 327
+-- Name: COLUMN mv_artist_pathway_related_artists.target_tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_pathway_related_artists.target_tune_id IS 'ID of the tune recorded by artist B';
+
+
+--
+-- TOC entry 5237 (class 0 OID 0)
+-- Dependencies: 327
+-- Name: COLUMN mv_artist_pathway_related_artists.target_tune_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_pathway_related_artists.target_tune_name IS 'Name of the tune recorded by artist B';
+
+
+--
+-- TOC entry 5238 (class 0 OID 0)
+-- Dependencies: 327
+-- Name: COLUMN mv_artist_pathway_related_artists.edge_reason; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_pathway_related_artists.edge_reason IS 'Description of how the artists connect (e.g., recorded same set sequence or track)';
+
+
+--
+-- TOC entry 5239 (class 0 OID 0)
+-- Dependencies: 327
+-- Name: COLUMN mv_artist_pathway_related_artists.evidence_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_pathway_related_artists.evidence_count IS 'Number of transition tracks serving as evidence for connection';
+
+
+--
+-- TOC entry 5240 (class 0 OID 0)
+-- Dependencies: 327
+-- Name: COLUMN mv_artist_pathway_related_artists.relation_score; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_pathway_related_artists.relation_score IS 'Calculated strength of relationship between artist A and artist B';
+
+
+--
 -- TOC entry 329 (class 1259 OID 799827)
 -- Name: mv_artist_transition_evidence; Type: MATERIALIZED VIEW; Schema: thesession; Owner: folkguitar
 --
@@ -2580,6 +2878,87 @@ CREATE MATERIALIZED VIEW thesession.mv_artist_transition_evidence AS
 
 
 ALTER MATERIALIZED VIEW thesession.mv_artist_transition_evidence OWNER TO folkguitar;
+
+--
+-- TOC entry 5241 (class 0 OID 0)
+-- Dependencies: 329
+-- Name: COLUMN mv_artist_transition_evidence.artist_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_transition_evidence.artist_name IS 'Name of the recording artist';
+
+
+--
+-- TOC entry 5242 (class 0 OID 0)
+-- Dependencies: 329
+-- Name: COLUMN mv_artist_transition_evidence.recording; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_transition_evidence.recording IS 'Field recording on mv_artist_transition_evidence';
+
+
+--
+-- TOC entry 5243 (class 0 OID 0)
+-- Dependencies: 329
+-- Name: COLUMN mv_artist_transition_evidence.track; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_transition_evidence.track IS 'Track number on the album or recording';
+
+
+--
+-- TOC entry 5244 (class 0 OID 0)
+-- Dependencies: 329
+-- Name: COLUMN mv_artist_transition_evidence.source_tune_number; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_transition_evidence.source_tune_number IS 'Field source_tune_number on mv_artist_transition_evidence';
+
+
+--
+-- TOC entry 5245 (class 0 OID 0)
+-- Dependencies: 329
+-- Name: COLUMN mv_artist_transition_evidence.target_tune_number; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_transition_evidence.target_tune_number IS 'Field target_tune_number on mv_artist_transition_evidence';
+
+
+--
+-- TOC entry 5246 (class 0 OID 0)
+-- Dependencies: 329
+-- Name: COLUMN mv_artist_transition_evidence.source_tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_transition_evidence.source_tune_id IS 'ID of the source_tune';
+
+
+--
+-- TOC entry 5247 (class 0 OID 0)
+-- Dependencies: 329
+-- Name: COLUMN mv_artist_transition_evidence.source_tune_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_transition_evidence.source_tune_name IS 'Name of the source_tune';
+
+
+--
+-- TOC entry 5248 (class 0 OID 0)
+-- Dependencies: 329
+-- Name: COLUMN mv_artist_transition_evidence.target_tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_transition_evidence.target_tune_id IS 'ID of the target_tune';
+
+
+--
+-- TOC entry 5249 (class 0 OID 0)
+-- Dependencies: 329
+-- Name: COLUMN mv_artist_transition_evidence.target_tune_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_artist_transition_evidence.target_tune_name IS 'Name of the target_tune';
+
 
 --
 -- TOC entry 293 (class 1259 OID 399777)
@@ -2644,6 +3023,87 @@ CREATE MATERIALIZED VIEW thesession.mv_collection_overlap AS
 ALTER MATERIALIZED VIEW thesession.mv_collection_overlap OWNER TO folkguitar;
 
 --
+-- TOC entry 5250 (class 0 OID 0)
+-- Dependencies: 305
+-- Name: COLUMN mv_collection_overlap.collection_id_1; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_collection_overlap.collection_id_1 IS 'ID of the first tune collection';
+
+
+--
+-- TOC entry 5251 (class 0 OID 0)
+-- Dependencies: 305
+-- Name: COLUMN mv_collection_overlap.collection_id_2; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_collection_overlap.collection_id_2 IS 'ID of the second tune collection';
+
+
+--
+-- TOC entry 5252 (class 0 OID 0)
+-- Dependencies: 305
+-- Name: COLUMN mv_collection_overlap.shared_tune_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_collection_overlap.shared_tune_count IS 'Number of common tunes shared between the two collections';
+
+
+--
+-- TOC entry 5253 (class 0 OID 0)
+-- Dependencies: 305
+-- Name: COLUMN mv_collection_overlap.total_tunes_1; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_collection_overlap.total_tunes_1 IS 'Total number of tunes in the first collection';
+
+
+--
+-- TOC entry 5254 (class 0 OID 0)
+-- Dependencies: 305
+-- Name: COLUMN mv_collection_overlap.total_tunes_2; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_collection_overlap.total_tunes_2 IS 'Total number of tunes in the second collection';
+
+
+--
+-- TOC entry 5255 (class 0 OID 0)
+-- Dependencies: 305
+-- Name: COLUMN mv_collection_overlap.overlap_pct_1; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_collection_overlap.overlap_pct_1 IS 'Percentage of collection 1''s tunes that are also in collection 2';
+
+
+--
+-- TOC entry 5256 (class 0 OID 0)
+-- Dependencies: 305
+-- Name: COLUMN mv_collection_overlap.overlap_pct_2; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_collection_overlap.overlap_pct_2 IS 'Percentage of collection 2''s tunes that are also in collection 1';
+
+
+--
+-- TOC entry 5257 (class 0 OID 0)
+-- Dependencies: 305
+-- Name: COLUMN mv_collection_overlap.union_tune_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_collection_overlap.union_tune_count IS 'Total unique tunes combined from both collections';
+
+
+--
+-- TOC entry 5258 (class 0 OID 0)
+-- Dependencies: 305
+-- Name: COLUMN mv_collection_overlap.jaccard_score; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_collection_overlap.jaccard_score IS 'Jaccard similarity coefficient (shared tunes divided by union of tunes)';
+
+
+--
 -- TOC entry 296 (class 1259 OID 401917)
 -- Name: mv_tune_names; Type: MATERIALIZED VIEW; Schema: thesession; Owner: folkguitar
 --
@@ -2670,6 +3130,33 @@ CREATE MATERIALIZED VIEW thesession.mv_tune_names AS
 
 
 ALTER MATERIALIZED VIEW thesession.mv_tune_names OWNER TO folkguitar;
+
+--
+-- TOC entry 5259 (class 0 OID 0)
+-- Dependencies: 296
+-- Name: COLUMN mv_tune_names.tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_names.tune_id IS 'Canonical ID of the traditional tune';
+
+
+--
+-- TOC entry 5260 (class 0 OID 0)
+-- Dependencies: 296
+-- Name: COLUMN mv_tune_names.primary_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_names.primary_name IS 'Canonical primary name of the traditional tune';
+
+
+--
+-- TOC entry 5261 (class 0 OID 0)
+-- Dependencies: 296
+-- Name: COLUMN mv_tune_names.aliases; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_names.aliases IS 'Array of alternative names or titles for the tune';
+
 
 --
 -- TOC entry 308 (class 1259 OID 544129)
@@ -2817,6 +3304,105 @@ CREATE MATERIALIZED VIEW thesession.mv_tune_meta AS
 ALTER MATERIALIZED VIEW thesession.mv_tune_meta OWNER TO folkguitar;
 
 --
+-- TOC entry 5262 (class 0 OID 0)
+-- Dependencies: 320
+-- Name: COLUMN mv_tune_meta.tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_meta.tune_id IS 'Canonical ID of the traditional tune';
+
+
+--
+-- TOC entry 5263 (class 0 OID 0)
+-- Dependencies: 320
+-- Name: COLUMN mv_tune_meta.primary_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_meta.primary_name IS 'Canonical primary name of the traditional tune';
+
+
+--
+-- TOC entry 5264 (class 0 OID 0)
+-- Dependencies: 320
+-- Name: COLUMN mv_tune_meta.aliases; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_meta.aliases IS 'Array of alternative names or titles for the tune';
+
+
+--
+-- TOC entry 5265 (class 0 OID 0)
+-- Dependencies: 320
+-- Name: COLUMN mv_tune_meta.type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_meta.type IS 'Rhythm type of the tune (e.g., reel, jig, hornpipe, polka, slide, slip jig)';
+
+
+--
+-- TOC entry 5266 (class 0 OID 0)
+-- Dependencies: 320
+-- Name: COLUMN mv_tune_meta.meter; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_meta.meter IS 'Time signature/meter of the tune setting (e.g., 4/4, 6/8, 9/8)';
+
+
+--
+-- TOC entry 5267 (class 0 OID 0)
+-- Dependencies: 320
+-- Name: COLUMN mv_tune_meta.mode; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_meta.mode IS 'Modal key of the setting (e.g., Gmajor, Adorian, Edorian, Dmixolydian)';
+
+
+--
+-- TOC entry 5268 (class 0 OID 0)
+-- Dependencies: 320
+-- Name: COLUMN mv_tune_meta.incipit; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_meta.incipit IS 'Opening ABC notation snippet (first 1-2 bars) of the tune melody';
+
+
+--
+-- TOC entry 5269 (class 0 OID 0)
+-- Dependencies: 320
+-- Name: COLUMN mv_tune_meta.tunebooks; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_meta.tunebooks IS 'Field tunebooks on mv_tune_meta';
+
+
+--
+-- TOC entry 5270 (class 0 OID 0)
+-- Dependencies: 320
+-- Name: COLUMN mv_tune_meta.star_rating; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_meta.star_rating IS 'Average star rating of the tune on TheSession.org';
+
+
+--
+-- TOC entry 5271 (class 0 OID 0)
+-- Dependencies: 320
+-- Name: COLUMN mv_tune_meta.has_recording_albums; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_meta.has_recording_albums IS 'Boolean flag indicating if the tune has been recorded on commercial albums';
+
+
+--
+-- TOC entry 5272 (class 0 OID 0)
+-- Dependencies: 320
+-- Name: COLUMN mv_tune_meta.recording_album_recording_ids; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_meta.recording_album_recording_ids IS 'Field recording_album_recording_ids on mv_tune_meta';
+
+
+--
 -- TOC entry 309 (class 1259 OID 588954)
 -- Name: session_member_tunebook; Type: TABLE; Schema: thesession; Owner: folkguitar
 --
@@ -2905,6 +3491,177 @@ CREATE MATERIALIZED VIEW thesession.mv_country_tune_popularity AS
 ALTER MATERIALIZED VIEW thesession.mv_country_tune_popularity OWNER TO folkguitar;
 
 --
+-- TOC entry 5273 (class 0 OID 0)
+-- Dependencies: 351
+-- Name: COLUMN mv_country_tune_popularity.country_code; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_popularity.country_code IS 'ISO 2-letter country code of the session/member location';
+
+
+--
+-- TOC entry 5274 (class 0 OID 0)
+-- Dependencies: 351
+-- Name: COLUMN mv_country_tune_popularity.country_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_popularity.country_name IS 'Name of the country';
+
+
+--
+-- TOC entry 5275 (class 0 OID 0)
+-- Dependencies: 351
+-- Name: COLUMN mv_country_tune_popularity.tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_popularity.tune_id IS 'Canonical ID of the traditional tune';
+
+
+--
+-- TOC entry 5276 (class 0 OID 0)
+-- Dependencies: 351
+-- Name: COLUMN mv_country_tune_popularity.tune_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_popularity.tune_name IS 'Name of the tune';
+
+
+--
+-- TOC entry 5277 (class 0 OID 0)
+-- Dependencies: 351
+-- Name: COLUMN mv_country_tune_popularity.type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_popularity.type IS 'Rhythm type of the tune (e.g., reel, jig, hornpipe, polka, slide, slip jig)';
+
+
+--
+-- TOC entry 5278 (class 0 OID 0)
+-- Dependencies: 351
+-- Name: COLUMN mv_country_tune_popularity.meter; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_popularity.meter IS 'Time signature/meter of the tune setting (e.g., 4/4, 6/8, 9/8)';
+
+
+--
+-- TOC entry 5279 (class 0 OID 0)
+-- Dependencies: 351
+-- Name: COLUMN mv_country_tune_popularity.mode; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_popularity.mode IS 'Modal key of the setting (e.g., Gmajor, Adorian, Edorian, Dmixolydian)';
+
+
+--
+-- TOC entry 5280 (class 0 OID 0)
+-- Dependencies: 351
+-- Name: COLUMN mv_country_tune_popularity.incipit; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_popularity.incipit IS 'Opening ABC notation snippet (first 1-2 bars) of the tune melody';
+
+
+--
+-- TOC entry 5281 (class 0 OID 0)
+-- Dependencies: 351
+-- Name: COLUMN mv_country_tune_popularity.country_tunebook_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_popularity.country_tunebook_count IS 'Number of members in this country who have this tune in their tunebook';
+
+
+--
+-- TOC entry 5282 (class 0 OID 0)
+-- Dependencies: 351
+-- Name: COLUMN mv_country_tune_popularity.country_member_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_popularity.country_member_count IS 'Total number of active Session members located in this country';
+
+
+--
+-- TOC entry 5283 (class 0 OID 0)
+-- Dependencies: 351
+-- Name: COLUMN mv_country_tune_popularity.country_members; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_popularity.country_members IS 'Array or count of members from this country';
+
+
+--
+-- TOC entry 5284 (class 0 OID 0)
+-- Dependencies: 351
+-- Name: COLUMN mv_country_tune_popularity.country_tunebook_rows; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_popularity.country_tunebook_rows IS 'Total tunebook rows for all members in this country';
+
+
+--
+-- TOC entry 5285 (class 0 OID 0)
+-- Dependencies: 351
+-- Name: COLUMN mv_country_tune_popularity.global_tunebook_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_popularity.global_tunebook_count IS 'Global number of member tunebooks containing this tune';
+
+
+--
+-- TOC entry 5286 (class 0 OID 0)
+-- Dependencies: 351
+-- Name: COLUMN mv_country_tune_popularity.global_member_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_popularity.global_member_count IS 'Global number of active Session members';
+
+
+--
+-- TOC entry 5287 (class 0 OID 0)
+-- Dependencies: 351
+-- Name: COLUMN mv_country_tune_popularity.global_tunebook_rows; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_popularity.global_tunebook_rows IS 'Total global tunebook entries/rows';
+
+
+--
+-- TOC entry 5288 (class 0 OID 0)
+-- Dependencies: 351
+-- Name: COLUMN mv_country_tune_popularity.country_share; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_popularity.country_share IS 'Tune''s percentage share of the country''s total tunebook entries';
+
+
+--
+-- TOC entry 5289 (class 0 OID 0)
+-- Dependencies: 351
+-- Name: COLUMN mv_country_tune_popularity.global_share; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_popularity.global_share IS 'Tune''s percentage share of the global total tunebook entries';
+
+
+--
+-- TOC entry 5290 (class 0 OID 0)
+-- Dependencies: 351
+-- Name: COLUMN mv_country_tune_popularity.lift_score; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_popularity.lift_score IS 'Ratio of country share to global share (lift > 1 indicates local popularity)';
+
+
+--
+-- TOC entry 5291 (class 0 OID 0)
+-- Dependencies: 351
+-- Name: COLUMN mv_country_tune_popularity.weighted_country_score; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_popularity.weighted_country_score IS 'Weighted popularity score for the tune in this country';
+
+
+--
 -- TOC entry 352 (class 1259 OID 944404)
 -- Name: mv_country_similarity; Type: MATERIALIZED VIEW; Schema: thesession; Owner: folkguitar
 --
@@ -2938,6 +3695,51 @@ CREATE MATERIALIZED VIEW thesession.mv_country_similarity AS
 
 
 ALTER MATERIALIZED VIEW thesession.mv_country_similarity OWNER TO folkguitar;
+
+--
+-- TOC entry 5292 (class 0 OID 0)
+-- Dependencies: 352
+-- Name: COLUMN mv_country_similarity.country_a; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_similarity.country_a IS 'First country code/name';
+
+
+--
+-- TOC entry 5293 (class 0 OID 0)
+-- Dependencies: 352
+-- Name: COLUMN mv_country_similarity.country_b; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_similarity.country_b IS 'Second country code/name';
+
+
+--
+-- TOC entry 5294 (class 0 OID 0)
+-- Dependencies: 352
+-- Name: COLUMN mv_country_similarity.shared_tunes; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_similarity.shared_tunes IS 'Number of common tunes played/bookmarked in both countries';
+
+
+--
+-- TOC entry 5295 (class 0 OID 0)
+-- Dependencies: 352
+-- Name: COLUMN mv_country_similarity.cosine_similarity; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_similarity.cosine_similarity IS 'Cosine similarity score between the two countries'' tune popularity vectors';
+
+
+--
+-- TOC entry 5296 (class 0 OID 0)
+-- Dependencies: 352
+-- Name: COLUMN mv_country_similarity.adjusted_similarity; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_similarity.adjusted_similarity IS 'Adjusted similarity score accounting for country size and common biases';
+
 
 --
 -- TOC entry 323 (class 1259 OID 684022)
@@ -3024,6 +3826,42 @@ UNION ALL
 ALTER MATERIALIZED VIEW thesession.mv_member_tune_signal OWNER TO folkguitar;
 
 --
+-- TOC entry 5297 (class 0 OID 0)
+-- Dependencies: 353
+-- Name: COLUMN mv_member_tune_signal.member_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_tune_signal.member_id IS 'Canonical ID of the Session member';
+
+
+--
+-- TOC entry 5298 (class 0 OID 0)
+-- Dependencies: 353
+-- Name: COLUMN mv_member_tune_signal.tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_tune_signal.tune_id IS 'Canonical ID of the traditional tune';
+
+
+--
+-- TOC entry 5299 (class 0 OID 0)
+-- Dependencies: 353
+-- Name: COLUMN mv_member_tune_signal.signal_type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_tune_signal.signal_type IS 'Type of relationship (e.g., tunebook, bookmark, set_submitter)';
+
+
+--
+-- TOC entry 5300 (class 0 OID 0)
+-- Dependencies: 353
+-- Name: COLUMN mv_member_tune_signal.signal_weight; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_tune_signal.signal_weight IS 'Weight score representing the strength of the signal';
+
+
+--
 -- TOC entry 354 (class 1259 OID 951631)
 -- Name: mv_country_tune_signal_popularity; Type: MATERIALIZED VIEW; Schema: thesession; Owner: folkguitar
 --
@@ -3108,6 +3946,240 @@ CREATE MATERIALIZED VIEW thesession.mv_country_tune_signal_popularity AS
 ALTER MATERIALIZED VIEW thesession.mv_country_tune_signal_popularity OWNER TO folkguitar;
 
 --
+-- TOC entry 5301 (class 0 OID 0)
+-- Dependencies: 354
+-- Name: COLUMN mv_country_tune_signal_popularity.country_code; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_signal_popularity.country_code IS 'ISO 2-letter country code of the session/member location';
+
+
+--
+-- TOC entry 5302 (class 0 OID 0)
+-- Dependencies: 354
+-- Name: COLUMN mv_country_tune_signal_popularity.country_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_signal_popularity.country_name IS 'Name of the country';
+
+
+--
+-- TOC entry 5303 (class 0 OID 0)
+-- Dependencies: 354
+-- Name: COLUMN mv_country_tune_signal_popularity.tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_signal_popularity.tune_id IS 'Canonical ID of the traditional tune';
+
+
+--
+-- TOC entry 5304 (class 0 OID 0)
+-- Dependencies: 354
+-- Name: COLUMN mv_country_tune_signal_popularity.tune_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_signal_popularity.tune_name IS 'Name of the tune';
+
+
+--
+-- TOC entry 5305 (class 0 OID 0)
+-- Dependencies: 354
+-- Name: COLUMN mv_country_tune_signal_popularity.type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_signal_popularity.type IS 'Rhythm type of the tune (e.g., reel, jig, hornpipe, polka, slide, slip jig)';
+
+
+--
+-- TOC entry 5306 (class 0 OID 0)
+-- Dependencies: 354
+-- Name: COLUMN mv_country_tune_signal_popularity.meter; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_signal_popularity.meter IS 'Time signature/meter of the tune setting (e.g., 4/4, 6/8, 9/8)';
+
+
+--
+-- TOC entry 5307 (class 0 OID 0)
+-- Dependencies: 354
+-- Name: COLUMN mv_country_tune_signal_popularity.mode; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_signal_popularity.mode IS 'Modal key of the setting (e.g., Gmajor, Adorian, Edorian, Dmixolydian)';
+
+
+--
+-- TOC entry 5308 (class 0 OID 0)
+-- Dependencies: 354
+-- Name: COLUMN mv_country_tune_signal_popularity.incipit; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_signal_popularity.incipit IS 'Opening ABC notation snippet (first 1-2 bars) of the tune melody';
+
+
+--
+-- TOC entry 5309 (class 0 OID 0)
+-- Dependencies: 354
+-- Name: COLUMN mv_country_tune_signal_popularity.country_signal_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_signal_popularity.country_signal_count IS 'Combined local popularity signal count in this country';
+
+
+--
+-- TOC entry 5310 (class 0 OID 0)
+-- Dependencies: 354
+-- Name: COLUMN mv_country_tune_signal_popularity.country_member_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_signal_popularity.country_member_count IS 'Total members in this country contributing to signal';
+
+
+--
+-- TOC entry 5311 (class 0 OID 0)
+-- Dependencies: 354
+-- Name: COLUMN mv_country_tune_signal_popularity.country_tune_weight; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_signal_popularity.country_tune_weight IS 'Normalized local weight of the tune in this country';
+
+
+--
+-- TOC entry 5312 (class 0 OID 0)
+-- Dependencies: 354
+-- Name: COLUMN mv_country_tune_signal_popularity.tunebook_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_signal_popularity.tunebook_count IS 'Number of member tunebooks containing this tune';
+
+
+--
+-- TOC entry 5313 (class 0 OID 0)
+-- Dependencies: 354
+-- Name: COLUMN mv_country_tune_signal_popularity.bookmark_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_signal_popularity.bookmark_count IS 'Number of members who have bookmarked/saved this tune';
+
+
+--
+-- TOC entry 5314 (class 0 OID 0)
+-- Dependencies: 354
+-- Name: COLUMN mv_country_tune_signal_popularity.set_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_signal_popularity.set_count IS 'Count of sets';
+
+
+--
+-- TOC entry 5315 (class 0 OID 0)
+-- Dependencies: 354
+-- Name: COLUMN mv_country_tune_signal_popularity.country_signal_members; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_signal_popularity.country_signal_members IS 'Number of unique members in this country contributing to this tune''s signal';
+
+
+--
+-- TOC entry 5316 (class 0 OID 0)
+-- Dependencies: 354
+-- Name: COLUMN mv_country_tune_signal_popularity.country_signal_rows; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_signal_popularity.country_signal_rows IS 'Total local signal rows/entries in this country';
+
+
+--
+-- TOC entry 5317 (class 0 OID 0)
+-- Dependencies: 354
+-- Name: COLUMN mv_country_tune_signal_popularity.country_signal_weight; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_signal_popularity.country_signal_weight IS 'Sum of signal weights for this tune in this country';
+
+
+--
+-- TOC entry 5318 (class 0 OID 0)
+-- Dependencies: 354
+-- Name: COLUMN mv_country_tune_signal_popularity.global_signal_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_signal_popularity.global_signal_count IS 'Global combined signal count for this tune';
+
+
+--
+-- TOC entry 5319 (class 0 OID 0)
+-- Dependencies: 354
+-- Name: COLUMN mv_country_tune_signal_popularity.global_signal_members; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_signal_popularity.global_signal_members IS 'Global number of members contributing to this tune''s signal';
+
+
+--
+-- TOC entry 5320 (class 0 OID 0)
+-- Dependencies: 354
+-- Name: COLUMN mv_country_tune_signal_popularity.global_signal_weight; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_signal_popularity.global_signal_weight IS 'Sum of global signal weights for this tune';
+
+
+--
+-- TOC entry 5321 (class 0 OID 0)
+-- Dependencies: 354
+-- Name: COLUMN mv_country_tune_signal_popularity.global_signal_rows; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_signal_popularity.global_signal_rows IS 'Total global signal rows/entries';
+
+
+--
+-- TOC entry 5322 (class 0 OID 0)
+-- Dependencies: 354
+-- Name: COLUMN mv_country_tune_signal_popularity.total_global_signal_weight; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_signal_popularity.total_global_signal_weight IS 'Total global signal weight sum across all tunes';
+
+
+--
+-- TOC entry 5323 (class 0 OID 0)
+-- Dependencies: 354
+-- Name: COLUMN mv_country_tune_signal_popularity.country_share; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_signal_popularity.country_share IS 'Tune''s signal weight share in this country';
+
+
+--
+-- TOC entry 5324 (class 0 OID 0)
+-- Dependencies: 354
+-- Name: COLUMN mv_country_tune_signal_popularity.global_share; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_signal_popularity.global_share IS 'Tune''s signal weight share globally';
+
+
+--
+-- TOC entry 5325 (class 0 OID 0)
+-- Dependencies: 354
+-- Name: COLUMN mv_country_tune_signal_popularity.lift_score; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_signal_popularity.lift_score IS 'Ratio of country signal share to global signal share';
+
+
+--
+-- TOC entry 5326 (class 0 OID 0)
+-- Dependencies: 354
+-- Name: COLUMN mv_country_tune_signal_popularity.weighted_country_score; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_country_tune_signal_popularity.weighted_country_score IS 'Weighted signal popularity score for this country';
+
+
+--
 -- TOC entry 332 (class 1259 OID 807360)
 -- Name: mv_melody_setting_bars; Type: MATERIALIZED VIEW; Schema: thesession; Owner: folkguitar
 --
@@ -3184,6 +4256,123 @@ CREATE MATERIALIZED VIEW thesession.mv_melody_setting_bars AS
 
 
 ALTER MATERIALIZED VIEW thesession.mv_melody_setting_bars OWNER TO folkguitar;
+
+--
+-- TOC entry 5327 (class 0 OID 0)
+-- Dependencies: 332
+-- Name: COLUMN mv_melody_setting_bars.bar_number; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_setting_bars.bar_number IS 'Bar number within the tune setting';
+
+
+--
+-- TOC entry 5328 (class 0 OID 0)
+-- Dependencies: 332
+-- Name: COLUMN mv_melody_setting_bars.setting_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_setting_bars.setting_id IS 'Canonical ID of the specific tune setting/transcription';
+
+
+--
+-- TOC entry 5329 (class 0 OID 0)
+-- Dependencies: 332
+-- Name: COLUMN mv_melody_setting_bars.tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_setting_bars.tune_id IS 'Canonical ID of the traditional tune';
+
+
+--
+-- TOC entry 5330 (class 0 OID 0)
+-- Dependencies: 332
+-- Name: COLUMN mv_melody_setting_bars.name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_setting_bars.name IS 'Field name on mv_melody_setting_bars';
+
+
+--
+-- TOC entry 5331 (class 0 OID 0)
+-- Dependencies: 332
+-- Name: COLUMN mv_melody_setting_bars.type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_setting_bars.type IS 'Rhythm type of the tune (e.g., reel, jig, hornpipe, polka, slide, slip jig)';
+
+
+--
+-- TOC entry 5332 (class 0 OID 0)
+-- Dependencies: 332
+-- Name: COLUMN mv_melody_setting_bars.meter; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_setting_bars.meter IS 'Time signature/meter of the tune setting (e.g., 4/4, 6/8, 9/8)';
+
+
+--
+-- TOC entry 5333 (class 0 OID 0)
+-- Dependencies: 332
+-- Name: COLUMN mv_melody_setting_bars.mode; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_setting_bars.mode IS 'Modal key of the setting (e.g., Gmajor, Adorian, Edorian, Dmixolydian)';
+
+
+--
+-- TOC entry 5334 (class 0 OID 0)
+-- Dependencies: 332
+-- Name: COLUMN mv_melody_setting_bars.raw_bar_number; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_setting_bars.raw_bar_number IS 'Field raw_bar_number on mv_melody_setting_bars';
+
+
+--
+-- TOC entry 5335 (class 0 OID 0)
+-- Dependencies: 332
+-- Name: COLUMN mv_melody_setting_bars.bar_text; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_setting_bars.bar_text IS 'Melody notes in this bar in ABC format';
+
+
+--
+-- TOC entry 5336 (class 0 OID 0)
+-- Dependencies: 332
+-- Name: COLUMN mv_melody_setting_bars.note_tokens; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_setting_bars.note_tokens IS 'Field note_tokens on mv_melody_setting_bars';
+
+
+--
+-- TOC entry 5337 (class 0 OID 0)
+-- Dependencies: 332
+-- Name: COLUMN mv_melody_setting_bars.pitches; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_setting_bars.pitches IS 'Field pitches on mv_melody_setting_bars';
+
+
+--
+-- TOC entry 5338 (class 0 OID 0)
+-- Dependencies: 332
+-- Name: COLUMN mv_melody_setting_bars.rhythms; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_setting_bars.rhythms IS 'Field rhythms on mv_melody_setting_bars';
+
+
+--
+-- TOC entry 5339 (class 0 OID 0)
+-- Dependencies: 332
+-- Name: COLUMN mv_melody_setting_bars.note_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_setting_bars.note_count IS 'Number of notes in the bar';
+
 
 --
 -- TOC entry 333 (class 1259 OID 807407)
@@ -3354,6 +4543,177 @@ CREATE MATERIALIZED VIEW thesession.mv_melody_2bar_fragments_v5 AS
 ALTER MATERIALIZED VIEW thesession.mv_melody_2bar_fragments_v5 OWNER TO folkguitar;
 
 --
+-- TOC entry 5340 (class 0 OID 0)
+-- Dependencies: 344
+-- Name: COLUMN mv_melody_2bar_fragments_v5.fragment_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragments_v5.fragment_id IS 'Unique identifier of the 2-bar melody fragment';
+
+
+--
+-- TOC entry 5341 (class 0 OID 0)
+-- Dependencies: 344
+-- Name: COLUMN mv_melody_2bar_fragments_v5.setting_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragments_v5.setting_id IS 'Canonical ID of the specific tune setting/transcription';
+
+
+--
+-- TOC entry 5342 (class 0 OID 0)
+-- Dependencies: 344
+-- Name: COLUMN mv_melody_2bar_fragments_v5.tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragments_v5.tune_id IS 'Canonical ID of the traditional tune';
+
+
+--
+-- TOC entry 5343 (class 0 OID 0)
+-- Dependencies: 344
+-- Name: COLUMN mv_melody_2bar_fragments_v5.name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragments_v5.name IS 'Field name on mv_melody_2bar_fragments_v5';
+
+
+--
+-- TOC entry 5344 (class 0 OID 0)
+-- Dependencies: 344
+-- Name: COLUMN mv_melody_2bar_fragments_v5.type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragments_v5.type IS 'Rhythm type of the tune (e.g., reel, jig, hornpipe, polka, slide, slip jig)';
+
+
+--
+-- TOC entry 5345 (class 0 OID 0)
+-- Dependencies: 344
+-- Name: COLUMN mv_melody_2bar_fragments_v5.meter; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragments_v5.meter IS 'Time signature/meter of the tune setting (e.g., 4/4, 6/8, 9/8)';
+
+
+--
+-- TOC entry 5346 (class 0 OID 0)
+-- Dependencies: 344
+-- Name: COLUMN mv_melody_2bar_fragments_v5.mode; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragments_v5.mode IS 'Modal key of the setting (e.g., Gmajor, Adorian, Edorian, Dmixolydian)';
+
+
+--
+-- TOC entry 5347 (class 0 OID 0)
+-- Dependencies: 344
+-- Name: COLUMN mv_melody_2bar_fragments_v5.bar_start; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragments_v5.bar_start IS 'Starting bar number of the melody fragment within the setting';
+
+
+--
+-- TOC entry 5348 (class 0 OID 0)
+-- Dependencies: 344
+-- Name: COLUMN mv_melody_2bar_fragments_v5.bar_end; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragments_v5.bar_end IS 'Ending bar number of the melody fragment within the setting';
+
+
+--
+-- TOC entry 5349 (class 0 OID 0)
+-- Dependencies: 344
+-- Name: COLUMN mv_melody_2bar_fragments_v5.bar_1_text; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragments_v5.bar_1_text IS 'Melody notes in the first bar of the fragment';
+
+
+--
+-- TOC entry 5350 (class 0 OID 0)
+-- Dependencies: 344
+-- Name: COLUMN mv_melody_2bar_fragments_v5.bar_2_text; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragments_v5.bar_2_text IS 'Melody notes in the second bar of the fragment';
+
+
+--
+-- TOC entry 5351 (class 0 OID 0)
+-- Dependencies: 344
+-- Name: COLUMN mv_melody_2bar_fragments_v5.bar_1_note_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragments_v5.bar_1_note_count IS 'Count of bar 1 notes';
+
+
+--
+-- TOC entry 5352 (class 0 OID 0)
+-- Dependencies: 344
+-- Name: COLUMN mv_melody_2bar_fragments_v5.bar_2_note_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragments_v5.bar_2_note_count IS 'Count of bar 2 notes';
+
+
+--
+-- TOC entry 5353 (class 0 OID 0)
+-- Dependencies: 344
+-- Name: COLUMN mv_melody_2bar_fragments_v5.note_tokens; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragments_v5.note_tokens IS 'Field note_tokens on mv_melody_2bar_fragments_v5';
+
+
+--
+-- TOC entry 5354 (class 0 OID 0)
+-- Dependencies: 344
+-- Name: COLUMN mv_melody_2bar_fragments_v5.pitches; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragments_v5.pitches IS 'Field pitches on mv_melody_2bar_fragments_v5';
+
+
+--
+-- TOC entry 5355 (class 0 OID 0)
+-- Dependencies: 344
+-- Name: COLUMN mv_melody_2bar_fragments_v5.rhythms; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragments_v5.rhythms IS 'Field rhythms on mv_melody_2bar_fragments_v5';
+
+
+--
+-- TOC entry 5356 (class 0 OID 0)
+-- Dependencies: 344
+-- Name: COLUMN mv_melody_2bar_fragments_v5.note_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragments_v5.note_count IS 'Total number of notes in the 2-bar fragment';
+
+
+--
+-- TOC entry 5357 (class 0 OID 0)
+-- Dependencies: 344
+-- Name: COLUMN mv_melody_2bar_fragments_v5.interval_fingerprint; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragments_v5.interval_fingerprint IS 'Condensed interval representation for matching';
+
+
+--
+-- TOC entry 5358 (class 0 OID 0)
+-- Dependencies: 344
+-- Name: COLUMN mv_melody_2bar_fragments_v5.rhythm_fingerprint; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragments_v5.rhythm_fingerprint IS 'Condensed rhythm/duration representation for matching';
+
+
+--
 -- TOC entry 345 (class 1259 OID 889669)
 -- Name: mv_melody_2bar_fragment_ngrams_v5; Type: MATERIALIZED VIEW; Schema: thesession; Owner: folkguitar
 --
@@ -3429,6 +4789,168 @@ CREATE MATERIALIZED VIEW thesession.mv_melody_2bar_fragment_ngrams_v5 AS
 ALTER MATERIALIZED VIEW thesession.mv_melody_2bar_fragment_ngrams_v5 OWNER TO folkguitar;
 
 --
+-- TOC entry 5359 (class 0 OID 0)
+-- Dependencies: 345
+-- Name: COLUMN mv_melody_2bar_fragment_ngrams_v5.fragment_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragment_ngrams_v5.fragment_id IS 'Unique identifier of the 2-bar melody fragment';
+
+
+--
+-- TOC entry 5360 (class 0 OID 0)
+-- Dependencies: 345
+-- Name: COLUMN mv_melody_2bar_fragment_ngrams_v5.setting_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragment_ngrams_v5.setting_id IS 'Canonical ID of the specific tune setting/transcription';
+
+
+--
+-- TOC entry 5361 (class 0 OID 0)
+-- Dependencies: 345
+-- Name: COLUMN mv_melody_2bar_fragment_ngrams_v5.tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragment_ngrams_v5.tune_id IS 'Canonical ID of the traditional tune';
+
+
+--
+-- TOC entry 5362 (class 0 OID 0)
+-- Dependencies: 345
+-- Name: COLUMN mv_melody_2bar_fragment_ngrams_v5.name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragment_ngrams_v5.name IS 'Field name on mv_melody_2bar_fragment_ngrams_v5';
+
+
+--
+-- TOC entry 5363 (class 0 OID 0)
+-- Dependencies: 345
+-- Name: COLUMN mv_melody_2bar_fragment_ngrams_v5.type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragment_ngrams_v5.type IS 'Rhythm type of the tune (e.g., reel, jig, hornpipe, polka, slide, slip jig)';
+
+
+--
+-- TOC entry 5364 (class 0 OID 0)
+-- Dependencies: 345
+-- Name: COLUMN mv_melody_2bar_fragment_ngrams_v5.meter; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragment_ngrams_v5.meter IS 'Time signature/meter of the tune setting (e.g., 4/4, 6/8, 9/8)';
+
+
+--
+-- TOC entry 5365 (class 0 OID 0)
+-- Dependencies: 345
+-- Name: COLUMN mv_melody_2bar_fragment_ngrams_v5.mode; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragment_ngrams_v5.mode IS 'Modal key of the setting (e.g., Gmajor, Adorian, Edorian, Dmixolydian)';
+
+
+--
+-- TOC entry 5366 (class 0 OID 0)
+-- Dependencies: 345
+-- Name: COLUMN mv_melody_2bar_fragment_ngrams_v5.bar_start; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragment_ngrams_v5.bar_start IS 'Starting bar number of the melody fragment within the setting';
+
+
+--
+-- TOC entry 5367 (class 0 OID 0)
+-- Dependencies: 345
+-- Name: COLUMN mv_melody_2bar_fragment_ngrams_v5.bar_end; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragment_ngrams_v5.bar_end IS 'Ending bar number of the melody fragment within the setting';
+
+
+--
+-- TOC entry 5368 (class 0 OID 0)
+-- Dependencies: 345
+-- Name: COLUMN mv_melody_2bar_fragment_ngrams_v5.bar_1_text; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragment_ngrams_v5.bar_1_text IS 'Melody notes in the first bar of the fragment';
+
+
+--
+-- TOC entry 5369 (class 0 OID 0)
+-- Dependencies: 345
+-- Name: COLUMN mv_melody_2bar_fragment_ngrams_v5.bar_2_text; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragment_ngrams_v5.bar_2_text IS 'Melody notes in the second bar of the fragment';
+
+
+--
+-- TOC entry 5370 (class 0 OID 0)
+-- Dependencies: 345
+-- Name: COLUMN mv_melody_2bar_fragment_ngrams_v5.fragment_contour_fingerprint; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragment_ngrams_v5.fragment_contour_fingerprint IS 'Melodic contour fingerprint representing the pitch rises and falls';
+
+
+--
+-- TOC entry 5371 (class 0 OID 0)
+-- Dependencies: 345
+-- Name: COLUMN mv_melody_2bar_fragment_ngrams_v5.fragment_coarse_fingerprint; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragment_ngrams_v5.fragment_coarse_fingerprint IS 'Coarse interval fingerprint for wider interval matches';
+
+
+--
+-- TOC entry 5372 (class 0 OID 0)
+-- Dependencies: 345
+-- Name: COLUMN mv_melody_2bar_fragment_ngrams_v5.ngram_size; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragment_ngrams_v5.ngram_size IS 'Size of the n-gram snippet';
+
+
+--
+-- TOC entry 5373 (class 0 OID 0)
+-- Dependencies: 345
+-- Name: COLUMN mv_melody_2bar_fragment_ngrams_v5.ngram_position; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragment_ngrams_v5.ngram_position IS 'Starting position of the n-gram in the fragment';
+
+
+--
+-- TOC entry 5374 (class 0 OID 0)
+-- Dependencies: 345
+-- Name: COLUMN mv_melody_2bar_fragment_ngrams_v5.interval_ngram; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragment_ngrams_v5.interval_ngram IS 'Interval transition n-gram representation';
+
+
+--
+-- TOC entry 5375 (class 0 OID 0)
+-- Dependencies: 345
+-- Name: COLUMN mv_melody_2bar_fragment_ngrams_v5.coarse_interval_ngram; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragment_ngrams_v5.coarse_interval_ngram IS 'Coarse interval transition n-gram representation';
+
+
+--
+-- TOC entry 5376 (class 0 OID 0)
+-- Dependencies: 345
+-- Name: COLUMN mv_melody_2bar_fragment_ngrams_v5.rhythm_ngram; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_fragment_ngrams_v5.rhythm_ngram IS 'Rhythm duration n-gram representation';
+
+
+--
 -- TOC entry 335 (class 1259 OID 807745)
 -- Name: mv_melody_2bar_ngram_stats_old; Type: MATERIALIZED VIEW; Schema: thesession; Owner: folkguitar
 --
@@ -3463,6 +4985,60 @@ CREATE MATERIALIZED VIEW thesession.mv_melody_2bar_ngram_stats_v5 AS
 
 
 ALTER MATERIALIZED VIEW thesession.mv_melody_2bar_ngram_stats_v5 OWNER TO folkguitar;
+
+--
+-- TOC entry 5377 (class 0 OID 0)
+-- Dependencies: 346
+-- Name: COLUMN mv_melody_2bar_ngram_stats_v5.interval_ngram; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_ngram_stats_v5.interval_ngram IS 'Interval transition n-gram value';
+
+
+--
+-- TOC entry 5378 (class 0 OID 0)
+-- Dependencies: 346
+-- Name: COLUMN mv_melody_2bar_ngram_stats_v5.coarse_interval_ngram; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_ngram_stats_v5.coarse_interval_ngram IS 'Coarse interval transition n-gram value';
+
+
+--
+-- TOC entry 5379 (class 0 OID 0)
+-- Dependencies: 346
+-- Name: COLUMN mv_melody_2bar_ngram_stats_v5.row_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_ngram_stats_v5.row_count IS 'Total occurrences of this n-gram in the fragments';
+
+
+--
+-- TOC entry 5380 (class 0 OID 0)
+-- Dependencies: 346
+-- Name: COLUMN mv_melody_2bar_ngram_stats_v5.tune_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_ngram_stats_v5.tune_count IS 'Number of unique tunes containing this n-gram';
+
+
+--
+-- TOC entry 5381 (class 0 OID 0)
+-- Dependencies: 346
+-- Name: COLUMN mv_melody_2bar_ngram_stats_v5.fragment_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_ngram_stats_v5.fragment_count IS 'Number of unique fragments containing this n-gram';
+
+
+--
+-- TOC entry 5382 (class 0 OID 0)
+-- Dependencies: 346
+-- Name: COLUMN mv_melody_2bar_ngram_stats_v5.rarity_weight; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_melody_2bar_ngram_stats_v5.rarity_weight IS 'Field rarity_weight on mv_melody_2bar_ngram_stats_v5';
+
 
 --
 -- TOC entry 298 (class 1259 OID 436178)
@@ -3522,6 +5098,132 @@ CREATE MATERIALIZED VIEW thesession.mv_member_search AS
 ALTER MATERIALIZED VIEW thesession.mv_member_search OWNER TO folkguitar;
 
 --
+-- TOC entry 5383 (class 0 OID 0)
+-- Dependencies: 310
+-- Name: COLUMN mv_member_search.member_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_search.member_id IS 'Canonical ID of the Session member';
+
+
+--
+-- TOC entry 5384 (class 0 OID 0)
+-- Dependencies: 310
+-- Name: COLUMN mv_member_search.username; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_search.username IS 'Field username on mv_member_search';
+
+
+--
+-- TOC entry 5385 (class 0 OID 0)
+-- Dependencies: 310
+-- Name: COLUMN mv_member_search.username_lc; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_search.username_lc IS 'Field username_lc on mv_member_search';
+
+
+--
+-- TOC entry 5386 (class 0 OID 0)
+-- Dependencies: 310
+-- Name: COLUMN mv_member_search.url; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_search.url IS 'Field url on mv_member_search';
+
+
+--
+-- TOC entry 5387 (class 0 OID 0)
+-- Dependencies: 310
+-- Name: COLUMN mv_member_search.joined_at; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_search.joined_at IS 'Field joined_at on mv_member_search';
+
+
+--
+-- TOC entry 5388 (class 0 OID 0)
+-- Dependencies: 310
+-- Name: COLUMN mv_member_search.tunebook_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_search.tunebook_count IS 'Number of tunes in the member''s tunebook';
+
+
+--
+-- TOC entry 5389 (class 0 OID 0)
+-- Dependencies: 310
+-- Name: COLUMN mv_member_search.sets_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_search.sets_count IS 'Count of setss';
+
+
+--
+-- TOC entry 5390 (class 0 OID 0)
+-- Dependencies: 310
+-- Name: COLUMN mv_member_search.settings_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_search.settings_count IS 'Total settings/transcriptions of this tune on TheSession.org';
+
+
+--
+-- TOC entry 5391 (class 0 OID 0)
+-- Dependencies: 310
+-- Name: COLUMN mv_member_search.recordings_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_search.recordings_count IS 'Count of recordingss';
+
+
+--
+-- TOC entry 5392 (class 0 OID 0)
+-- Dependencies: 310
+-- Name: COLUMN mv_member_search.sessions_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_search.sessions_count IS 'Count of sessionss';
+
+
+--
+-- TOC entry 5393 (class 0 OID 0)
+-- Dependencies: 310
+-- Name: COLUMN mv_member_search.comments_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_search.comments_count IS 'Count of commentss';
+
+
+--
+-- TOC entry 5394 (class 0 OID 0)
+-- Dependencies: 310
+-- Name: COLUMN mv_member_search.discussions_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_search.discussions_count IS 'Count of discussionss';
+
+
+--
+-- TOC entry 5395 (class 0 OID 0)
+-- Dependencies: 310
+-- Name: COLUMN mv_member_search.events_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_search.events_count IS 'Count of eventss';
+
+
+--
+-- TOC entry 5396 (class 0 OID 0)
+-- Dependencies: 310
+-- Name: COLUMN mv_member_search.trips_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_search.trips_count IS 'Count of tripss';
+
+
+--
 -- TOC entry 302 (class 1259 OID 482417)
 -- Name: mv_member_set_activity; Type: MATERIALIZED VIEW; Schema: thesession; Owner: folkguitar
 --
@@ -3566,6 +5268,51 @@ CREATE MATERIALIZED VIEW thesession.mv_member_set_activity AS
 
 
 ALTER MATERIALIZED VIEW thesession.mv_member_set_activity OWNER TO folkguitar;
+
+--
+-- TOC entry 5397 (class 0 OID 0)
+-- Dependencies: 302
+-- Name: COLUMN mv_member_set_activity.member_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_set_activity.member_id IS 'Canonical ID of the Session member';
+
+
+--
+-- TOC entry 5398 (class 0 OID 0)
+-- Dependencies: 302
+-- Name: COLUMN mv_member_set_activity.period_type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_set_activity.period_type IS 'Field period_type on mv_member_set_activity';
+
+
+--
+-- TOC entry 5399 (class 0 OID 0)
+-- Dependencies: 302
+-- Name: COLUMN mv_member_set_activity.period_start; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_set_activity.period_start IS 'Field period_start on mv_member_set_activity';
+
+
+--
+-- TOC entry 5400 (class 0 OID 0)
+-- Dependencies: 302
+-- Name: COLUMN mv_member_set_activity.sets_added; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_set_activity.sets_added IS 'Field sets_added on mv_member_set_activity';
+
+
+--
+-- TOC entry 5401 (class 0 OID 0)
+-- Dependencies: 302
+-- Name: COLUMN mv_member_set_activity.cumulative_sets; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_set_activity.cumulative_sets IS 'Field cumulative_sets on mv_member_set_activity';
+
 
 --
 -- TOC entry 303 (class 1259 OID 482427)
@@ -3624,6 +5371,69 @@ CREATE MATERIALIZED VIEW thesession.mv_member_set_summary AS
 ALTER MATERIALIZED VIEW thesession.mv_member_set_summary OWNER TO folkguitar;
 
 --
+-- TOC entry 5402 (class 0 OID 0)
+-- Dependencies: 303
+-- Name: COLUMN mv_member_set_summary.member_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_set_summary.member_id IS 'Canonical ID of the Session member';
+
+
+--
+-- TOC entry 5403 (class 0 OID 0)
+-- Dependencies: 303
+-- Name: COLUMN mv_member_set_summary.username; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_set_summary.username IS 'Field username on mv_member_set_summary';
+
+
+--
+-- TOC entry 5404 (class 0 OID 0)
+-- Dependencies: 303
+-- Name: COLUMN mv_member_set_summary.total_sets; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_set_summary.total_sets IS 'Field total_sets on mv_member_set_summary';
+
+
+--
+-- TOC entry 5405 (class 0 OID 0)
+-- Dependencies: 303
+-- Name: COLUMN mv_member_set_summary.first_set_date; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_set_summary.first_set_date IS 'Field first_set_date on mv_member_set_summary';
+
+
+--
+-- TOC entry 5406 (class 0 OID 0)
+-- Dependencies: 303
+-- Name: COLUMN mv_member_set_summary.last_set_date; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_set_summary.last_set_date IS 'Field last_set_date on mv_member_set_summary';
+
+
+--
+-- TOC entry 5407 (class 0 OID 0)
+-- Dependencies: 303
+-- Name: COLUMN mv_member_set_summary.most_active_month; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_set_summary.most_active_month IS 'Field most_active_month on mv_member_set_summary';
+
+
+--
+-- TOC entry 5408 (class 0 OID 0)
+-- Dependencies: 303
+-- Name: COLUMN mv_member_set_summary.most_active_month_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_member_set_summary.most_active_month_count IS 'Count of most active months';
+
+
+--
 -- TOC entry 297 (class 1259 OID 403644)
 -- Name: mv_tune_set_transitions; Type: MATERIALIZED VIEW; Schema: thesession; Owner: folkguitar
 --
@@ -3668,6 +5478,60 @@ CREATE MATERIALIZED VIEW thesession.mv_tune_set_transitions AS
 
 
 ALTER MATERIALIZED VIEW thesession.mv_tune_set_transitions OWNER TO folkguitar;
+
+--
+-- TOC entry 5409 (class 0 OID 0)
+-- Dependencies: 297
+-- Name: COLUMN mv_tune_set_transitions.source_tune; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_set_transitions.source_tune IS 'ID of the source tune';
+
+
+--
+-- TOC entry 5410 (class 0 OID 0)
+-- Dependencies: 297
+-- Name: COLUMN mv_tune_set_transitions.target_tune; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_set_transitions.target_tune IS 'ID of the target tune';
+
+
+--
+-- TOC entry 5411 (class 0 OID 0)
+-- Dependencies: 297
+-- Name: COLUMN mv_tune_set_transitions.transition_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_set_transitions.transition_count IS 'Number of times sets transition from source_tune to target_tune';
+
+
+--
+-- TOC entry 5412 (class 0 OID 0)
+-- Dependencies: 297
+-- Name: COLUMN mv_tune_set_transitions.source_total; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_set_transitions.source_total IS 'Total transitions originating from the source_tune';
+
+
+--
+-- TOC entry 5413 (class 0 OID 0)
+-- Dependencies: 297
+-- Name: COLUMN mv_tune_set_transitions.transition_pct; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_set_transitions.transition_pct IS 'Percentage of source_tune transitions that go to target_tune';
+
+
+--
+-- TOC entry 5414 (class 0 OID 0)
+-- Dependencies: 297
+-- Name: COLUMN mv_tune_set_transitions.transition_rank; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_set_transitions.transition_rank IS 'Rank of this transition among all transitions from source_tune';
+
 
 --
 -- TOC entry 321 (class 1259 OID 605364)
@@ -3747,6 +5611,78 @@ CREATE MATERIALIZED VIEW thesession.mv_mode_set_transitions AS
 
 
 ALTER MATERIALIZED VIEW thesession.mv_mode_set_transitions OWNER TO folkguitar;
+
+--
+-- TOC entry 5415 (class 0 OID 0)
+-- Dependencies: 321
+-- Name: COLUMN mv_mode_set_transitions.source_mode_label; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_mode_set_transitions.source_mode_label IS 'Field source_mode_label on mv_mode_set_transitions';
+
+
+--
+-- TOC entry 5416 (class 0 OID 0)
+-- Dependencies: 321
+-- Name: COLUMN mv_mode_set_transitions.source_mode_family; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_mode_set_transitions.source_mode_family IS 'Field source_mode_family on mv_mode_set_transitions';
+
+
+--
+-- TOC entry 5417 (class 0 OID 0)
+-- Dependencies: 321
+-- Name: COLUMN mv_mode_set_transitions.target_mode_label; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_mode_set_transitions.target_mode_label IS 'Field target_mode_label on mv_mode_set_transitions';
+
+
+--
+-- TOC entry 5418 (class 0 OID 0)
+-- Dependencies: 321
+-- Name: COLUMN mv_mode_set_transitions.target_mode_family; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_mode_set_transitions.target_mode_family IS 'Field target_mode_family on mv_mode_set_transitions';
+
+
+--
+-- TOC entry 5419 (class 0 OID 0)
+-- Dependencies: 321
+-- Name: COLUMN mv_mode_set_transitions.transition_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_mode_set_transitions.transition_count IS 'Number of times sets transition from source_mode to target_mode';
+
+
+--
+-- TOC entry 5420 (class 0 OID 0)
+-- Dependencies: 321
+-- Name: COLUMN mv_mode_set_transitions.source_total; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_mode_set_transitions.source_total IS 'Total transitions originating from the source_mode';
+
+
+--
+-- TOC entry 5421 (class 0 OID 0)
+-- Dependencies: 321
+-- Name: COLUMN mv_mode_set_transitions.transition_pct; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_mode_set_transitions.transition_pct IS 'Percentage of source_mode transitions that go to target_mode';
+
+
+--
+-- TOC entry 5422 (class 0 OID 0)
+-- Dependencies: 321
+-- Name: COLUMN mv_mode_set_transitions.transition_rank; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_mode_set_transitions.transition_rank IS 'Rank of this mode transition among all transitions from source_mode';
+
 
 --
 -- TOC entry 331 (class 1259 OID 800337)
@@ -3855,6 +5791,186 @@ CREATE MATERIALIZED VIEW thesession.mv_recording_set_search AS
 ALTER MATERIALIZED VIEW thesession.mv_recording_set_search OWNER TO folkguitar;
 
 --
+-- TOC entry 5423 (class 0 OID 0)
+-- Dependencies: 331
+-- Name: COLUMN mv_recording_set_search.recording_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_recording_set_search.recording_id IS 'ID of the recording';
+
+
+--
+-- TOC entry 5424 (class 0 OID 0)
+-- Dependencies: 331
+-- Name: COLUMN mv_recording_set_search.artist_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_recording_set_search.artist_id IS 'Canonical ID of the recording artist';
+
+
+--
+-- TOC entry 5425 (class 0 OID 0)
+-- Dependencies: 331
+-- Name: COLUMN mv_recording_set_search.artist_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_recording_set_search.artist_name IS 'Name of the recording artist';
+
+
+--
+-- TOC entry 5426 (class 0 OID 0)
+-- Dependencies: 331
+-- Name: COLUMN mv_recording_set_search.recording; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_recording_set_search.recording IS 'Field recording on mv_recording_set_search';
+
+
+--
+-- TOC entry 5427 (class 0 OID 0)
+-- Dependencies: 331
+-- Name: COLUMN mv_recording_set_search.track; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_recording_set_search.track IS 'Track number on the album or recording';
+
+
+--
+-- TOC entry 5428 (class 0 OID 0)
+-- Dependencies: 331
+-- Name: COLUMN mv_recording_set_search.tune_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_recording_set_search.tune_count IS 'Count of tunes';
+
+
+--
+-- TOC entry 5429 (class 0 OID 0)
+-- Dependencies: 331
+-- Name: COLUMN mv_recording_set_search.distinct_tune_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_recording_set_search.distinct_tune_count IS 'Count of distinct tunes';
+
+
+--
+-- TOC entry 5430 (class 0 OID 0)
+-- Dependencies: 331
+-- Name: COLUMN mv_recording_set_search.tune_ids; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_recording_set_search.tune_ids IS 'Array of tune IDs played on the track';
+
+
+--
+-- TOC entry 5431 (class 0 OID 0)
+-- Dependencies: 331
+-- Name: COLUMN mv_recording_set_search.setting_ids; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_recording_set_search.setting_ids IS 'Field setting_ids on mv_recording_set_search';
+
+
+--
+-- TOC entry 5432 (class 0 OID 0)
+-- Dependencies: 331
+-- Name: COLUMN mv_recording_set_search.distinct_tune_ids; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_recording_set_search.distinct_tune_ids IS 'Field distinct_tune_ids on mv_recording_set_search';
+
+
+--
+-- TOC entry 5433 (class 0 OID 0)
+-- Dependencies: 331
+-- Name: COLUMN mv_recording_set_search.canonical_tune_names; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_recording_set_search.canonical_tune_names IS 'Field canonical_tune_names on mv_recording_set_search';
+
+
+--
+-- TOC entry 5434 (class 0 OID 0)
+-- Dependencies: 331
+-- Name: COLUMN mv_recording_set_search.recording_tune_names; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_recording_set_search.recording_tune_names IS 'Field recording_tune_names on mv_recording_set_search';
+
+
+--
+-- TOC entry 5435 (class 0 OID 0)
+-- Dependencies: 331
+-- Name: COLUMN mv_recording_set_search.types; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_recording_set_search.types IS 'Field types on mv_recording_set_search';
+
+
+--
+-- TOC entry 5436 (class 0 OID 0)
+-- Dependencies: 331
+-- Name: COLUMN mv_recording_set_search.meters; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_recording_set_search.meters IS 'Field meters on mv_recording_set_search';
+
+
+--
+-- TOC entry 5437 (class 0 OID 0)
+-- Dependencies: 331
+-- Name: COLUMN mv_recording_set_search.modes; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_recording_set_search.modes IS 'Field modes on mv_recording_set_search';
+
+
+--
+-- TOC entry 5438 (class 0 OID 0)
+-- Dependencies: 331
+-- Name: COLUMN mv_recording_set_search.incipits; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_recording_set_search.incipits IS 'Field incipits on mv_recording_set_search';
+
+
+--
+-- TOC entry 5439 (class 0 OID 0)
+-- Dependencies: 331
+-- Name: COLUMN mv_recording_set_search.has_alias_resolution; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_recording_set_search.has_alias_resolution IS 'Field has_alias_resolution on mv_recording_set_search';
+
+
+--
+-- TOC entry 5440 (class 0 OID 0)
+-- Dependencies: 331
+-- Name: COLUMN mv_recording_set_search.has_repeated_tunes; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_recording_set_search.has_repeated_tunes IS 'Field has_repeated_tunes on mv_recording_set_search';
+
+
+--
+-- TOC entry 5441 (class 0 OID 0)
+-- Dependencies: 331
+-- Name: COLUMN mv_recording_set_search.ordered_signature; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_recording_set_search.ordered_signature IS 'Field ordered_signature on mv_recording_set_search';
+
+
+--
+-- TOC entry 5442 (class 0 OID 0)
+-- Dependencies: 331
+-- Name: COLUMN mv_recording_set_search.unordered_signature; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_recording_set_search.unordered_signature IS 'Field unordered_signature on mv_recording_set_search';
+
+
+--
 -- TOC entry 301 (class 1259 OID 446880)
 -- Name: mv_set_signatures; Type: MATERIALIZED VIEW; Schema: thesession; Owner: folkguitar
 --
@@ -3914,6 +6030,150 @@ CREATE MATERIALIZED VIEW thesession.mv_set_signatures AS
 
 
 ALTER MATERIALIZED VIEW thesession.mv_set_signatures OWNER TO folkguitar;
+
+--
+-- TOC entry 5443 (class 0 OID 0)
+-- Dependencies: 301
+-- Name: COLUMN mv_set_signatures.signature; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_signatures.signature IS 'Field signature on mv_set_signatures';
+
+
+--
+-- TOC entry 5444 (class 0 OID 0)
+-- Dependencies: 301
+-- Name: COLUMN mv_set_signatures.tune_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_signatures.tune_count IS 'Count of tunes';
+
+
+--
+-- TOC entry 5445 (class 0 OID 0)
+-- Dependencies: 301
+-- Name: COLUMN mv_set_signatures.set_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_signatures.set_count IS 'Count of sets';
+
+
+--
+-- TOC entry 5446 (class 0 OID 0)
+-- Dependencies: 301
+-- Name: COLUMN mv_set_signatures.distinct_users; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_signatures.distinct_users IS 'Field distinct_users on mv_set_signatures';
+
+
+--
+-- TOC entry 5447 (class 0 OID 0)
+-- Dependencies: 301
+-- Name: COLUMN mv_set_signatures.first_seen; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_signatures.first_seen IS 'Field first_seen on mv_set_signatures';
+
+
+--
+-- TOC entry 5448 (class 0 OID 0)
+-- Dependencies: 301
+-- Name: COLUMN mv_set_signatures.last_seen; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_signatures.last_seen IS 'Field last_seen on mv_set_signatures';
+
+
+--
+-- TOC entry 5449 (class 0 OID 0)
+-- Dependencies: 301
+-- Name: COLUMN mv_set_signatures.first_tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_signatures.first_tune_id IS 'ID of the first_tune';
+
+
+--
+-- TOC entry 5450 (class 0 OID 0)
+-- Dependencies: 301
+-- Name: COLUMN mv_set_signatures.first_tune_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_signatures.first_tune_name IS 'Name of the first_tune';
+
+
+--
+-- TOC entry 5451 (class 0 OID 0)
+-- Dependencies: 301
+-- Name: COLUMN mv_set_signatures.last_tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_signatures.last_tune_id IS 'ID of the last_tune';
+
+
+--
+-- TOC entry 5452 (class 0 OID 0)
+-- Dependencies: 301
+-- Name: COLUMN mv_set_signatures.last_tune_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_signatures.last_tune_name IS 'Name of the last_tune';
+
+
+--
+-- TOC entry 5453 (class 0 OID 0)
+-- Dependencies: 301
+-- Name: COLUMN mv_set_signatures.tune_ids_json; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_signatures.tune_ids_json IS 'Field tune_ids_json on mv_set_signatures';
+
+
+--
+-- TOC entry 5454 (class 0 OID 0)
+-- Dependencies: 301
+-- Name: COLUMN mv_set_signatures.tune_names_json; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_signatures.tune_names_json IS 'Field tune_names_json on mv_set_signatures';
+
+
+--
+-- TOC entry 5455 (class 0 OID 0)
+-- Dependencies: 301
+-- Name: COLUMN mv_set_signatures.type_sequence_json; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_signatures.type_sequence_json IS 'Field type_sequence_json on mv_set_signatures';
+
+
+--
+-- TOC entry 5456 (class 0 OID 0)
+-- Dependencies: 301
+-- Name: COLUMN mv_set_signatures.mode_sequence_json; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_signatures.mode_sequence_json IS 'Field mode_sequence_json on mv_set_signatures';
+
+
+--
+-- TOC entry 5457 (class 0 OID 0)
+-- Dependencies: 301
+-- Name: COLUMN mv_set_signatures.is_repeated; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_signatures.is_repeated IS 'Field is_repeated on mv_set_signatures';
+
+
+--
+-- TOC entry 5458 (class 0 OID 0)
+-- Dependencies: 301
+-- Name: COLUMN mv_set_signatures.signature_label; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_signatures.signature_label IS 'Field signature_label on mv_set_signatures';
+
 
 --
 -- TOC entry 322 (class 1259 OID 605385)
@@ -4091,6 +6351,330 @@ CREATE MATERIALIZED VIEW thesession.mv_set_search AS
 ALTER MATERIALIZED VIEW thesession.mv_set_search OWNER TO folkguitar;
 
 --
+-- TOC entry 5459 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.tuneset; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.tuneset IS 'Field tuneset on mv_set_search';
+
+
+--
+-- TOC entry 5460 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.member_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.member_id IS 'ID of the member who submitted the set';
+
+
+--
+-- TOC entry 5461 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.username; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.username IS 'Field username on mv_set_search';
+
+
+--
+-- TOC entry 5462 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.date; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.date IS 'Field date on mv_set_search';
+
+
+--
+-- TOC entry 5463 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.imported_at; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.imported_at IS 'Field imported_at on mv_set_search';
+
+
+--
+-- TOC entry 5464 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.tune_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.tune_count IS 'Count of tunes';
+
+
+--
+-- TOC entry 5465 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.signature; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.signature IS 'Field signature on mv_set_search';
+
+
+--
+-- TOC entry 5466 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.signature_label; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.signature_label IS 'Field signature_label on mv_set_search';
+
+
+--
+-- TOC entry 5467 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.first_tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.first_tune_id IS 'ID of the first_tune';
+
+
+--
+-- TOC entry 5468 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.first_tune_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.first_tune_name IS 'Name of the first_tune';
+
+
+--
+-- TOC entry 5469 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.first_type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.first_type IS 'Field first_type on mv_set_search';
+
+
+--
+-- TOC entry 5470 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.first_mode; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.first_mode IS 'Field first_mode on mv_set_search';
+
+
+--
+-- TOC entry 5471 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.first_meter; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.first_meter IS 'Field first_meter on mv_set_search';
+
+
+--
+-- TOC entry 5472 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.first_incipit; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.first_incipit IS 'Field first_incipit on mv_set_search';
+
+
+--
+-- TOC entry 5473 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.last_tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.last_tune_id IS 'ID of the last_tune';
+
+
+--
+-- TOC entry 5474 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.last_tune_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.last_tune_name IS 'Name of the last_tune';
+
+
+--
+-- TOC entry 5475 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.last_type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.last_type IS 'Field last_type on mv_set_search';
+
+
+--
+-- TOC entry 5476 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.last_mode; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.last_mode IS 'Field last_mode on mv_set_search';
+
+
+--
+-- TOC entry 5477 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.last_meter; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.last_meter IS 'Field last_meter on mv_set_search';
+
+
+--
+-- TOC entry 5478 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.last_incipit; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.last_incipit IS 'Field last_incipit on mv_set_search';
+
+
+--
+-- TOC entry 5479 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.setting_ids_json; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.setting_ids_json IS 'Field setting_ids_json on mv_set_search';
+
+
+--
+-- TOC entry 5480 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.tune_ids_json; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.tune_ids_json IS 'Field tune_ids_json on mv_set_search';
+
+
+--
+-- TOC entry 5481 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.tune_names_json; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.tune_names_json IS 'Field tune_names_json on mv_set_search';
+
+
+--
+-- TOC entry 5482 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.type_sequence_json; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.type_sequence_json IS 'Field type_sequence_json on mv_set_search';
+
+
+--
+-- TOC entry 5483 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.mode_sequence_json; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.mode_sequence_json IS 'Field mode_sequence_json on mv_set_search';
+
+
+--
+-- TOC entry 5484 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.meter_sequence_json; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.meter_sequence_json IS 'Field meter_sequence_json on mv_set_search';
+
+
+--
+-- TOC entry 5485 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.incipit_sequence_json; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.incipit_sequence_json IS 'Field incipit_sequence_json on mv_set_search';
+
+
+--
+-- TOC entry 5486 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.contains_tune_ids_json; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.contains_tune_ids_json IS 'Field contains_tune_ids_json on mv_set_search';
+
+
+--
+-- TOC entry 5487 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.contains_types_json; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.contains_types_json IS 'Field contains_types_json on mv_set_search';
+
+
+--
+-- TOC entry 5488 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.contains_modes_json; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.contains_modes_json IS 'Field contains_modes_json on mv_set_search';
+
+
+--
+-- TOC entry 5489 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.contains_meters_json; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.contains_meters_json IS 'Field contains_meters_json on mv_set_search';
+
+
+--
+-- TOC entry 5490 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.is_repeated; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.is_repeated IS 'Field is_repeated on mv_set_search';
+
+
+--
+-- TOC entry 5491 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.signature_set_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.signature_set_count IS 'Count of signature sets';
+
+
+--
+-- TOC entry 5492 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.signature_distinct_users; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.signature_distinct_users IS 'Field signature_distinct_users on mv_set_search';
+
+
+--
+-- TOC entry 5493 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.signature_first_seen; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.signature_first_seen IS 'Field signature_first_seen on mv_set_search';
+
+
+--
+-- TOC entry 5494 (class 0 OID 0)
+-- Dependencies: 322
+-- Name: COLUMN mv_set_search.signature_last_seen; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_set_search.signature_last_seen IS 'Field signature_last_seen on mv_set_search';
+
+
+--
 -- TOC entry 328 (class 1259 OID 796945)
 -- Name: mv_setting_bookmarkers; Type: MATERIALIZED VIEW; Schema: thesession; Owner: folkguitar
 --
@@ -4130,6 +6714,168 @@ CREATE MATERIALIZED VIEW thesession.mv_setting_bookmarkers AS
 
 
 ALTER MATERIALIZED VIEW thesession.mv_setting_bookmarkers OWNER TO folkguitar;
+
+--
+-- TOC entry 5495 (class 0 OID 0)
+-- Dependencies: 328
+-- Name: COLUMN mv_setting_bookmarkers.setting_owner_member_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_setting_bookmarkers.setting_owner_member_id IS 'ID of the setting_owner_member';
+
+
+--
+-- TOC entry 5496 (class 0 OID 0)
+-- Dependencies: 328
+-- Name: COLUMN mv_setting_bookmarkers.setting_owner_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_setting_bookmarkers.setting_owner_name IS 'Name of the setting_owner';
+
+
+--
+-- TOC entry 5497 (class 0 OID 0)
+-- Dependencies: 328
+-- Name: COLUMN mv_setting_bookmarkers.bookmarker_member_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_setting_bookmarkers.bookmarker_member_id IS 'ID of the bookmarker_member';
+
+
+--
+-- TOC entry 5498 (class 0 OID 0)
+-- Dependencies: 328
+-- Name: COLUMN mv_setting_bookmarkers.bookmarker_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_setting_bookmarkers.bookmarker_name IS 'Name of the bookmarker';
+
+
+--
+-- TOC entry 5499 (class 0 OID 0)
+-- Dependencies: 328
+-- Name: COLUMN mv_setting_bookmarkers.setting_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_setting_bookmarkers.setting_id IS 'Canonical ID of the specific tune setting/transcription';
+
+
+--
+-- TOC entry 5500 (class 0 OID 0)
+-- Dependencies: 328
+-- Name: COLUMN mv_setting_bookmarkers.tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_setting_bookmarkers.tune_id IS 'Canonical ID of the traditional tune';
+
+
+--
+-- TOC entry 5501 (class 0 OID 0)
+-- Dependencies: 328
+-- Name: COLUMN mv_setting_bookmarkers.tune_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_setting_bookmarkers.tune_name IS 'Name of the tune';
+
+
+--
+-- TOC entry 5502 (class 0 OID 0)
+-- Dependencies: 328
+-- Name: COLUMN mv_setting_bookmarkers.bookmarked_at; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_setting_bookmarkers.bookmarked_at IS 'Date/time the bookmark was saved';
+
+
+--
+-- TOC entry 5503 (class 0 OID 0)
+-- Dependencies: 328
+-- Name: COLUMN mv_setting_bookmarkers.incipit; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_setting_bookmarkers.incipit IS 'Opening ABC notation snippet (first 1-2 bars) of the tune melody';
+
+
+--
+-- TOC entry 5504 (class 0 OID 0)
+-- Dependencies: 328
+-- Name: COLUMN mv_setting_bookmarkers.setting_date; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_setting_bookmarkers.setting_date IS 'Field setting_date on mv_setting_bookmarkers';
+
+
+--
+-- TOC entry 5505 (class 0 OID 0)
+-- Dependencies: 328
+-- Name: COLUMN mv_setting_bookmarkers.primary_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_setting_bookmarkers.primary_name IS 'Canonical primary name of the traditional tune';
+
+
+--
+-- TOC entry 5506 (class 0 OID 0)
+-- Dependencies: 328
+-- Name: COLUMN mv_setting_bookmarkers.type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_setting_bookmarkers.type IS 'Rhythm type of the tune (e.g., reel, jig, hornpipe, polka, slide, slip jig)';
+
+
+--
+-- TOC entry 5507 (class 0 OID 0)
+-- Dependencies: 328
+-- Name: COLUMN mv_setting_bookmarkers.mode; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_setting_bookmarkers.mode IS 'Modal key of the setting (e.g., Gmajor, Adorian, Edorian, Dmixolydian)';
+
+
+--
+-- TOC entry 5508 (class 0 OID 0)
+-- Dependencies: 328
+-- Name: COLUMN mv_setting_bookmarkers.meter; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_setting_bookmarkers.meter IS 'Time signature/meter of the tune setting (e.g., 4/4, 6/8, 9/8)';
+
+
+--
+-- TOC entry 5509 (class 0 OID 0)
+-- Dependencies: 328
+-- Name: COLUMN mv_setting_bookmarkers.star_rating; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_setting_bookmarkers.star_rating IS 'Average star rating of the tune on TheSession.org';
+
+
+--
+-- TOC entry 5510 (class 0 OID 0)
+-- Dependencies: 328
+-- Name: COLUMN mv_setting_bookmarkers.tunebooks; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_setting_bookmarkers.tunebooks IS 'Field tunebooks on mv_setting_bookmarkers';
+
+
+--
+-- TOC entry 5511 (class 0 OID 0)
+-- Dependencies: 328
+-- Name: COLUMN mv_setting_bookmarkers.has_recording_albums; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_setting_bookmarkers.has_recording_albums IS 'Boolean flag indicating if the tune has been recorded on commercial albums';
+
+
+--
+-- TOC entry 5512 (class 0 OID 0)
+-- Dependencies: 328
+-- Name: COLUMN mv_setting_bookmarkers.popularity_known; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_setting_bookmarkers.popularity_known IS 'Field popularity_known on mv_setting_bookmarkers';
+
 
 --
 -- TOC entry 347 (class 1259 OID 919581)
@@ -4177,6 +6923,60 @@ CREATE MATERIALIZED VIEW thesession.mv_static_recording_pages AS
 ALTER MATERIALIZED VIEW thesession.mv_static_recording_pages OWNER TO folkguitar;
 
 --
+-- TOC entry 5513 (class 0 OID 0)
+-- Dependencies: 347
+-- Name: COLUMN mv_static_recording_pages.recording_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_static_recording_pages.recording_id IS 'ID of the recording';
+
+
+--
+-- TOC entry 5514 (class 0 OID 0)
+-- Dependencies: 347
+-- Name: COLUMN mv_static_recording_pages.recording; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_static_recording_pages.recording IS 'Field recording on mv_static_recording_pages';
+
+
+--
+-- TOC entry 5515 (class 0 OID 0)
+-- Dependencies: 347
+-- Name: COLUMN mv_static_recording_pages.artist_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_static_recording_pages.artist_name IS 'Name of the recording artist';
+
+
+--
+-- TOC entry 5516 (class 0 OID 0)
+-- Dependencies: 347
+-- Name: COLUMN mv_static_recording_pages.slug; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_static_recording_pages.slug IS 'Field slug on mv_static_recording_pages';
+
+
+--
+-- TOC entry 5517 (class 0 OID 0)
+-- Dependencies: 347
+-- Name: COLUMN mv_static_recording_pages.path; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_static_recording_pages.path IS 'Field path on mv_static_recording_pages';
+
+
+--
+-- TOC entry 5518 (class 0 OID 0)
+-- Dependencies: 347
+-- Name: COLUMN mv_static_recording_pages.canonical_url; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_static_recording_pages.canonical_url IS 'Field canonical_url on mv_static_recording_pages';
+
+
+--
 -- TOC entry 330 (class 1259 OID 799907)
 -- Name: mv_transition_artist_overlap; Type: MATERIALIZED VIEW; Schema: thesession; Owner: folkguitar
 --
@@ -4215,6 +7015,69 @@ CREATE MATERIALIZED VIEW thesession.mv_transition_artist_overlap AS
 
 
 ALTER MATERIALIZED VIEW thesession.mv_transition_artist_overlap OWNER TO folkguitar;
+
+--
+-- TOC entry 5519 (class 0 OID 0)
+-- Dependencies: 330
+-- Name: COLUMN mv_transition_artist_overlap.artist_a; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_transition_artist_overlap.artist_a IS 'Field artist_a on mv_transition_artist_overlap';
+
+
+--
+-- TOC entry 5520 (class 0 OID 0)
+-- Dependencies: 330
+-- Name: COLUMN mv_transition_artist_overlap.artist_b; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_transition_artist_overlap.artist_b IS 'Field artist_b on mv_transition_artist_overlap';
+
+
+--
+-- TOC entry 5521 (class 0 OID 0)
+-- Dependencies: 330
+-- Name: COLUMN mv_transition_artist_overlap.source_tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_transition_artist_overlap.source_tune_id IS 'ID of the source_tune';
+
+
+--
+-- TOC entry 5522 (class 0 OID 0)
+-- Dependencies: 330
+-- Name: COLUMN mv_transition_artist_overlap.source_tune_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_transition_artist_overlap.source_tune_name IS 'Name of the source_tune';
+
+
+--
+-- TOC entry 5523 (class 0 OID 0)
+-- Dependencies: 330
+-- Name: COLUMN mv_transition_artist_overlap.target_tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_transition_artist_overlap.target_tune_id IS 'ID of the target_tune';
+
+
+--
+-- TOC entry 5524 (class 0 OID 0)
+-- Dependencies: 330
+-- Name: COLUMN mv_transition_artist_overlap.target_tune_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_transition_artist_overlap.target_tune_name IS 'Name of the target_tune';
+
+
+--
+-- TOC entry 5525 (class 0 OID 0)
+-- Dependencies: 330
+-- Name: COLUMN mv_transition_artist_overlap.global_transition_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_transition_artist_overlap.global_transition_count IS 'Count of global transitions';
+
 
 --
 -- TOC entry 295 (class 1259 OID 401906)
@@ -4256,6 +7119,60 @@ CREATE MATERIALIZED VIEW thesession.mv_tune_transitions AS
 
 
 ALTER MATERIALIZED VIEW thesession.mv_tune_transitions OWNER TO folkguitar;
+
+--
+-- TOC entry 5526 (class 0 OID 0)
+-- Dependencies: 295
+-- Name: COLUMN mv_tune_transitions.source_tune; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_transitions.source_tune IS 'ID of the source tune in the transition';
+
+
+--
+-- TOC entry 5527 (class 0 OID 0)
+-- Dependencies: 295
+-- Name: COLUMN mv_tune_transitions.target_tune; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_transitions.target_tune IS 'ID of the target tune in the transition';
+
+
+--
+-- TOC entry 5528 (class 0 OID 0)
+-- Dependencies: 295
+-- Name: COLUMN mv_tune_transitions.transition_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_transitions.transition_count IS 'Number of times this transition occurs in commercial recordings';
+
+
+--
+-- TOC entry 5529 (class 0 OID 0)
+-- Dependencies: 295
+-- Name: COLUMN mv_tune_transitions.source_total; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_transitions.source_total IS 'Total transitions originating from the source_tune across all recordings';
+
+
+--
+-- TOC entry 5530 (class 0 OID 0)
+-- Dependencies: 295
+-- Name: COLUMN mv_tune_transitions.transition_pct; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_transitions.transition_pct IS 'Percentage of source_tune transitions that go to target_tune';
+
+
+--
+-- TOC entry 5531 (class 0 OID 0)
+-- Dependencies: 295
+-- Name: COLUMN mv_tune_transitions.transition_rank; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_transitions.transition_rank IS 'Rank of this transition among all transitions from source_tune';
+
 
 --
 -- TOC entry 356 (class 1259 OID 1117015)
@@ -4903,6 +7820,861 @@ CREATE MATERIALIZED VIEW thesession.mv_tune_analytics AS
 ALTER MATERIALIZED VIEW thesession.mv_tune_analytics OWNER TO folkguitar;
 
 --
+-- TOC entry 5532 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.tune_id IS 'ID of the traditional tune';
+
+
+--
+-- TOC entry 5533 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.primary_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.primary_name IS 'Canonical primary name of the traditional tune';
+
+
+--
+-- TOC entry 5534 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.slug; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.slug IS 'Field slug on mv_tune_analytics';
+
+
+--
+-- TOC entry 5535 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.aliases; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.aliases IS 'Array of alternative names or titles for the tune';
+
+
+--
+-- TOC entry 5536 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.type IS 'Rhythm type of the tune (e.g., reel, jig, hornpipe, polka, slide, slip jig)';
+
+
+--
+-- TOC entry 5537 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.meter; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.meter IS 'Time signature/meter of the tune setting (e.g., 4/4, 6/8, 9/8)';
+
+
+--
+-- TOC entry 5538 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.mode; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.mode IS 'Modal key of the setting (e.g., Gmajor, Adorian, Edorian, Dmixolydian)';
+
+
+--
+-- TOC entry 5539 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.incipit; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.incipit IS 'Opening ABC notation snippet (first 1-2 bars) of the tune melody';
+
+
+--
+-- TOC entry 5540 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.tunebook_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.tunebook_count IS 'Number of member tunebooks containing this tune';
+
+
+--
+-- TOC entry 5541 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.star_rating; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.star_rating IS 'Average star rating of the tune on TheSession.org';
+
+
+--
+-- TOC entry 5542 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.has_recording_albums; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.has_recording_albums IS 'Boolean flag indicating if the tune has been recorded on commercial albums';
+
+
+--
+-- TOC entry 5543 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.settings_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.settings_count IS 'Total settings/transcriptions of this tune on TheSession.org';
+
+
+--
+-- TOC entry 5544 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.setting_user_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.setting_user_count IS 'Count of setting users';
+
+
+--
+-- TOC entry 5545 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.distinct_modes_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.distinct_modes_count IS 'Number of distinct modes/keys this tune is played in';
+
+
+--
+-- TOC entry 5546 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.distinct_meters_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.distinct_meters_count IS 'Count of distinct meterss';
+
+
+--
+-- TOC entry 5547 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.first_setting_date; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.first_setting_date IS 'Field first_setting_date on mv_tune_analytics';
+
+
+--
+-- TOC entry 5548 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.latest_setting_date; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.latest_setting_date IS 'Field latest_setting_date on mv_tune_analytics';
+
+
+--
+-- TOC entry 5549 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.recording_occurrence_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.recording_occurrence_count IS 'Count of recording occurrences';
+
+
+--
+-- TOC entry 5550 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.recording_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.recording_count IS 'Total number of commercial recordings featuring this tune';
+
+
+--
+-- TOC entry 5551 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.recording_title_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.recording_title_count IS 'Count of recording titles';
+
+
+--
+-- TOC entry 5552 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.recording_artist_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.recording_artist_count IS 'Number of unique recording artists who have recorded this tune';
+
+
+--
+-- TOC entry 5553 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.recording_track_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.recording_track_count IS 'Count of recording tracks';
+
+
+--
+-- TOC entry 5554 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.recording_album_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.recording_album_count IS 'Number of unique albums featuring this tune';
+
+
+--
+-- TOC entry 5555 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.recording_album_provider_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.recording_album_provider_count IS 'Count of recording album providers';
+
+
+--
+-- TOC entry 5556 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.bookmark_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.bookmark_count IS 'Number of members who have bookmarked/saved this tune';
+
+
+--
+-- TOC entry 5557 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.bookmark_member_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.bookmark_member_count IS 'Count of bookmark members';
+
+
+--
+-- TOC entry 5558 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.first_bookmarked_date; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.first_bookmarked_date IS 'Field first_bookmarked_date on mv_tune_analytics';
+
+
+--
+-- TOC entry 5559 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.latest_bookmarked_date; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.latest_bookmarked_date IS 'Field latest_bookmarked_date on mv_tune_analytics';
+
+
+--
+-- TOC entry 5560 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.member_tunebook_rows; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.member_tunebook_rows IS 'Field member_tunebook_rows on mv_tune_analytics';
+
+
+--
+-- TOC entry 5561 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.member_tunebook_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.member_tunebook_count IS 'Count of member tunebooks';
+
+
+--
+-- TOC entry 5562 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.first_tunebook_added_date; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.first_tunebook_added_date IS 'Field first_tunebook_added_date on mv_tune_analytics';
+
+
+--
+-- TOC entry 5563 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.latest_tunebook_added_date; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.latest_tunebook_added_date IS 'Field latest_tunebook_added_date on mv_tune_analytics';
+
+
+--
+-- TOC entry 5564 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.set_appearance_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.set_appearance_count IS 'Number of session sets/sequences that include this tune';
+
+
+--
+-- TOC entry 5565 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.distinct_set_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.distinct_set_count IS 'Number of distinct sets containing this tune';
+
+
+--
+-- TOC entry 5566 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.set_member_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.set_member_count IS 'Number of unique session players who have contributed sets containing this tune';
+
+
+--
+-- TOC entry 5567 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.average_set_position; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.average_set_position IS 'Average position of the tune within sets (e.g., 1st, 2nd, 3rd)';
+
+
+--
+-- TOC entry 5568 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.median_set_position; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.median_set_position IS 'Field median_set_position on mv_tune_analytics';
+
+
+--
+-- TOC entry 5569 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.set_starter_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.set_starter_count IS 'Count of set starters';
+
+
+--
+-- TOC entry 5570 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.non_starter_set_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.non_starter_set_count IS 'Count of non starter sets';
+
+
+--
+-- TOC entry 5571 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.first_seen_in_sets; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.first_seen_in_sets IS 'Earliest date this tune appeared in a session set';
+
+
+--
+-- TOC entry 5572 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.latest_seen_in_sets; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.latest_seen_in_sets IS 'Most recent date this tune appeared in a session set';
+
+
+--
+-- TOC entry 5573 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.collection_appearance_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.collection_appearance_count IS 'Count of collection appearances';
+
+
+--
+-- TOC entry 5574 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.collection_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.collection_count IS 'Count of collections';
+
+
+--
+-- TOC entry 5575 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.recording_transition_out_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.recording_transition_out_count IS 'Count of recording transition outs';
+
+
+--
+-- TOC entry 5576 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.recording_transition_in_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.recording_transition_in_count IS 'Count of recording transition ins';
+
+
+--
+-- TOC entry 5577 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.recording_distinct_next_tunes; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.recording_distinct_next_tunes IS 'Field recording_distinct_next_tunes on mv_tune_analytics';
+
+
+--
+-- TOC entry 5578 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.recording_distinct_previous_tunes; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.recording_distinct_previous_tunes IS 'Field recording_distinct_previous_tunes on mv_tune_analytics';
+
+
+--
+-- TOC entry 5579 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.top_recording_next_tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.top_recording_next_tune_id IS 'ID of the top_recording_next_tune';
+
+
+--
+-- TOC entry 5580 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.top_recording_next_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.top_recording_next_count IS 'Count of top recording nexts';
+
+
+--
+-- TOC entry 5581 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.top_recording_next_pct; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.top_recording_next_pct IS 'Field top_recording_next_pct on mv_tune_analytics';
+
+
+--
+-- TOC entry 5582 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.top_recording_previous_tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.top_recording_previous_tune_id IS 'ID of the top_recording_previous_tune';
+
+
+--
+-- TOC entry 5583 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.top_recording_previous_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.top_recording_previous_count IS 'Count of top recording previouss';
+
+
+--
+-- TOC entry 5584 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.top_recording_previous_pct; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.top_recording_previous_pct IS 'Field top_recording_previous_pct on mv_tune_analytics';
+
+
+--
+-- TOC entry 5585 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.set_transition_out_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.set_transition_out_count IS 'Count of set transition outs';
+
+
+--
+-- TOC entry 5586 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.set_transition_in_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.set_transition_in_count IS 'Count of set transition ins';
+
+
+--
+-- TOC entry 5587 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.set_distinct_next_tunes; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.set_distinct_next_tunes IS 'Field set_distinct_next_tunes on mv_tune_analytics';
+
+
+--
+-- TOC entry 5588 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.set_distinct_previous_tunes; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.set_distinct_previous_tunes IS 'Field set_distinct_previous_tunes on mv_tune_analytics';
+
+
+--
+-- TOC entry 5589 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.top_set_next_tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.top_set_next_tune_id IS 'ID of the top_set_next_tune';
+
+
+--
+-- TOC entry 5590 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.top_set_next_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.top_set_next_count IS 'Count of top set nexts';
+
+
+--
+-- TOC entry 5591 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.top_set_next_pct; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.top_set_next_pct IS 'Field top_set_next_pct on mv_tune_analytics';
+
+
+--
+-- TOC entry 5592 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.top_set_previous_tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.top_set_previous_tune_id IS 'ID of the top_set_previous_tune';
+
+
+--
+-- TOC entry 5593 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.top_set_previous_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.top_set_previous_count IS 'Count of top set previouss';
+
+
+--
+-- TOC entry 5594 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.top_set_previous_pct; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.top_set_previous_pct IS 'Field top_set_previous_pct on mv_tune_analytics';
+
+
+--
+-- TOC entry 5595 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.country_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.country_count IS 'Count of countrys';
+
+
+--
+-- TOC entry 5596 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.max_country_score; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.max_country_score IS 'Field max_country_score on mv_tune_analytics';
+
+
+--
+-- TOC entry 5597 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.max_country_lift; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.max_country_lift IS 'Field max_country_lift on mv_tune_analytics';
+
+
+--
+-- TOC entry 5598 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.recording_percentile_by_type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.recording_percentile_by_type IS 'Field recording_percentile_by_type on mv_tune_analytics';
+
+
+--
+-- TOC entry 5599 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.artist_percentile_by_type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.artist_percentile_by_type IS 'Field artist_percentile_by_type on mv_tune_analytics';
+
+
+--
+-- TOC entry 5600 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.album_percentile_by_type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.album_percentile_by_type IS 'Field album_percentile_by_type on mv_tune_analytics';
+
+
+--
+-- TOC entry 5601 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.settings_percentile_by_type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.settings_percentile_by_type IS 'Field settings_percentile_by_type on mv_tune_analytics';
+
+
+--
+-- TOC entry 5602 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.bookmark_percentile_by_type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.bookmark_percentile_by_type IS 'Field bookmark_percentile_by_type on mv_tune_analytics';
+
+
+--
+-- TOC entry 5603 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.set_percentile_by_type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.set_percentile_by_type IS 'Field set_percentile_by_type on mv_tune_analytics';
+
+
+--
+-- TOC entry 5604 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.tunebook_percentile_by_type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.tunebook_percentile_by_type IS 'Field tunebook_percentile_by_type on mv_tune_analytics';
+
+
+--
+-- TOC entry 5605 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.recording_transition_percentile_by_type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.recording_transition_percentile_by_type IS 'Field recording_transition_percentile_by_type on mv_tune_analytics';
+
+
+--
+-- TOC entry 5606 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.set_transition_percentile_by_type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.set_transition_percentile_by_type IS 'Field set_transition_percentile_by_type on mv_tune_analytics';
+
+
+--
+-- TOC entry 5607 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.country_percentile_by_type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.country_percentile_by_type IS 'Field country_percentile_by_type on mv_tune_analytics';
+
+
+--
+-- TOC entry 5608 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.recording_rank_by_type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.recording_rank_by_type IS 'Field recording_rank_by_type on mv_tune_analytics';
+
+
+--
+-- TOC entry 5609 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.set_rank_by_type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.set_rank_by_type IS 'Field set_rank_by_type on mv_tune_analytics';
+
+
+--
+-- TOC entry 5610 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.bookmark_rank_by_type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.bookmark_rank_by_type IS 'Field bookmark_rank_by_type on mv_tune_analytics';
+
+
+--
+-- TOC entry 5611 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.tunebook_rank_by_type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.tunebook_rank_by_type IS 'Field tunebook_rank_by_type on mv_tune_analytics';
+
+
+--
+-- TOC entry 5612 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.is_zero_exposure; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.is_zero_exposure IS 'Field is_zero_exposure on mv_tune_analytics';
+
+
+--
+-- TOC entry 5613 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.evidence_level; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.evidence_level IS 'Confidence rating of the data quality (e.g., strong, medium, weak)';
+
+
+--
+-- TOC entry 5614 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.quality_signal; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.quality_signal IS 'Calculated quality rating score based on recordings, settings, and ratings';
+
+
+--
+-- TOC entry 5615 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.exposure_signal; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.exposure_signal IS 'Calculated exposure/popularity rating score in sessions and tunebooks';
+
+
+--
+-- TOC entry 5616 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.session_signal; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.session_signal IS 'Field session_signal on mv_tune_analytics';
+
+
+--
+-- TOC entry 5617 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.recording_signal; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.recording_signal IS 'Field recording_signal on mv_tune_analytics';
+
+
+--
+-- TOC entry 5618 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.influence_signal; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.influence_signal IS 'Field influence_signal on mv_tune_analytics';
+
+
+--
+-- TOC entry 5619 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.obscurity_signal; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.obscurity_signal IS 'Field obscurity_signal on mv_tune_analytics';
+
+
+--
+-- TOC entry 5620 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.hidden_gem_score; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.hidden_gem_score IS 'Field hidden_gem_score on mv_tune_analytics';
+
+
+--
+-- TOC entry 5621 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.forgotten_classic_score; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.forgotten_classic_score IS 'Field forgotten_classic_score on mv_tune_analytics';
+
+
+--
+-- TOC entry 5622 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.beginner_score; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.beginner_score IS 'Field beginner_score on mv_tune_analytics';
+
+
+--
+-- TOC entry 5623 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.influential_score; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.influential_score IS 'Field influential_score on mv_tune_analytics';
+
+
+--
+-- TOC entry 5624 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.hidden_gem_tier; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.hidden_gem_tier IS 'Field hidden_gem_tier on mv_tune_analytics';
+
+
+--
+-- TOC entry 5625 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.hidden_gem_reason_code; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.hidden_gem_reason_code IS 'Field hidden_gem_reason_code on mv_tune_analytics';
+
+
+--
+-- TOC entry 5626 (class 0 OID 0)
+-- Dependencies: 356
+-- Name: COLUMN mv_tune_analytics.analytics_updated_at; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_analytics.analytics_updated_at IS 'Timestamp of when these analytics were calculated/updated';
+
+
+--
 -- TOC entry 355 (class 1259 OID 1116986)
 -- Name: mv_tune_hidden_gem_features; Type: MATERIALIZED VIEW; Schema: thesession; Owner: folkguitar
 --
@@ -5154,6 +8926,330 @@ CREATE MATERIALIZED VIEW thesession.mv_tune_hidden_gem_features AS
 ALTER MATERIALIZED VIEW thesession.mv_tune_hidden_gem_features OWNER TO folkguitar;
 
 --
+-- TOC entry 5627 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.tune_id IS 'Canonical ID of the traditional tune';
+
+
+--
+-- TOC entry 5628 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.primary_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.primary_name IS 'Canonical primary name of the traditional tune';
+
+
+--
+-- TOC entry 5629 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.type IS 'Rhythm type of the tune (e.g., reel, jig, hornpipe, polka, slide, slip jig)';
+
+
+--
+-- TOC entry 5630 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.meter; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.meter IS 'Time signature/meter of the tune setting (e.g., 4/4, 6/8, 9/8)';
+
+
+--
+-- TOC entry 5631 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.mode; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.mode IS 'Modal key of the setting (e.g., Gmajor, Adorian, Edorian, Dmixolydian)';
+
+
+--
+-- TOC entry 5632 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.incipit; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.incipit IS 'Opening ABC notation snippet (first 1-2 bars) of the tune melody';
+
+
+--
+-- TOC entry 5633 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.tunebook_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.tunebook_count IS 'Number of member tunebooks containing this tune';
+
+
+--
+-- TOC entry 5634 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.star_rating; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.star_rating IS 'Average star rating of the tune on TheSession.org';
+
+
+--
+-- TOC entry 5635 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.has_recording_albums; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.has_recording_albums IS 'Boolean flag indicating if the tune has been recorded on commercial albums';
+
+
+--
+-- TOC entry 5636 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.settings_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.settings_count IS 'Total settings/transcriptions of this tune on TheSession.org';
+
+
+--
+-- TOC entry 5637 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.distinct_modes_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.distinct_modes_count IS 'Number of distinct modes/keys this tune is played in';
+
+
+--
+-- TOC entry 5638 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.recording_occurrence_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.recording_occurrence_count IS 'Count of recording occurrences';
+
+
+--
+-- TOC entry 5639 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.recording_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.recording_count IS 'Total number of commercial recordings featuring this tune';
+
+
+--
+-- TOC entry 5640 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.recording_artist_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.recording_artist_count IS 'Number of unique recording artists who have recorded this tune';
+
+
+--
+-- TOC entry 5641 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.recording_album_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.recording_album_count IS 'Number of unique albums featuring this tune';
+
+
+--
+-- TOC entry 5642 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.bookmark_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.bookmark_count IS 'Number of members who have bookmarked/saved this tune';
+
+
+--
+-- TOC entry 5643 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.bookmark_member_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.bookmark_member_count IS 'Count of bookmark members';
+
+
+--
+-- TOC entry 5644 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.set_appearance_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.set_appearance_count IS 'Number of session sets/sequences that include this tune';
+
+
+--
+-- TOC entry 5645 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.distinct_set_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.distinct_set_count IS 'Number of distinct sets containing this tune';
+
+
+--
+-- TOC entry 5646 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.set_member_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.set_member_count IS 'Number of unique session players who have contributed sets containing this tune';
+
+
+--
+-- TOC entry 5647 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.average_set_position; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.average_set_position IS 'Average position of the tune within sets (e.g., 1st, 2nd, 3rd)';
+
+
+--
+-- TOC entry 5648 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.first_seen_in_sets; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.first_seen_in_sets IS 'Earliest date this tune appeared in a session set';
+
+
+--
+-- TOC entry 5649 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.latest_seen_in_sets; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.latest_seen_in_sets IS 'Most recent date this tune appeared in a session set';
+
+
+--
+-- TOC entry 5650 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.recording_percentile_by_type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.recording_percentile_by_type IS 'Percentile rank of commercial recordings compared to other tunes of the same rhythm type';
+
+
+--
+-- TOC entry 5651 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.artist_percentile_by_type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.artist_percentile_by_type IS 'Percentile rank of distinct recording artists compared to same rhythm type';
+
+
+--
+-- TOC entry 5652 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.bookmark_percentile_by_type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.bookmark_percentile_by_type IS 'Percentile rank of member bookmark saves compared to same rhythm type';
+
+
+--
+-- TOC entry 5653 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.set_percentile_by_type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.set_percentile_by_type IS 'Percentile rank of session set appearances compared to same rhythm type';
+
+
+--
+-- TOC entry 5654 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.tunebook_percentile_by_type; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.tunebook_percentile_by_type IS 'Percentile rank of tunebook additions compared to same rhythm type';
+
+
+--
+-- TOC entry 5655 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.is_zero_exposure; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.is_zero_exposure IS 'Boolean indicating if the tune has absolutely zero session exposure';
+
+
+--
+-- TOC entry 5656 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.evidence_level; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.evidence_level IS 'Confidence rating of the data quality (e.g., strong, medium, weak)';
+
+
+--
+-- TOC entry 5657 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.quality_signal; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.quality_signal IS 'Calculated quality rating score based on recordings, settings, and ratings';
+
+
+--
+-- TOC entry 5658 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.exposure_signal; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.exposure_signal IS 'Calculated exposure/popularity rating score in sessions and tunebooks';
+
+
+--
+-- TOC entry 5659 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.hidden_gem_score; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.hidden_gem_score IS 'Calculated score indicating how much of a hidden gem the tune is';
+
+
+--
+-- TOC entry 5660 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.hidden_gem_tier; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.hidden_gem_tier IS 'Tier level classification of the hidden gem (e.g., gold, silver, bronze)';
+
+
+--
+-- TOC entry 5661 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.hidden_gem_reason_code; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.hidden_gem_reason_code IS 'Text code explaining why this tune is classified as a hidden gem';
+
+
+--
+-- TOC entry 5662 (class 0 OID 0)
+-- Dependencies: 355
+-- Name: COLUMN mv_tune_hidden_gem_features.analytics_updated_at; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_hidden_gem_features.analytics_updated_at IS 'Timestamp of when these analytics were calculated/updated';
+
+
+--
 -- TOC entry 342 (class 1259 OID 881680)
 -- Name: mv_tune_name_search; Type: MATERIALIZED VIEW; Schema: thesession; Owner: folkguitar
 --
@@ -5179,6 +9275,42 @@ UNION
 ALTER MATERIALIZED VIEW thesession.mv_tune_name_search OWNER TO folkguitar;
 
 --
+-- TOC entry 5663 (class 0 OID 0)
+-- Dependencies: 342
+-- Name: COLUMN mv_tune_name_search.tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_name_search.tune_id IS 'Canonical ID of the traditional tune';
+
+
+--
+-- TOC entry 5664 (class 0 OID 0)
+-- Dependencies: 342
+-- Name: COLUMN mv_tune_name_search.primary_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_name_search.primary_name IS 'Canonical primary name of the traditional tune';
+
+
+--
+-- TOC entry 5665 (class 0 OID 0)
+-- Dependencies: 342
+-- Name: COLUMN mv_tune_name_search.search_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_name_search.search_name IS 'Name of the search';
+
+
+--
+-- TOC entry 5666 (class 0 OID 0)
+-- Dependencies: 342
+-- Name: COLUMN mv_tune_name_search.is_primary; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_name_search.is_primary IS 'Field is_primary on mv_tune_name_search';
+
+
+--
 -- TOC entry 306 (class 1259 OID 539944)
 -- Name: mv_tune_recording_artists; Type: MATERIALIZED VIEW; Schema: thesession; Owner: folkguitar
 --
@@ -5200,6 +9332,87 @@ CREATE MATERIALIZED VIEW thesession.mv_tune_recording_artists AS
 
 
 ALTER MATERIALIZED VIEW thesession.mv_tune_recording_artists OWNER TO folkguitar;
+
+--
+-- TOC entry 5667 (class 0 OID 0)
+-- Dependencies: 306
+-- Name: COLUMN mv_tune_recording_artists.tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_recording_artists.tune_id IS 'Canonical ID of the traditional tune';
+
+
+--
+-- TOC entry 5668 (class 0 OID 0)
+-- Dependencies: 306
+-- Name: COLUMN mv_tune_recording_artists.artist_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_recording_artists.artist_id IS 'Canonical ID of the recording artist';
+
+
+--
+-- TOC entry 5669 (class 0 OID 0)
+-- Dependencies: 306
+-- Name: COLUMN mv_tune_recording_artists.artist_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_recording_artists.artist_name IS 'Name of the recording artist';
+
+
+--
+-- TOC entry 5670 (class 0 OID 0)
+-- Dependencies: 306
+-- Name: COLUMN mv_tune_recording_artists.artist_key; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_recording_artists.artist_key IS 'URL slug / unique key of the recording artist';
+
+
+--
+-- TOC entry 5671 (class 0 OID 0)
+-- Dependencies: 306
+-- Name: COLUMN mv_tune_recording_artists.occurrence_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_recording_artists.occurrence_count IS 'Number of times this artist has recorded this specific tune';
+
+
+--
+-- TOC entry 5672 (class 0 OID 0)
+-- Dependencies: 306
+-- Name: COLUMN mv_tune_recording_artists.recording_count; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_recording_artists.recording_count IS 'Total number of commercial recordings featuring this tune';
+
+
+--
+-- TOC entry 5673 (class 0 OID 0)
+-- Dependencies: 306
+-- Name: COLUMN mv_tune_recording_artists.sample_recording; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_recording_artists.sample_recording IS 'Title of a sample recording of this tune by the artist';
+
+
+--
+-- TOC entry 5674 (class 0 OID 0)
+-- Dependencies: 306
+-- Name: COLUMN mv_tune_recording_artists.min_track; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_recording_artists.min_track IS 'First track number on which the artist recorded this tune';
+
+
+--
+-- TOC entry 5675 (class 0 OID 0)
+-- Dependencies: 306
+-- Name: COLUMN mv_tune_recording_artists.max_track; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_recording_artists.max_track IS 'Last track number on which the artist recorded this tune';
+
 
 --
 -- TOC entry 307 (class 1259 OID 540066)
@@ -5226,6 +9439,96 @@ CREATE MATERIALIZED VIEW thesession.mv_tune_recording_detail AS
 ALTER MATERIALIZED VIEW thesession.mv_tune_recording_detail OWNER TO folkguitar;
 
 --
+-- TOC entry 5676 (class 0 OID 0)
+-- Dependencies: 307
+-- Name: COLUMN mv_tune_recording_detail.tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_recording_detail.tune_id IS 'Canonical ID of the traditional tune';
+
+
+--
+-- TOC entry 5677 (class 0 OID 0)
+-- Dependencies: 307
+-- Name: COLUMN mv_tune_recording_detail.primary_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_recording_detail.primary_name IS 'Canonical primary name of the traditional tune';
+
+
+--
+-- TOC entry 5678 (class 0 OID 0)
+-- Dependencies: 307
+-- Name: COLUMN mv_tune_recording_detail.aliases; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_recording_detail.aliases IS 'Array of alternative names or titles for the tune';
+
+
+--
+-- TOC entry 5679 (class 0 OID 0)
+-- Dependencies: 307
+-- Name: COLUMN mv_tune_recording_detail.recording_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_recording_detail.recording_id IS 'Canonical ID of the commercial recording/album';
+
+
+--
+-- TOC entry 5680 (class 0 OID 0)
+-- Dependencies: 307
+-- Name: COLUMN mv_tune_recording_detail.recording; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_recording_detail.recording IS 'Field recording on mv_tune_recording_detail';
+
+
+--
+-- TOC entry 5681 (class 0 OID 0)
+-- Dependencies: 307
+-- Name: COLUMN mv_tune_recording_detail.artist_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_recording_detail.artist_id IS 'Canonical ID of the recording artist';
+
+
+--
+-- TOC entry 5682 (class 0 OID 0)
+-- Dependencies: 307
+-- Name: COLUMN mv_tune_recording_detail.artist_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_recording_detail.artist_name IS 'Name of the recording artist';
+
+
+--
+-- TOC entry 5683 (class 0 OID 0)
+-- Dependencies: 307
+-- Name: COLUMN mv_tune_recording_detail.track; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_recording_detail.track IS 'Track number on the album or recording';
+
+
+--
+-- TOC entry 5684 (class 0 OID 0)
+-- Dependencies: 307
+-- Name: COLUMN mv_tune_recording_detail.tune_number; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_recording_detail.tune_number IS 'Sequence position of this tune on the recorded track';
+
+
+--
+-- TOC entry 5685 (class 0 OID 0)
+-- Dependencies: 307
+-- Name: COLUMN mv_tune_recording_detail.recording_tune_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_recording_detail.recording_tune_name IS 'The specific title of the tune as printed on the recording sleeve/metadata';
+
+
+--
 -- TOC entry 304 (class 1259 OID 513105)
 -- Name: mv_tune_transition_evidence; Type: MATERIALIZED VIEW; Schema: thesession; Owner: folkguitar
 --
@@ -5249,6 +9552,105 @@ CREATE MATERIALIZED VIEW thesession.mv_tune_transition_evidence AS
 
 
 ALTER MATERIALIZED VIEW thesession.mv_tune_transition_evidence OWNER TO folkguitar;
+
+--
+-- TOC entry 5686 (class 0 OID 0)
+-- Dependencies: 304
+-- Name: COLUMN mv_tune_transition_evidence.source_tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_transition_evidence.source_tune_id IS 'ID of the source tune in the transition';
+
+
+--
+-- TOC entry 5687 (class 0 OID 0)
+-- Dependencies: 304
+-- Name: COLUMN mv_tune_transition_evidence.target_tune_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_transition_evidence.target_tune_id IS 'ID of the target tune in the transition';
+
+
+--
+-- TOC entry 5688 (class 0 OID 0)
+-- Dependencies: 304
+-- Name: COLUMN mv_tune_transition_evidence.recording_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_transition_evidence.recording_id IS 'Canonical ID of the commercial recording/album';
+
+
+--
+-- TOC entry 5689 (class 0 OID 0)
+-- Dependencies: 304
+-- Name: COLUMN mv_tune_transition_evidence.track; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_transition_evidence.track IS 'Track number on the album or recording';
+
+
+--
+-- TOC entry 5690 (class 0 OID 0)
+-- Dependencies: 304
+-- Name: COLUMN mv_tune_transition_evidence.source_tune_number; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_transition_evidence.source_tune_number IS 'Position of the source tune on the recorded track';
+
+
+--
+-- TOC entry 5691 (class 0 OID 0)
+-- Dependencies: 304
+-- Name: COLUMN mv_tune_transition_evidence.target_tune_number; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_transition_evidence.target_tune_number IS 'Position of the target tune on the recorded track';
+
+
+--
+-- TOC entry 5692 (class 0 OID 0)
+-- Dependencies: 304
+-- Name: COLUMN mv_tune_transition_evidence.source_tune_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_transition_evidence.source_tune_name IS 'Name of the source tune';
+
+
+--
+-- TOC entry 5693 (class 0 OID 0)
+-- Dependencies: 304
+-- Name: COLUMN mv_tune_transition_evidence.target_tune_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_transition_evidence.target_tune_name IS 'Name of the target tune';
+
+
+--
+-- TOC entry 5694 (class 0 OID 0)
+-- Dependencies: 304
+-- Name: COLUMN mv_tune_transition_evidence.recording_title; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_transition_evidence.recording_title IS 'Title of the commercial recording/album';
+
+
+--
+-- TOC entry 5695 (class 0 OID 0)
+-- Dependencies: 304
+-- Name: COLUMN mv_tune_transition_evidence.artist_id; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_transition_evidence.artist_id IS 'ID of the recording artist';
+
+
+--
+-- TOC entry 5696 (class 0 OID 0)
+-- Dependencies: 304
+-- Name: COLUMN mv_tune_transition_evidence.artist_name; Type: COMMENT; Schema: thesession; Owner: folkguitar
+--
+
+COMMENT ON COLUMN thesession.mv_tune_transition_evidence.artist_name IS 'Name of the recording artist';
+
 
 --
 -- TOC entry 349 (class 1259 OID 942546)
@@ -5448,7 +9850,7 @@ CREATE SEQUENCE thesession.naturalearth_countries_gid_seq
 ALTER SEQUENCE thesession.naturalearth_countries_gid_seq OWNER TO folkguitar;
 
 --
--- TOC entry 5197 (class 0 OID 0)
+-- TOC entry 5697 (class 0 OID 0)
 -- Dependencies: 348
 -- Name: naturalearth_countries_gid_seq; Type: SEQUENCE OWNED BY; Schema: thesession; Owner: folkguitar
 --
@@ -5566,7 +9968,7 @@ CREATE SEQUENCE thesession.session_tune_alias_id_seq
 ALTER SEQUENCE thesession.session_tune_alias_id_seq OWNER TO folkguitar;
 
 --
--- TOC entry 5198 (class 0 OID 0)
+-- TOC entry 5698 (class 0 OID 0)
 -- Dependencies: 286
 -- Name: session_tune_alias_id_seq; Type: SEQUENCE OWNED BY; Schema: thesession; Owner: folkguitar
 --
@@ -5654,7 +10056,7 @@ CREATE SEQUENCE thesession.tune_collection_id_seq
 ALTER SEQUENCE thesession.tune_collection_id_seq OWNER TO folkguitar;
 
 --
--- TOC entry 5199 (class 0 OID 0)
+-- TOC entry 5699 (class 0 OID 0)
 -- Dependencies: 290
 -- Name: tune_collection_id_seq; Type: SEQUENCE OWNED BY; Schema: thesession; Owner: folkguitar
 --
@@ -5678,7 +10080,7 @@ CREATE SEQUENCE thesession.tune_collection_item_id_seq
 ALTER SEQUENCE thesession.tune_collection_item_id_seq OWNER TO folkguitar;
 
 --
--- TOC entry 5200 (class 0 OID 0)
+-- TOC entry 5700 (class 0 OID 0)
 -- Dependencies: 292
 -- Name: tune_collection_item_id_seq; Type: SEQUENCE OWNED BY; Schema: thesession; Owner: folkguitar
 --
@@ -5934,7 +10336,7 @@ CREATE MATERIALIZED VIEW thesession.zz_old_mv_melody_2bar_ngram_stats_v4 AS
 ALTER MATERIALIZED VIEW thesession.zz_old_mv_melody_2bar_ngram_stats_v4 OWNER TO folkguitar;
 
 --
--- TOC entry 4646 (class 2604 OID 442117)
+-- TOC entry 4651 (class 2604 OID 442117)
 -- Name: feature_request id; Type: DEFAULT; Schema: thesession; Owner: folkguitar
 --
 
@@ -5942,7 +10344,7 @@ ALTER TABLE ONLY thesession.feature_request ALTER COLUMN id SET DEFAULT nextval(
 
 
 --
--- TOC entry 4653 (class 2604 OID 942549)
+-- TOC entry 4658 (class 2604 OID 942549)
 -- Name: naturalearth_countries gid; Type: DEFAULT; Schema: thesession; Owner: folkguitar
 --
 
@@ -5950,7 +10352,7 @@ ALTER TABLE ONLY thesession.naturalearth_countries ALTER COLUMN gid SET DEFAULT 
 
 
 --
--- TOC entry 4626 (class 2604 OID 391560)
+-- TOC entry 4631 (class 2604 OID 391560)
 -- Name: session_tune_alias id; Type: DEFAULT; Schema: thesession; Owner: folkguitar
 --
 
@@ -5958,7 +10360,7 @@ ALTER TABLE ONLY thesession.session_tune_alias ALTER COLUMN id SET DEFAULT nextv
 
 
 --
--- TOC entry 4628 (class 2604 OID 399766)
+-- TOC entry 4633 (class 2604 OID 399766)
 -- Name: tune_collection id; Type: DEFAULT; Schema: thesession; Owner: folkguitar
 --
 
@@ -5966,7 +10368,7 @@ ALTER TABLE ONLY thesession.tune_collection ALTER COLUMN id SET DEFAULT nextval(
 
 
 --
--- TOC entry 4631 (class 2604 OID 399780)
+-- TOC entry 4636 (class 2604 OID 399780)
 -- Name: tune_collection_item id; Type: DEFAULT; Schema: thesession; Owner: folkguitar
 --
 
@@ -5974,7 +10376,7 @@ ALTER TABLE ONLY thesession.tune_collection_item ALTER COLUMN id SET DEFAULT nex
 
 
 --
--- TOC entry 4769 (class 2606 OID 442122)
+-- TOC entry 4779 (class 2606 OID 442122)
 -- Name: feature_request feature_request_pkey; Type: CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -5983,7 +10385,7 @@ ALTER TABLE ONLY thesession.feature_request
 
 
 --
--- TOC entry 4947 (class 2606 OID 944241)
+-- TOC entry 4957 (class 2606 OID 944241)
 -- Name: member_country member_country_pkey; Type: CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -5992,7 +10394,7 @@ ALTER TABLE ONLY thesession.member_country
 
 
 --
--- TOC entry 4942 (class 2606 OID 942553)
+-- TOC entry 4952 (class 2606 OID 942553)
 -- Name: naturalearth_countries naturalearth_countries_pkey; Type: CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -6001,7 +10403,16 @@ ALTER TABLE ONLY thesession.naturalearth_countries
 
 
 --
--- TOC entry 4847 (class 2606 OID 690246)
+-- TOC entry 5000 (class 2606 OID 1158834)
+-- Name: api_keys pk_api_keys; Type: CONSTRAINT; Schema: thesession; Owner: folkguitar
+--
+
+ALTER TABLE ONLY thesession.api_keys
+    ADD CONSTRAINT pk_api_keys PRIMARY KEY (id);
+
+
+--
+-- TOC entry 4857 (class 2606 OID 690246)
 -- Name: session_activity_raw session_activity_raw_pkey; Type: CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -6010,7 +10421,7 @@ ALTER TABLE ONLY thesession.session_activity_raw
 
 
 --
--- TOC entry 4708 (class 2606 OID 376300)
+-- TOC entry 4718 (class 2606 OID 376300)
 -- Name: session_event_comment session_event_comment_pkey; Type: CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -6019,7 +10430,7 @@ ALTER TABLE ONLY thesession.session_event_comment
 
 
 --
--- TOC entry 4704 (class 2606 OID 340011)
+-- TOC entry 4714 (class 2606 OID 340011)
 -- Name: session_event session_event_pkey; Type: CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -6028,7 +10439,7 @@ ALTER TABLE ONLY thesession.session_event
 
 
 --
--- TOC entry 4837 (class 2606 OID 684028)
+-- TOC entry 4847 (class 2606 OID 684028)
 -- Name: session_member_bookmark_setting session_member_bookmark_setting_pkey; Type: CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -6037,7 +10448,7 @@ ALTER TABLE ONLY thesession.session_member_bookmark_setting
 
 
 --
--- TOC entry 4767 (class 2606 OID 436195)
+-- TOC entry 4777 (class 2606 OID 436195)
 -- Name: session_member session_member_pkey; Type: CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -6046,7 +10457,7 @@ ALTER TABLE ONLY thesession.session_member
 
 
 --
--- TOC entry 4801 (class 2606 OID 588961)
+-- TOC entry 4811 (class 2606 OID 588961)
 -- Name: session_member_tunebook session_member_tunebook_pkey; Type: CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -6055,7 +10466,7 @@ ALTER TABLE ONLY thesession.session_member_tunebook
 
 
 --
--- TOC entry 4795 (class 2606 OID 544136)
+-- TOC entry 4805 (class 2606 OID 544136)
 -- Name: session_recording_album session_recording_album_pk; Type: CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -6064,7 +10475,7 @@ ALTER TABLE ONLY thesession.session_recording_album
 
 
 --
--- TOC entry 4749 (class 2606 OID 401360)
+-- TOC entry 4759 (class 2606 OID 401360)
 -- Name: session_recording session_recording_pk; Type: CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -6073,7 +10484,7 @@ ALTER TABLE ONLY thesession.session_recording
 
 
 --
--- TOC entry 4696 (class 2606 OID 444929)
+-- TOC entry 4706 (class 2606 OID 444929)
 -- Name: session_set_items_raw session_set_items_raw_pkey; Type: CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -6082,7 +10493,7 @@ ALTER TABLE ONLY thesession.session_set_items_raw
 
 
 --
--- TOC entry 4684 (class 2606 OID 291014)
+-- TOC entry 4694 (class 2606 OID 291014)
 -- Name: session_sets_raw session_sets_raw_pkey; Type: CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -6091,7 +10502,7 @@ ALTER TABLE ONLY thesession.session_sets_raw
 
 
 --
--- TOC entry 4686 (class 2606 OID 660987)
+-- TOC entry 4696 (class 2606 OID 660987)
 -- Name: session_sets_raw session_sets_raw_uq_member_tuneset; Type: CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -6100,7 +10511,7 @@ ALTER TABLE ONLY thesession.session_sets_raw
 
 
 --
--- TOC entry 4714 (class 2606 OID 391565)
+-- TOC entry 4724 (class 2606 OID 391565)
 -- Name: session_tune_alias session_tune_alias_pkey; Type: CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -6109,7 +10520,7 @@ ALTER TABLE ONLY thesession.session_tune_alias
 
 
 --
--- TOC entry 4716 (class 2606 OID 391569)
+-- TOC entry 4726 (class 2606 OID 391569)
 -- Name: session_tune_alias session_tune_alias_unique; Type: CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -6118,7 +10529,7 @@ ALTER TABLE ONLY thesession.session_tune_alias
 
 
 --
--- TOC entry 4675 (class 2606 OID 290952)
+-- TOC entry 4685 (class 2606 OID 290952)
 -- Name: session_tune_popularity_raw session_tune_popularity_raw_pkey; Type: CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -6127,7 +10538,7 @@ ALTER TABLE ONLY thesession.session_tune_popularity_raw
 
 
 --
--- TOC entry 4671 (class 2606 OID 290791)
+-- TOC entry 4681 (class 2606 OID 290791)
 -- Name: session_tunes_raw session_tunes_raw_pkey; Type: CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -6136,7 +10547,7 @@ ALTER TABLE ONLY thesession.session_tunes_raw
 
 
 --
--- TOC entry 4710 (class 2606 OID 378549)
+-- TOC entry 4720 (class 2606 OID 378549)
 -- Name: session_venue session_venue_pkey; Type: CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -6145,7 +10556,7 @@ ALTER TABLE ONLY thesession.session_venue
 
 
 --
--- TOC entry 4726 (class 2606 OID 396472)
+-- TOC entry 4736 (class 2606 OID 396472)
 -- Name: sessions sessions_pkey; Type: CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -6154,7 +10565,7 @@ ALTER TABLE ONLY thesession.sessions
 
 
 --
--- TOC entry 4740 (class 2606 OID 493700)
+-- TOC entry 4750 (class 2606 OID 493700)
 -- Name: tune_collection_item tune_collection_item_collection_page_position_uk; Type: CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -6163,7 +10574,7 @@ ALTER TABLE ONLY thesession.tune_collection_item
 
 
 --
--- TOC entry 4742 (class 2606 OID 399785)
+-- TOC entry 4752 (class 2606 OID 399785)
 -- Name: tune_collection_item tune_collection_item_pkey; Type: CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -6172,7 +10583,7 @@ ALTER TABLE ONLY thesession.tune_collection_item
 
 
 --
--- TOC entry 4730 (class 2606 OID 399772)
+-- TOC entry 4740 (class 2606 OID 399772)
 -- Name: tune_collection tune_collection_pkey; Type: CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -6181,7 +10592,7 @@ ALTER TABLE ONLY thesession.tune_collection
 
 
 --
--- TOC entry 4732 (class 2606 OID 492999)
+-- TOC entry 4742 (class 2606 OID 492999)
 -- Name: tune_collection tune_collection_session_collection_id_uk; Type: CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -6190,7 +10601,7 @@ ALTER TABLE ONLY thesession.tune_collection
 
 
 --
--- TOC entry 4734 (class 2606 OID 399774)
+-- TOC entry 4744 (class 2606 OID 399774)
 -- Name: tune_collection tune_collection_slug_key; Type: CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -6199,7 +10610,24 @@ ALTER TABLE ONLY thesession.tune_collection
 
 
 --
--- TOC entry 4735 (class 1259 OID 399791)
+-- TOC entry 5002 (class 2606 OID 1158836)
+-- Name: api_keys uq_api_keys_hash; Type: CONSTRAINT; Schema: thesession; Owner: folkguitar
+--
+
+ALTER TABLE ONLY thesession.api_keys
+    ADD CONSTRAINT uq_api_keys_hash UNIQUE (key_hash);
+
+
+--
+-- TOC entry 4998 (class 1259 OID 1158837)
+-- Name: idx_api_keys_hash; Type: INDEX; Schema: thesession; Owner: folkguitar
+--
+
+CREATE INDEX idx_api_keys_hash ON thesession.api_keys USING btree (key_hash) WHERE ((status)::text = 'active'::text);
+
+
+--
+-- TOC entry 4745 (class 1259 OID 399791)
 -- Name: idx_collection_item_collection; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6207,7 +10635,7 @@ CREATE INDEX idx_collection_item_collection ON thesession.tune_collection_item U
 
 
 --
--- TOC entry 4736 (class 1259 OID 399792)
+-- TOC entry 4746 (class 1259 OID 399792)
 -- Name: idx_collection_item_tune; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6215,7 +10643,7 @@ CREATE INDEX idx_collection_item_tune ON thesession.tune_collection_item USING b
 
 
 --
--- TOC entry 4770 (class 1259 OID 442124)
+-- TOC entry 4780 (class 1259 OID 442124)
 -- Name: idx_feature_request_created_at; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6223,7 +10651,7 @@ CREATE INDEX idx_feature_request_created_at ON thesession.feature_request USING 
 
 
 --
--- TOC entry 4771 (class 1259 OID 442123)
+-- TOC entry 4781 (class 1259 OID 442123)
 -- Name: idx_feature_request_email; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6231,7 +10659,7 @@ CREATE INDEX idx_feature_request_email ON thesession.feature_request USING btree
 
 
 --
--- TOC entry 4943 (class 1259 OID 944256)
+-- TOC entry 4953 (class 1259 OID 944256)
 -- Name: idx_member_country_country_code; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6239,7 +10667,7 @@ CREATE INDEX idx_member_country_country_code ON thesession.member_country USING 
 
 
 --
--- TOC entry 4944 (class 1259 OID 944257)
+-- TOC entry 4954 (class 1259 OID 944257)
 -- Name: idx_member_country_country_name; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6247,7 +10675,7 @@ CREATE INDEX idx_member_country_country_name ON thesession.member_country USING 
 
 
 --
--- TOC entry 4945 (class 1259 OID 944258)
+-- TOC entry 4955 (class 1259 OID 944258)
 -- Name: idx_member_country_source; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6255,7 +10683,7 @@ CREATE INDEX idx_member_country_source ON thesession.member_country USING btree 
 
 
 --
--- TOC entry 4853 (class 1259 OID 784610)
+-- TOC entry 4863 (class 1259 OID 784610)
 -- Name: idx_mv_artist_name_search_lc; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6263,7 +10691,7 @@ CREATE INDEX idx_mv_artist_name_search_lc ON thesession.mv_artist_name_search US
 
 
 --
--- TOC entry 4854 (class 1259 OID 784611)
+-- TOC entry 4864 (class 1259 OID 784611)
 -- Name: idx_mv_artist_name_search_tunes; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6271,7 +10699,7 @@ CREATE INDEX idx_mv_artist_name_search_tunes ON thesession.mv_artist_name_search
 
 
 --
--- TOC entry 4856 (class 1259 OID 785045)
+-- TOC entry 4866 (class 1259 OID 785045)
 -- Name: idx_mv_artist_pathway_related_artists_a; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6279,7 +10707,7 @@ CREATE INDEX idx_mv_artist_pathway_related_artists_a ON thesession.mv_artist_pat
 
 
 --
--- TOC entry 4857 (class 1259 OID 785046)
+-- TOC entry 4867 (class 1259 OID 785046)
 -- Name: idx_mv_artist_pathway_related_artists_b; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6287,7 +10715,7 @@ CREATE INDEX idx_mv_artist_pathway_related_artists_b ON thesession.mv_artist_pat
 
 
 --
--- TOC entry 4858 (class 1259 OID 785047)
+-- TOC entry 4868 (class 1259 OID 785047)
 -- Name: idx_mv_artist_pathway_related_artists_score; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6295,7 +10723,7 @@ CREATE INDEX idx_mv_artist_pathway_related_artists_score ON thesession.mv_artist
 
 
 --
--- TOC entry 4862 (class 1259 OID 799840)
+-- TOC entry 4872 (class 1259 OID 799840)
 -- Name: idx_mv_artist_transition_evidence_artist; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6303,7 +10731,7 @@ CREATE INDEX idx_mv_artist_transition_evidence_artist ON thesession.mv_artist_tr
 
 
 --
--- TOC entry 4863 (class 1259 OID 799841)
+-- TOC entry 4873 (class 1259 OID 799841)
 -- Name: idx_mv_artist_transition_evidence_transition; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6311,7 +10739,7 @@ CREATE INDEX idx_mv_artist_transition_evidence_transition ON thesession.mv_artis
 
 
 --
--- TOC entry 4848 (class 1259 OID 784373)
+-- TOC entry 4858 (class 1259 OID 784373)
 -- Name: idx_mv_artist_transition_features_artist; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6319,7 +10747,7 @@ CREATE INDEX idx_mv_artist_transition_features_artist ON thesession.mv_artist_tr
 
 
 --
--- TOC entry 4849 (class 1259 OID 784375)
+-- TOC entry 4859 (class 1259 OID 784375)
 -- Name: idx_mv_artist_transition_features_source; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6327,7 +10755,7 @@ CREATE INDEX idx_mv_artist_transition_features_source ON thesession.mv_artist_tr
 
 
 --
--- TOC entry 4850 (class 1259 OID 784376)
+-- TOC entry 4860 (class 1259 OID 784376)
 -- Name: idx_mv_artist_transition_features_target; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6335,7 +10763,7 @@ CREATE INDEX idx_mv_artist_transition_features_target ON thesession.mv_artist_tr
 
 
 --
--- TOC entry 4851 (class 1259 OID 784374)
+-- TOC entry 4861 (class 1259 OID 784374)
 -- Name: idx_mv_artist_transition_features_weighted; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6343,7 +10771,7 @@ CREATE INDEX idx_mv_artist_transition_features_weighted ON thesession.mv_artist_
 
 
 --
--- TOC entry 4883 (class 1259 OID 807721)
+-- TOC entry 4893 (class 1259 OID 807721)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_fragment; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6351,7 +10779,7 @@ CREATE INDEX idx_mv_melody_2bar_fragment_ngrams_fragment ON thesession.mv_melody
 
 
 --
--- TOC entry 4884 (class 1259 OID 807707)
+-- TOC entry 4894 (class 1259 OID 807707)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_interval; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6359,7 +10787,7 @@ CREATE INDEX idx_mv_melody_2bar_fragment_ngrams_interval ON thesession.mv_melody
 
 
 --
--- TOC entry 4885 (class 1259 OID 807708)
+-- TOC entry 4895 (class 1259 OID 807708)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_interval_rhythm; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6367,7 +10795,7 @@ CREATE INDEX idx_mv_melody_2bar_fragment_ngrams_interval_rhythm ON thesession.mv
 
 
 --
--- TOC entry 4886 (class 1259 OID 807718)
+-- TOC entry 4896 (class 1259 OID 807718)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_tune; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6375,7 +10803,7 @@ CREATE INDEX idx_mv_melody_2bar_fragment_ngrams_tune ON thesession.mv_melody_2ba
 
 
 --
--- TOC entry 4887 (class 1259 OID 807722)
+-- TOC entry 4897 (class 1259 OID 807722)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_type_meter; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6383,7 +10811,7 @@ CREATE INDEX idx_mv_melody_2bar_fragment_ngrams_type_meter ON thesession.mv_melo
 
 
 --
--- TOC entry 4891 (class 1259 OID 859280)
+-- TOC entry 4901 (class 1259 OID 859280)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_v2_fragment; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6391,7 +10819,7 @@ CREATE INDEX idx_mv_melody_2bar_fragment_ngrams_v2_fragment ON thesession.zz_old
 
 
 --
--- TOC entry 4892 (class 1259 OID 859276)
+-- TOC entry 4902 (class 1259 OID 859276)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_v2_interval; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6399,7 +10827,7 @@ CREATE INDEX idx_mv_melody_2bar_fragment_ngrams_v2_interval ON thesession.zz_old
 
 
 --
--- TOC entry 4893 (class 1259 OID 859277)
+-- TOC entry 4903 (class 1259 OID 859277)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_v2_interval_rhythm; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6407,7 +10835,7 @@ CREATE INDEX idx_mv_melody_2bar_fragment_ngrams_v2_interval_rhythm ON thesession
 
 
 --
--- TOC entry 4894 (class 1259 OID 859279)
+-- TOC entry 4904 (class 1259 OID 859279)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_v2_interval_rhythm_type_mete; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6415,7 +10843,7 @@ CREATE INDEX idx_mv_melody_2bar_fragment_ngrams_v2_interval_rhythm_type_mete ON 
 
 
 --
--- TOC entry 4895 (class 1259 OID 859278)
+-- TOC entry 4905 (class 1259 OID 859278)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_v2_interval_type_meter; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6423,7 +10851,7 @@ CREATE INDEX idx_mv_melody_2bar_fragment_ngrams_v2_interval_type_meter ON theses
 
 
 --
--- TOC entry 4896 (class 1259 OID 859284)
+-- TOC entry 4906 (class 1259 OID 859284)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_v2_tune; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6431,7 +10859,7 @@ CREATE INDEX idx_mv_melody_2bar_fragment_ngrams_v2_tune ON thesession.zz_old_mv_
 
 
 --
--- TOC entry 4897 (class 1259 OID 862117)
+-- TOC entry 4907 (class 1259 OID 862117)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_v3_fragment; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6439,7 +10867,7 @@ CREATE INDEX idx_mv_melody_2bar_fragment_ngrams_v3_fragment ON thesession.zz_old
 
 
 --
--- TOC entry 4898 (class 1259 OID 862114)
+-- TOC entry 4908 (class 1259 OID 862114)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_v3_interval; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6447,7 +10875,7 @@ CREATE INDEX idx_mv_melody_2bar_fragment_ngrams_v3_interval ON thesession.zz_old
 
 
 --
--- TOC entry 4899 (class 1259 OID 862115)
+-- TOC entry 4909 (class 1259 OID 862115)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_v3_interval_rhythm; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6455,7 +10883,7 @@ CREATE INDEX idx_mv_melody_2bar_fragment_ngrams_v3_interval_rhythm ON thesession
 
 
 --
--- TOC entry 4900 (class 1259 OID 862116)
+-- TOC entry 4910 (class 1259 OID 862116)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_v3_interval_type_meter; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6463,7 +10891,7 @@ CREATE INDEX idx_mv_melody_2bar_fragment_ngrams_v3_interval_type_meter ON theses
 
 
 --
--- TOC entry 4902 (class 1259 OID 863597)
+-- TOC entry 4912 (class 1259 OID 863597)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_v4_coarse; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6471,7 +10899,7 @@ CREATE INDEX idx_mv_melody_2bar_fragment_ngrams_v4_coarse ON thesession.zz_old_m
 
 
 --
--- TOC entry 4903 (class 1259 OID 888799)
+-- TOC entry 4913 (class 1259 OID 888799)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_v4_coarse_pos; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6479,7 +10907,7 @@ CREATE INDEX idx_mv_melody_2bar_fragment_ngrams_v4_coarse_pos ON thesession.zz_o
 
 
 --
--- TOC entry 4904 (class 1259 OID 863599)
+-- TOC entry 4914 (class 1259 OID 863599)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_v4_coarse_rhythm; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6487,7 +10915,7 @@ CREATE INDEX idx_mv_melody_2bar_fragment_ngrams_v4_coarse_rhythm ON thesession.z
 
 
 --
--- TOC entry 4905 (class 1259 OID 863600)
+-- TOC entry 4915 (class 1259 OID 863600)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_v4_fragment; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6495,7 +10923,7 @@ CREATE INDEX idx_mv_melody_2bar_fragment_ngrams_v4_fragment ON thesession.zz_old
 
 
 --
--- TOC entry 4906 (class 1259 OID 863596)
+-- TOC entry 4916 (class 1259 OID 863596)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_v4_interval; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6503,7 +10931,7 @@ CREATE INDEX idx_mv_melody_2bar_fragment_ngrams_v4_interval ON thesession.zz_old
 
 
 --
--- TOC entry 4907 (class 1259 OID 863598)
+-- TOC entry 4917 (class 1259 OID 863598)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_v4_interval_rhythm; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6511,7 +10939,7 @@ CREATE INDEX idx_mv_melody_2bar_fragment_ngrams_v4_interval_rhythm ON thesession
 
 
 --
--- TOC entry 4908 (class 1259 OID 868310)
+-- TOC entry 4918 (class 1259 OID 868310)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_v4_unique; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6519,7 +10947,7 @@ CREATE UNIQUE INDEX idx_mv_melody_2bar_fragment_ngrams_v4_unique ON thesession.z
 
 
 --
--- TOC entry 4924 (class 1259 OID 889708)
+-- TOC entry 4934 (class 1259 OID 889708)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_v5_coarse; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6527,7 +10955,7 @@ CREATE INDEX idx_mv_melody_2bar_fragment_ngrams_v5_coarse ON thesession.mv_melod
 
 
 --
--- TOC entry 4925 (class 1259 OID 889715)
+-- TOC entry 4935 (class 1259 OID 889715)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_v5_coarse_pos; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6535,7 +10963,7 @@ CREATE INDEX idx_mv_melody_2bar_fragment_ngrams_v5_coarse_pos ON thesession.mv_m
 
 
 --
--- TOC entry 4926 (class 1259 OID 889710)
+-- TOC entry 4936 (class 1259 OID 889710)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_v5_coarse_rhythm; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6543,7 +10971,7 @@ CREATE INDEX idx_mv_melody_2bar_fragment_ngrams_v5_coarse_rhythm ON thesession.m
 
 
 --
--- TOC entry 4927 (class 1259 OID 889714)
+-- TOC entry 4937 (class 1259 OID 889714)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_v5_fragment; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6551,7 +10979,7 @@ CREATE INDEX idx_mv_melody_2bar_fragment_ngrams_v5_fragment ON thesession.mv_mel
 
 
 --
--- TOC entry 4928 (class 1259 OID 889707)
+-- TOC entry 4938 (class 1259 OID 889707)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_v5_interval; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6559,7 +10987,7 @@ CREATE INDEX idx_mv_melody_2bar_fragment_ngrams_v5_interval ON thesession.mv_mel
 
 
 --
--- TOC entry 4929 (class 1259 OID 889709)
+-- TOC entry 4939 (class 1259 OID 889709)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_v5_interval_rhythm; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6567,7 +10995,7 @@ CREATE INDEX idx_mv_melody_2bar_fragment_ngrams_v5_interval_rhythm ON thesession
 
 
 --
--- TOC entry 4930 (class 1259 OID 889706)
+-- TOC entry 4940 (class 1259 OID 889706)
 -- Name: idx_mv_melody_2bar_fragment_ngrams_v5_unique; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6575,7 +11003,7 @@ CREATE UNIQUE INDEX idx_mv_melody_2bar_fragment_ngrams_v5_unique ON thesession.m
 
 
 --
--- TOC entry 4878 (class 1259 OID 807415)
+-- TOC entry 4888 (class 1259 OID 807415)
 -- Name: idx_mv_melody_2bar_fragments_interval; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6583,7 +11011,7 @@ CREATE INDEX idx_mv_melody_2bar_fragments_interval ON thesession.mv_melody_2bar_
 
 
 --
--- TOC entry 4879 (class 1259 OID 807416)
+-- TOC entry 4889 (class 1259 OID 807416)
 -- Name: idx_mv_melody_2bar_fragments_interval_rhythm; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6591,7 +11019,7 @@ CREATE INDEX idx_mv_melody_2bar_fragments_interval_rhythm ON thesession.mv_melod
 
 
 --
--- TOC entry 4880 (class 1259 OID 807417)
+-- TOC entry 4890 (class 1259 OID 807417)
 -- Name: idx_mv_melody_2bar_fragments_tune; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6599,7 +11027,7 @@ CREATE INDEX idx_mv_melody_2bar_fragments_tune ON thesession.mv_melody_2bar_frag
 
 
 --
--- TOC entry 4881 (class 1259 OID 807418)
+-- TOC entry 4891 (class 1259 OID 807418)
 -- Name: idx_mv_melody_2bar_fragments_type_meter; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6607,7 +11035,7 @@ CREATE INDEX idx_mv_melody_2bar_fragments_type_meter ON thesession.mv_melody_2ba
 
 
 --
--- TOC entry 4919 (class 1259 OID 889532)
+-- TOC entry 4929 (class 1259 OID 889532)
 -- Name: idx_mv_melody_2bar_fragments_v5_interval; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6615,7 +11043,7 @@ CREATE INDEX idx_mv_melody_2bar_fragments_v5_interval ON thesession.mv_melody_2b
 
 
 --
--- TOC entry 4920 (class 1259 OID 889534)
+-- TOC entry 4930 (class 1259 OID 889534)
 -- Name: idx_mv_melody_2bar_fragments_v5_interval_rhythm; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6623,7 +11051,7 @@ CREATE INDEX idx_mv_melody_2bar_fragments_v5_interval_rhythm ON thesession.mv_me
 
 
 --
--- TOC entry 4921 (class 1259 OID 889537)
+-- TOC entry 4931 (class 1259 OID 889537)
 -- Name: idx_mv_melody_2bar_fragments_v5_tune; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6631,7 +11059,7 @@ CREATE INDEX idx_mv_melody_2bar_fragments_v5_tune ON thesession.mv_melody_2bar_f
 
 
 --
--- TOC entry 4922 (class 1259 OID 889538)
+-- TOC entry 4932 (class 1259 OID 889538)
 -- Name: idx_mv_melody_2bar_fragments_v5_type_meter; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6639,7 +11067,7 @@ CREATE INDEX idx_mv_melody_2bar_fragments_v5_type_meter ON thesession.mv_melody_
 
 
 --
--- TOC entry 4889 (class 1259 OID 807763)
+-- TOC entry 4899 (class 1259 OID 807763)
 -- Name: idx_mv_melody_2bar_ngram_stats_tune_count; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6647,7 +11075,7 @@ CREATE INDEX idx_mv_melody_2bar_ngram_stats_tune_count ON thesession.mv_melody_2
 
 
 --
--- TOC entry 4901 (class 1259 OID 862118)
+-- TOC entry 4911 (class 1259 OID 862118)
 -- Name: idx_mv_melody_2bar_ngram_stats_v3_tune_count; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6655,7 +11083,7 @@ CREATE INDEX idx_mv_melody_2bar_ngram_stats_v3_tune_count ON thesession.zz_old_m
 
 
 --
--- TOC entry 4913 (class 1259 OID 863602)
+-- TOC entry 4923 (class 1259 OID 863602)
 -- Name: idx_mv_melody_2bar_ngram_stats_v4_coarse; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6663,7 +11091,7 @@ CREATE INDEX idx_mv_melody_2bar_ngram_stats_v4_coarse ON thesession.zz_old_mv_me
 
 
 --
--- TOC entry 4914 (class 1259 OID 863601)
+-- TOC entry 4924 (class 1259 OID 863601)
 -- Name: idx_mv_melody_2bar_ngram_stats_v4_interval; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6671,7 +11099,7 @@ CREATE INDEX idx_mv_melody_2bar_ngram_stats_v4_interval ON thesession.zz_old_mv_
 
 
 --
--- TOC entry 4915 (class 1259 OID 868222)
+-- TOC entry 4925 (class 1259 OID 868222)
 -- Name: idx_mv_melody_2bar_ngram_stats_v4_unique; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6679,7 +11107,7 @@ CREATE UNIQUE INDEX idx_mv_melody_2bar_ngram_stats_v4_unique ON thesession.zz_ol
 
 
 --
--- TOC entry 4935 (class 1259 OID 889752)
+-- TOC entry 4945 (class 1259 OID 889752)
 -- Name: idx_mv_melody_2bar_ngram_stats_v5_coarse; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6687,7 +11115,7 @@ CREATE INDEX idx_mv_melody_2bar_ngram_stats_v5_coarse ON thesession.mv_melody_2b
 
 
 --
--- TOC entry 4936 (class 1259 OID 889751)
+-- TOC entry 4946 (class 1259 OID 889751)
 -- Name: idx_mv_melody_2bar_ngram_stats_v5_interval; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6695,7 +11123,7 @@ CREATE INDEX idx_mv_melody_2bar_ngram_stats_v5_interval ON thesession.mv_melody_
 
 
 --
--- TOC entry 4937 (class 1259 OID 889750)
+-- TOC entry 4947 (class 1259 OID 889750)
 -- Name: idx_mv_melody_2bar_ngram_stats_v5_unique; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6703,7 +11131,7 @@ CREATE UNIQUE INDEX idx_mv_melody_2bar_ngram_stats_v5_unique ON thesession.mv_me
 
 
 --
--- TOC entry 4909 (class 1259 OID 867579)
+-- TOC entry 4919 (class 1259 OID 867579)
 -- Name: idx_mv_melody_frag_v4_coarse_type; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6711,7 +11139,7 @@ CREATE INDEX idx_mv_melody_frag_v4_coarse_type ON thesession.zz_old_mv_melody_2b
 
 
 --
--- TOC entry 4910 (class 1259 OID 867574)
+-- TOC entry 4920 (class 1259 OID 867574)
 -- Name: idx_mv_melody_frag_v4_coarse_type_meter; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6719,7 +11147,7 @@ CREATE INDEX idx_mv_melody_frag_v4_coarse_type_meter ON thesession.zz_old_mv_mel
 
 
 --
--- TOC entry 4911 (class 1259 OID 867578)
+-- TOC entry 4921 (class 1259 OID 867578)
 -- Name: idx_mv_melody_frag_v4_interval_type; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6727,7 +11155,7 @@ CREATE INDEX idx_mv_melody_frag_v4_interval_type ON thesession.zz_old_mv_melody_
 
 
 --
--- TOC entry 4912 (class 1259 OID 867570)
+-- TOC entry 4922 (class 1259 OID 867570)
 -- Name: idx_mv_melody_frag_v4_interval_type_meter; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6735,7 +11163,7 @@ CREATE INDEX idx_mv_melody_frag_v4_interval_type_meter ON thesession.zz_old_mv_m
 
 
 --
--- TOC entry 4931 (class 1259 OID 889718)
+-- TOC entry 4941 (class 1259 OID 889718)
 -- Name: idx_mv_melody_frag_v5_coarse_type; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6743,7 +11171,7 @@ CREATE INDEX idx_mv_melody_frag_v5_coarse_type ON thesession.mv_melody_2bar_frag
 
 
 --
--- TOC entry 4932 (class 1259 OID 889728)
+-- TOC entry 4942 (class 1259 OID 889728)
 -- Name: idx_mv_melody_frag_v5_coarse_type_meter; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6751,7 +11179,7 @@ CREATE INDEX idx_mv_melody_frag_v5_coarse_type_meter ON thesession.mv_melody_2ba
 
 
 --
--- TOC entry 4933 (class 1259 OID 889716)
+-- TOC entry 4943 (class 1259 OID 889716)
 -- Name: idx_mv_melody_frag_v5_interval_type; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6759,7 +11187,7 @@ CREATE INDEX idx_mv_melody_frag_v5_interval_type ON thesession.mv_melody_2bar_fr
 
 
 --
--- TOC entry 4934 (class 1259 OID 889717)
+-- TOC entry 4944 (class 1259 OID 889717)
 -- Name: idx_mv_melody_frag_v5_interval_type_meter; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6767,7 +11195,7 @@ CREATE INDEX idx_mv_melody_frag_v5_interval_type_meter ON thesession.mv_melody_2
 
 
 --
--- TOC entry 4874 (class 1259 OID 807376)
+-- TOC entry 4884 (class 1259 OID 807376)
 -- Name: idx_mv_melody_setting_bars_setting_bar; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6775,7 +11203,7 @@ CREATE INDEX idx_mv_melody_setting_bars_setting_bar ON thesession.mv_melody_sett
 
 
 --
--- TOC entry 4875 (class 1259 OID 880756)
+-- TOC entry 4885 (class 1259 OID 880756)
 -- Name: idx_mv_melody_setting_bars_setting_bar_uidx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6783,7 +11211,7 @@ CREATE UNIQUE INDEX idx_mv_melody_setting_bars_setting_bar_uidx ON thesession.mv
 
 
 --
--- TOC entry 4876 (class 1259 OID 807377)
+-- TOC entry 4886 (class 1259 OID 807377)
 -- Name: idx_mv_melody_setting_bars_tune; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6791,7 +11219,7 @@ CREATE INDEX idx_mv_melody_setting_bars_tune ON thesession.mv_melody_setting_bar
 
 
 --
--- TOC entry 4877 (class 1259 OID 807378)
+-- TOC entry 4887 (class 1259 OID 807378)
 -- Name: idx_mv_melody_setting_bars_type_meter; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6799,7 +11227,7 @@ CREATE INDEX idx_mv_melody_setting_bars_type_meter ON thesession.mv_melody_setti
 
 
 --
--- TOC entry 4802 (class 1259 OID 591901)
+-- TOC entry 4812 (class 1259 OID 591901)
 -- Name: idx_mv_member_search_member_id; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6807,7 +11235,7 @@ CREATE UNIQUE INDEX idx_mv_member_search_member_id ON thesession.mv_member_searc
 
 
 --
--- TOC entry 4803 (class 1259 OID 591902)
+-- TOC entry 4813 (class 1259 OID 591902)
 -- Name: idx_mv_member_search_username_lc; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6815,7 +11243,7 @@ CREATE INDEX idx_mv_member_search_username_lc ON thesession.mv_member_search USI
 
 
 --
--- TOC entry 4804 (class 1259 OID 591903)
+-- TOC entry 4814 (class 1259 OID 591903)
 -- Name: idx_mv_member_search_username_trgm; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6823,7 +11251,7 @@ CREATE INDEX idx_mv_member_search_username_trgm ON thesession.mv_member_search U
 
 
 --
--- TOC entry 4869 (class 1259 OID 800347)
+-- TOC entry 4879 (class 1259 OID 800347)
 -- Name: idx_mv_recording_set_search_artist; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6831,7 +11259,7 @@ CREATE INDEX idx_mv_recording_set_search_artist ON thesession.mv_recording_set_s
 
 
 --
--- TOC entry 4870 (class 1259 OID 800348)
+-- TOC entry 4880 (class 1259 OID 800348)
 -- Name: idx_mv_recording_set_search_distinct_tune_ids; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6839,7 +11267,7 @@ CREATE INDEX idx_mv_recording_set_search_distinct_tune_ids ON thesession.mv_reco
 
 
 --
--- TOC entry 4871 (class 1259 OID 800349)
+-- TOC entry 4881 (class 1259 OID 800349)
 -- Name: idx_mv_recording_set_search_ordered_signature; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6847,7 +11275,7 @@ CREATE INDEX idx_mv_recording_set_search_ordered_signature ON thesession.mv_reco
 
 
 --
--- TOC entry 4872 (class 1259 OID 800350)
+-- TOC entry 4882 (class 1259 OID 800350)
 -- Name: idx_mv_recording_set_search_unordered_signature; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6855,7 +11283,7 @@ CREATE INDEX idx_mv_recording_set_search_unordered_signature ON thesession.mv_re
 
 
 --
--- TOC entry 4860 (class 1259 OID 796953)
+-- TOC entry 4870 (class 1259 OID 796953)
 -- Name: idx_mv_setting_bookmarkers_owner; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6863,7 +11291,7 @@ CREATE INDEX idx_mv_setting_bookmarkers_owner ON thesession.mv_setting_bookmarke
 
 
 --
--- TOC entry 4865 (class 1259 OID 799921)
+-- TOC entry 4875 (class 1259 OID 799921)
 -- Name: idx_mv_transition_artist_overlap_artist_a; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6871,7 +11299,7 @@ CREATE INDEX idx_mv_transition_artist_overlap_artist_a ON thesession.mv_transiti
 
 
 --
--- TOC entry 4866 (class 1259 OID 799922)
+-- TOC entry 4876 (class 1259 OID 799922)
 -- Name: idx_mv_transition_artist_overlap_artist_b; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6879,7 +11307,7 @@ CREATE INDEX idx_mv_transition_artist_overlap_artist_b ON thesession.mv_transiti
 
 
 --
--- TOC entry 4867 (class 1259 OID 799923)
+-- TOC entry 4877 (class 1259 OID 799923)
 -- Name: idx_mv_transition_artist_overlap_transition; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6887,7 +11315,7 @@ CREATE INDEX idx_mv_transition_artist_overlap_transition ON thesession.mv_transi
 
 
 --
--- TOC entry 4981 (class 1259 OID 1117028)
+-- TOC entry 4991 (class 1259 OID 1117028)
 -- Name: idx_mv_tune_analytics_slug; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6895,7 +11323,7 @@ CREATE INDEX idx_mv_tune_analytics_slug ON thesession.mv_tune_analytics USING bt
 
 
 --
--- TOC entry 4982 (class 1259 OID 1117022)
+-- TOC entry 4992 (class 1259 OID 1117022)
 -- Name: idx_mv_tune_analytics_tune_id; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6903,7 +11331,7 @@ CREATE UNIQUE INDEX idx_mv_tune_analytics_tune_id ON thesession.mv_tune_analytic
 
 
 --
--- TOC entry 4983 (class 1259 OID 1117023)
+-- TOC entry 4993 (class 1259 OID 1117023)
 -- Name: idx_mv_tune_analytics_type_hidden_gem; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6911,7 +11339,7 @@ CREATE INDEX idx_mv_tune_analytics_type_hidden_gem ON thesession.mv_tune_analyti
 
 
 --
--- TOC entry 4984 (class 1259 OID 1117027)
+-- TOC entry 4994 (class 1259 OID 1117027)
 -- Name: idx_mv_tune_analytics_type_influence; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6919,7 +11347,7 @@ CREATE INDEX idx_mv_tune_analytics_type_influence ON thesession.mv_tune_analytic
 
 
 --
--- TOC entry 4985 (class 1259 OID 1117025)
+-- TOC entry 4995 (class 1259 OID 1117025)
 -- Name: idx_mv_tune_analytics_type_recording; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6927,7 +11355,7 @@ CREATE INDEX idx_mv_tune_analytics_type_recording ON thesession.mv_tune_analytic
 
 
 --
--- TOC entry 4986 (class 1259 OID 1117026)
+-- TOC entry 4996 (class 1259 OID 1117026)
 -- Name: idx_mv_tune_analytics_type_session; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6935,7 +11363,7 @@ CREATE INDEX idx_mv_tune_analytics_type_session ON thesession.mv_tune_analytics 
 
 
 --
--- TOC entry 4987 (class 1259 OID 1117024)
+-- TOC entry 4997 (class 1259 OID 1117024)
 -- Name: idx_mv_tune_analytics_type_tier_score; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6943,7 +11371,7 @@ CREATE INDEX idx_mv_tune_analytics_type_tier_score ON thesession.mv_tune_analyti
 
 
 --
--- TOC entry 4976 (class 1259 OID 1116997)
+-- TOC entry 4986 (class 1259 OID 1116997)
 -- Name: idx_mv_tune_hidden_gem_features_evidence; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6951,7 +11379,7 @@ CREATE INDEX idx_mv_tune_hidden_gem_features_evidence ON thesession.mv_tune_hidd
 
 
 --
--- TOC entry 4977 (class 1259 OID 1116995)
+-- TOC entry 4987 (class 1259 OID 1116995)
 -- Name: idx_mv_tune_hidden_gem_features_tier_score; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6959,7 +11387,7 @@ CREATE INDEX idx_mv_tune_hidden_gem_features_tier_score ON thesession.mv_tune_hi
 
 
 --
--- TOC entry 4978 (class 1259 OID 1116993)
+-- TOC entry 4988 (class 1259 OID 1116993)
 -- Name: idx_mv_tune_hidden_gem_features_tune_id; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6967,7 +11395,7 @@ CREATE UNIQUE INDEX idx_mv_tune_hidden_gem_features_tune_id ON thesession.mv_tun
 
 
 --
--- TOC entry 4979 (class 1259 OID 1116994)
+-- TOC entry 4989 (class 1259 OID 1116994)
 -- Name: idx_mv_tune_hidden_gem_features_type_score; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6975,7 +11403,7 @@ CREATE INDEX idx_mv_tune_hidden_gem_features_type_score ON thesession.mv_tune_hi
 
 
 --
--- TOC entry 4980 (class 1259 OID 1116996)
+-- TOC entry 4990 (class 1259 OID 1116996)
 -- Name: idx_mv_tune_hidden_gem_features_type_tier_score; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6983,7 +11411,7 @@ CREATE INDEX idx_mv_tune_hidden_gem_features_type_tier_score ON thesession.mv_tu
 
 
 --
--- TOC entry 4805 (class 1259 OID 606481)
+-- TOC entry 4815 (class 1259 OID 606481)
 -- Name: idx_mv_tune_meta_has_recordings; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6991,7 +11419,7 @@ CREATE INDEX idx_mv_tune_meta_has_recordings ON thesession.mv_tune_meta USING bt
 
 
 --
--- TOC entry 4806 (class 1259 OID 606480)
+-- TOC entry 4816 (class 1259 OID 606480)
 -- Name: idx_mv_tune_meta_mode; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -6999,7 +11427,7 @@ CREATE INDEX idx_mv_tune_meta_mode ON thesession.mv_tune_meta USING btree (mode)
 
 
 --
--- TOC entry 4807 (class 1259 OID 606477)
+-- TOC entry 4817 (class 1259 OID 606477)
 -- Name: idx_mv_tune_meta_star_rating; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7007,7 +11435,7 @@ CREATE INDEX idx_mv_tune_meta_star_rating ON thesession.mv_tune_meta USING btree
 
 
 --
--- TOC entry 4808 (class 1259 OID 606476)
+-- TOC entry 4818 (class 1259 OID 606476)
 -- Name: idx_mv_tune_meta_tune_id; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7015,7 +11443,7 @@ CREATE UNIQUE INDEX idx_mv_tune_meta_tune_id ON thesession.mv_tune_meta USING bt
 
 
 --
--- TOC entry 4809 (class 1259 OID 606478)
+-- TOC entry 4819 (class 1259 OID 606478)
 -- Name: idx_mv_tune_meta_tunebooks; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7023,7 +11451,7 @@ CREATE INDEX idx_mv_tune_meta_tunebooks ON thesession.mv_tune_meta USING btree (
 
 
 --
--- TOC entry 4810 (class 1259 OID 606479)
+-- TOC entry 4820 (class 1259 OID 606479)
 -- Name: idx_mv_tune_meta_type; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7031,7 +11459,7 @@ CREATE INDEX idx_mv_tune_meta_type ON thesession.mv_tune_meta USING btree (type)
 
 
 --
--- TOC entry 4811 (class 1259 OID 606484)
+-- TOC entry 4821 (class 1259 OID 606484)
 -- Name: idx_mv_tune_meta_type_mode; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7039,7 +11467,7 @@ CREATE INDEX idx_mv_tune_meta_type_mode ON thesession.mv_tune_meta USING btree (
 
 
 --
--- TOC entry 4916 (class 1259 OID 881687)
+-- TOC entry 4926 (class 1259 OID 881687)
 -- Name: idx_mv_tune_name_search_search_lc; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7047,7 +11475,7 @@ CREATE INDEX idx_mv_tune_name_search_search_lc ON thesession.mv_tune_name_search
 
 
 --
--- TOC entry 4917 (class 1259 OID 881688)
+-- TOC entry 4927 (class 1259 OID 881688)
 -- Name: idx_mv_tune_name_search_tune_id; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7055,7 +11483,7 @@ CREATE INDEX idx_mv_tune_name_search_tune_id ON thesession.mv_tune_name_search U
 
 
 --
--- TOC entry 4779 (class 1259 OID 513112)
+-- TOC entry 4789 (class 1259 OID 513112)
 -- Name: idx_mv_tune_transition_evidence_pair; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7063,7 +11491,7 @@ CREATE INDEX idx_mv_tune_transition_evidence_pair ON thesession.mv_tune_transiti
 
 
 --
--- TOC entry 4780 (class 1259 OID 513113)
+-- TOC entry 4790 (class 1259 OID 513113)
 -- Name: idx_mv_tune_transition_evidence_pair_artist; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7071,7 +11499,7 @@ CREATE INDEX idx_mv_tune_transition_evidence_pair_artist ON thesession.mv_tune_t
 
 
 --
--- TOC entry 4781 (class 1259 OID 513114)
+-- TOC entry 4791 (class 1259 OID 513114)
 -- Name: idx_mv_tune_transition_evidence_pair_recording; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7079,7 +11507,7 @@ CREATE INDEX idx_mv_tune_transition_evidence_pair_recording ON thesession.mv_tun
 
 
 --
--- TOC entry 4782 (class 1259 OID 513115)
+-- TOC entry 4792 (class 1259 OID 513115)
 -- Name: idx_mv_tune_transition_evidence_uq; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7087,7 +11515,7 @@ CREATE UNIQUE INDEX idx_mv_tune_transition_evidence_uq ON thesession.mv_tune_tra
 
 
 --
--- TOC entry 4750 (class 1259 OID 440801)
+-- TOC entry 4760 (class 1259 OID 440801)
 -- Name: idx_mv_tune_transitions_source_rank; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7095,7 +11523,7 @@ CREATE INDEX idx_mv_tune_transitions_source_rank ON thesession.mv_tune_transitio
 
 
 --
--- TOC entry 4751 (class 1259 OID 440802)
+-- TOC entry 4761 (class 1259 OID 440802)
 -- Name: idx_mv_tune_transitions_source_target; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7103,7 +11531,7 @@ CREATE INDEX idx_mv_tune_transitions_source_target ON thesession.mv_tune_transit
 
 
 --
--- TOC entry 4838 (class 1259 OID 690252)
+-- TOC entry 4848 (class 1259 OID 690252)
 -- Name: idx_session_activity_raw_actor_member; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7111,7 +11539,7 @@ CREATE INDEX idx_session_activity_raw_actor_member ON thesession.session_activit
 
 
 --
--- TOC entry 4839 (class 1259 OID 690250)
+-- TOC entry 4849 (class 1259 OID 690250)
 -- Name: idx_session_activity_raw_object_type; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7119,7 +11547,7 @@ CREATE INDEX idx_session_activity_raw_object_type ON thesession.session_activity
 
 
 --
--- TOC entry 4840 (class 1259 OID 690248)
+-- TOC entry 4850 (class 1259 OID 690248)
 -- Name: idx_session_activity_raw_processed; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7127,7 +11555,7 @@ CREATE INDEX idx_session_activity_raw_processed ON thesession.session_activity_r
 
 
 --
--- TOC entry 4841 (class 1259 OID 690247)
+-- TOC entry 4851 (class 1259 OID 690247)
 -- Name: idx_session_activity_raw_published; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7135,7 +11563,7 @@ CREATE INDEX idx_session_activity_raw_published ON thesession.session_activity_r
 
 
 --
--- TOC entry 4842 (class 1259 OID 690251)
+-- TOC entry 4852 (class 1259 OID 690251)
 -- Name: idx_session_activity_raw_target_type; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7143,7 +11571,7 @@ CREATE INDEX idx_session_activity_raw_target_type ON thesession.session_activity
 
 
 --
--- TOC entry 4843 (class 1259 OID 690434)
+-- TOC entry 4853 (class 1259 OID 690434)
 -- Name: idx_session_activity_raw_tunebook_posts; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7151,7 +11579,7 @@ CREATE INDEX idx_session_activity_raw_tunebook_posts ON thesession.session_activ
 
 
 --
--- TOC entry 4844 (class 1259 OID 690433)
+-- TOC entry 4854 (class 1259 OID 690433)
 -- Name: idx_session_activity_raw_unprocessed_tunes; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7159,7 +11587,7 @@ CREATE INDEX idx_session_activity_raw_unprocessed_tunes ON thesession.session_ac
 
 
 --
--- TOC entry 4845 (class 1259 OID 690249)
+-- TOC entry 4855 (class 1259 OID 690249)
 -- Name: idx_session_activity_raw_verb; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7167,7 +11595,7 @@ CREATE INDEX idx_session_activity_raw_verb ON thesession.session_activity_raw US
 
 
 --
--- TOC entry 4760 (class 1259 OID 684154)
+-- TOC entry 4770 (class 1259 OID 684154)
 -- Name: idx_session_member_bookmarks_scraped; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7175,7 +11603,7 @@ CREATE INDEX idx_session_member_bookmarks_scraped ON thesession.session_member U
 
 
 --
--- TOC entry 4761 (class 1259 OID 436198)
+-- TOC entry 4771 (class 1259 OID 436198)
 -- Name: idx_session_member_location; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7183,7 +11611,7 @@ CREATE INDEX idx_session_member_location ON thesession.session_member USING btre
 
 
 --
--- TOC entry 4762 (class 1259 OID 436196)
+-- TOC entry 4772 (class 1259 OID 436196)
 -- Name: idx_session_member_name; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7191,7 +11619,7 @@ CREATE INDEX idx_session_member_name ON thesession.session_member USING btree (n
 
 
 --
--- TOC entry 4763 (class 1259 OID 483212)
+-- TOC entry 4773 (class 1259 OID 483212)
 -- Name: idx_session_member_name_lower_like; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7199,7 +11627,7 @@ CREATE INDEX idx_session_member_name_lower_like ON thesession.session_member USI
 
 
 --
--- TOC entry 4764 (class 1259 OID 483220)
+-- TOC entry 4774 (class 1259 OID 483220)
 -- Name: idx_session_member_name_trgm; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7207,7 +11635,7 @@ CREATE INDEX idx_session_member_name_trgm ON thesession.session_member USING gin
 
 
 --
--- TOC entry 4765 (class 1259 OID 436197)
+-- TOC entry 4775 (class 1259 OID 436197)
 -- Name: idx_session_member_sets; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7215,7 +11643,7 @@ CREATE INDEX idx_session_member_sets ON thesession.session_member USING btree (s
 
 
 --
--- TOC entry 4796 (class 1259 OID 589127)
+-- TOC entry 4806 (class 1259 OID 589127)
 -- Name: idx_session_member_tunebook_fetched_at; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7223,7 +11651,7 @@ CREATE INDEX idx_session_member_tunebook_fetched_at ON thesession.session_member
 
 
 --
--- TOC entry 4797 (class 1259 OID 621390)
+-- TOC entry 4807 (class 1259 OID 621390)
 -- Name: idx_session_member_tunebook_member_added_sort; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7231,7 +11659,7 @@ CREATE INDEX idx_session_member_tunebook_member_added_sort ON thesession.session
 
 
 --
--- TOC entry 4798 (class 1259 OID 589126)
+-- TOC entry 4808 (class 1259 OID 589126)
 -- Name: idx_session_member_tunebook_member_page; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7239,7 +11667,7 @@ CREATE INDEX idx_session_member_tunebook_member_page ON thesession.session_membe
 
 
 --
--- TOC entry 4799 (class 1259 OID 589124)
+-- TOC entry 4809 (class 1259 OID 589124)
 -- Name: idx_session_member_tunebook_tune_id; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7247,7 +11675,7 @@ CREATE INDEX idx_session_member_tunebook_tune_id ON thesession.session_member_tu
 
 
 --
--- TOC entry 4655 (class 1259 OID 290793)
+-- TOC entry 4665 (class 1259 OID 290793)
 -- Name: idx_session_meter; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7255,7 +11683,7 @@ CREATE INDEX idx_session_meter ON thesession.session_tunes_raw USING btree (mete
 
 
 --
--- TOC entry 4656 (class 1259 OID 290794)
+-- TOC entry 4666 (class 1259 OID 290794)
 -- Name: idx_session_mode; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7263,7 +11691,7 @@ CREATE INDEX idx_session_mode ON thesession.session_tunes_raw USING btree (mode)
 
 
 --
--- TOC entry 4743 (class 1259 OID 401363)
+-- TOC entry 4753 (class 1259 OID 401363)
 -- Name: idx_session_recording_artist; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7271,7 +11699,7 @@ CREATE INDEX idx_session_recording_artist ON thesession.session_recording USING 
 
 
 --
--- TOC entry 4744 (class 1259 OID 401362)
+-- TOC entry 4754 (class 1259 OID 401362)
 -- Name: idx_session_recording_recording; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7279,7 +11707,7 @@ CREATE INDEX idx_session_recording_recording ON thesession.session_recording USI
 
 
 --
--- TOC entry 4745 (class 1259 OID 403549)
+-- TOC entry 4755 (class 1259 OID 403549)
 -- Name: idx_session_recording_transition_not_null; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7287,7 +11715,7 @@ CREATE INDEX idx_session_recording_transition_not_null ON thesession.session_rec
 
 
 --
--- TOC entry 4746 (class 1259 OID 401361)
+-- TOC entry 4756 (class 1259 OID 401361)
 -- Name: idx_session_recording_tune; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7295,7 +11723,7 @@ CREATE INDEX idx_session_recording_tune ON thesession.session_recording USING bt
 
 
 --
--- TOC entry 4747 (class 1259 OID 401579)
+-- TOC entry 4757 (class 1259 OID 401579)
 -- Name: idx_session_recording_tune_id; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7303,7 +11731,7 @@ CREATE INDEX idx_session_recording_tune_id ON thesession.session_recording USING
 
 
 --
--- TOC entry 4687 (class 1259 OID 292946)
+-- TOC entry 4697 (class 1259 OID 292946)
 -- Name: idx_session_set_items_raw_order1; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7311,7 +11739,7 @@ CREATE INDEX idx_session_set_items_raw_order1 ON thesession.session_set_items_ra
 
 
 --
--- TOC entry 4688 (class 1259 OID 292947)
+-- TOC entry 4698 (class 1259 OID 292947)
 -- Name: idx_session_set_items_raw_order1_tune; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7319,7 +11747,7 @@ CREATE INDEX idx_session_set_items_raw_order1_tune ON thesession.session_set_ite
 
 
 --
--- TOC entry 4689 (class 1259 OID 292944)
+-- TOC entry 4699 (class 1259 OID 292944)
 -- Name: idx_session_set_items_raw_setting_id; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7327,7 +11755,7 @@ CREATE INDEX idx_session_set_items_raw_setting_id ON thesession.session_set_item
 
 
 --
--- TOC entry 4690 (class 1259 OID 292943)
+-- TOC entry 4700 (class 1259 OID 292943)
 -- Name: idx_session_set_items_raw_tune_id; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7335,7 +11763,7 @@ CREATE INDEX idx_session_set_items_raw_tune_id ON thesession.session_set_items_r
 
 
 --
--- TOC entry 4691 (class 1259 OID 292945)
+-- TOC entry 4701 (class 1259 OID 292945)
 -- Name: idx_session_set_items_raw_tune_sets; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7343,7 +11771,7 @@ CREATE INDEX idx_session_set_items_raw_tune_sets ON thesession.session_set_items
 
 
 --
--- TOC entry 4692 (class 1259 OID 628155)
+-- TOC entry 4702 (class 1259 OID 628155)
 -- Name: idx_session_set_items_raw_tuneset; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7351,7 +11779,7 @@ CREATE INDEX idx_session_set_items_raw_tuneset ON thesession.session_set_items_r
 
 
 --
--- TOC entry 4693 (class 1259 OID 292948)
+-- TOC entry 4703 (class 1259 OID 292948)
 -- Name: idx_session_set_items_raw_tuneset_order; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7359,7 +11787,7 @@ CREATE INDEX idx_session_set_items_raw_tuneset_order ON thesession.session_set_i
 
 
 --
--- TOC entry 4694 (class 1259 OID 339900)
+-- TOC entry 4704 (class 1259 OID 339900)
 -- Name: idx_session_set_items_slug; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7367,7 +11795,7 @@ CREATE INDEX idx_session_set_items_slug ON thesession.session_set_items_raw USIN
 
 
 --
--- TOC entry 4676 (class 1259 OID 292940)
+-- TOC entry 4686 (class 1259 OID 292940)
 -- Name: idx_session_sets_raw_date; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7375,7 +11803,7 @@ CREATE INDEX idx_session_sets_raw_date ON thesession.session_sets_raw USING btre
 
 
 --
--- TOC entry 4677 (class 1259 OID 628156)
+-- TOC entry 4687 (class 1259 OID 628156)
 -- Name: idx_session_sets_raw_date_member; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7383,7 +11811,7 @@ CREATE INDEX idx_session_sets_raw_date_member ON thesession.session_sets_raw USI
 
 
 --
--- TOC entry 4678 (class 1259 OID 292941)
+-- TOC entry 4688 (class 1259 OID 292941)
 -- Name: idx_session_sets_raw_member_id; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7391,7 +11819,7 @@ CREATE INDEX idx_session_sets_raw_member_id ON thesession.session_sets_raw USING
 
 
 --
--- TOC entry 4679 (class 1259 OID 292942)
+-- TOC entry 4689 (class 1259 OID 292942)
 -- Name: idx_session_sets_raw_username; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7399,7 +11827,7 @@ CREATE INDEX idx_session_sets_raw_username ON thesession.session_sets_raw USING 
 
 
 --
--- TOC entry 4657 (class 1259 OID 290795)
+-- TOC entry 4667 (class 1259 OID 290795)
 -- Name: idx_session_tune; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7407,7 +11835,7 @@ CREATE INDEX idx_session_tune ON thesession.session_tunes_raw USING btree (tune_
 
 
 --
--- TOC entry 4672 (class 1259 OID 339899)
+-- TOC entry 4682 (class 1259 OID 339899)
 -- Name: idx_session_tune_popularity_slug; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7415,7 +11843,7 @@ CREATE INDEX idx_session_tune_popularity_slug ON thesession.session_tune_popular
 
 
 --
--- TOC entry 4673 (class 1259 OID 292939)
+-- TOC entry 4683 (class 1259 OID 292939)
 -- Name: idx_session_tune_popularity_tunebooks; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7423,7 +11851,7 @@ CREATE INDEX idx_session_tune_popularity_tunebooks ON thesession.session_tune_po
 
 
 --
--- TOC entry 4658 (class 1259 OID 292937)
+-- TOC entry 4668 (class 1259 OID 292937)
 -- Name: idx_session_tunes_raw_date; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7431,7 +11859,7 @@ CREATE INDEX idx_session_tunes_raw_date ON thesession.session_tunes_raw USING bt
 
 
 --
--- TOC entry 4659 (class 1259 OID 292936)
+-- TOC entry 4669 (class 1259 OID 292936)
 -- Name: idx_session_tunes_raw_meter; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7439,7 +11867,7 @@ CREATE INDEX idx_session_tunes_raw_meter ON thesession.session_tunes_raw USING b
 
 
 --
--- TOC entry 4660 (class 1259 OID 292935)
+-- TOC entry 4670 (class 1259 OID 292935)
 -- Name: idx_session_tunes_raw_mode; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7447,7 +11875,7 @@ CREATE INDEX idx_session_tunes_raw_mode ON thesession.session_tunes_raw USING bt
 
 
 --
--- TOC entry 4661 (class 1259 OID 690814)
+-- TOC entry 4671 (class 1259 OID 690814)
 -- Name: idx_session_tunes_raw_setting_id; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7455,7 +11883,7 @@ CREATE INDEX idx_session_tunes_raw_setting_id ON thesession.session_tunes_raw US
 
 
 --
--- TOC entry 4662 (class 1259 OID 339909)
+-- TOC entry 4672 (class 1259 OID 339909)
 -- Name: idx_session_tunes_raw_slug; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7463,7 +11891,7 @@ CREATE INDEX idx_session_tunes_raw_slug ON thesession.session_tunes_raw USING bt
 
 
 --
--- TOC entry 4663 (class 1259 OID 292933)
+-- TOC entry 4673 (class 1259 OID 292933)
 -- Name: idx_session_tunes_raw_tune_id; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7471,7 +11899,7 @@ CREATE INDEX idx_session_tunes_raw_tune_id ON thesession.session_tunes_raw USING
 
 
 --
--- TOC entry 4664 (class 1259 OID 412597)
+-- TOC entry 4674 (class 1259 OID 412597)
 -- Name: idx_session_tunes_raw_tune_setting; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7479,7 +11907,7 @@ CREATE INDEX idx_session_tunes_raw_tune_setting ON thesession.session_tunes_raw 
 
 
 --
--- TOC entry 4665 (class 1259 OID 292934)
+-- TOC entry 4675 (class 1259 OID 292934)
 -- Name: idx_session_tunes_raw_type; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7487,7 +11915,7 @@ CREATE INDEX idx_session_tunes_raw_type ON thesession.session_tunes_raw USING bt
 
 
 --
--- TOC entry 4666 (class 1259 OID 292938)
+-- TOC entry 4676 (class 1259 OID 292938)
 -- Name: idx_session_tunes_raw_type_mode; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7495,7 +11923,7 @@ CREATE INDEX idx_session_tunes_raw_type_mode ON thesession.session_tunes_raw USI
 
 
 --
--- TOC entry 4667 (class 1259 OID 678855)
+-- TOC entry 4677 (class 1259 OID 678855)
 -- Name: idx_session_tunes_raw_username; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7503,7 +11931,7 @@ CREATE INDEX idx_session_tunes_raw_username ON thesession.session_tunes_raw USIN
 
 
 --
--- TOC entry 4668 (class 1259 OID 678858)
+-- TOC entry 4678 (class 1259 OID 678858)
 -- Name: idx_session_tunes_raw_username_lower; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7511,7 +11939,7 @@ CREATE INDEX idx_session_tunes_raw_username_lower ON thesession.session_tunes_ra
 
 
 --
--- TOC entry 4669 (class 1259 OID 290792)
+-- TOC entry 4679 (class 1259 OID 290792)
 -- Name: idx_session_type; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7519,7 +11947,7 @@ CREATE INDEX idx_session_type ON thesession.session_tunes_raw USING btree (type)
 
 
 --
--- TOC entry 4831 (class 1259 OID 690815)
+-- TOC entry 4841 (class 1259 OID 690815)
 -- Name: idx_smbs_setting_id; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7527,7 +11955,7 @@ CREATE INDEX idx_smbs_setting_id ON thesession.session_member_bookmark_setting U
 
 
 --
--- TOC entry 4832 (class 1259 OID 684032)
+-- TOC entry 4842 (class 1259 OID 684032)
 -- Name: idx_sms_bookmarked_at; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7535,7 +11963,7 @@ CREATE INDEX idx_sms_bookmarked_at ON thesession.session_member_bookmark_setting
 
 
 --
--- TOC entry 4833 (class 1259 OID 684029)
+-- TOC entry 4843 (class 1259 OID 684029)
 -- Name: idx_sms_member; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7543,7 +11971,7 @@ CREATE INDEX idx_sms_member ON thesession.session_member_bookmark_setting USING 
 
 
 --
--- TOC entry 4834 (class 1259 OID 684030)
+-- TOC entry 4844 (class 1259 OID 684030)
 -- Name: idx_sms_setting; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7551,7 +11979,7 @@ CREATE INDEX idx_sms_setting ON thesession.session_member_bookmark_setting USING
 
 
 --
--- TOC entry 4835 (class 1259 OID 684031)
+-- TOC entry 4845 (class 1259 OID 684031)
 -- Name: idx_sms_tune; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7559,7 +11987,7 @@ CREATE INDEX idx_sms_tune ON thesession.session_member_bookmark_setting USING bt
 
 
 --
--- TOC entry 4737 (class 1259 OID 493020)
+-- TOC entry 4747 (class 1259 OID 493020)
 -- Name: idx_tune_collection_item_collection_id; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7567,7 +11995,7 @@ CREATE INDEX idx_tune_collection_item_collection_id ON thesession.tune_collectio
 
 
 --
--- TOC entry 4738 (class 1259 OID 400021)
+-- TOC entry 4748 (class 1259 OID 400021)
 -- Name: idx_tune_collection_item_collection_position; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7575,7 +12003,7 @@ CREATE INDEX idx_tune_collection_item_collection_position ON thesession.tune_col
 
 
 --
--- TOC entry 4728 (class 1259 OID 399775)
+-- TOC entry 4738 (class 1259 OID 399775)
 -- Name: idx_tune_collection_slug; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7583,7 +12011,7 @@ CREATE INDEX idx_tune_collection_slug ON thesession.tune_collection USING btree 
 
 
 --
--- TOC entry 4812 (class 1259 OID 605371)
+-- TOC entry 4822 (class 1259 OID 605371)
 -- Name: ix_mv_mode_set_transitions_source_family; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7591,7 +12019,7 @@ CREATE INDEX ix_mv_mode_set_transitions_source_family ON thesession.mv_mode_set_
 
 
 --
--- TOC entry 4813 (class 1259 OID 605372)
+-- TOC entry 4823 (class 1259 OID 605372)
 -- Name: ix_mv_mode_set_transitions_source_family_label; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7599,7 +12027,7 @@ CREATE INDEX ix_mv_mode_set_transitions_source_family_label ON thesession.mv_mod
 
 
 --
--- TOC entry 4814 (class 1259 OID 605373)
+-- TOC entry 4824 (class 1259 OID 605373)
 -- Name: ix_mv_mode_set_transitions_source_label; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7607,7 +12035,7 @@ CREATE INDEX ix_mv_mode_set_transitions_source_label ON thesession.mv_mode_set_t
 
 
 --
--- TOC entry 4815 (class 1259 OID 605374)
+-- TOC entry 4825 (class 1259 OID 605374)
 -- Name: ix_mv_mode_set_transitions_source_pct; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7615,7 +12043,7 @@ CREATE INDEX ix_mv_mode_set_transitions_source_pct ON thesession.mv_mode_set_tra
 
 
 --
--- TOC entry 4816 (class 1259 OID 605375)
+-- TOC entry 4826 (class 1259 OID 605375)
 -- Name: ix_mv_mode_set_transitions_source_rank; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7623,7 +12051,7 @@ CREATE INDEX ix_mv_mode_set_transitions_source_rank ON thesession.mv_mode_set_tr
 
 
 --
--- TOC entry 4818 (class 1259 OID 606418)
+-- TOC entry 4828 (class 1259 OID 606418)
 -- Name: ix_mv_set_search_date; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7631,7 +12059,7 @@ CREATE INDEX ix_mv_set_search_date ON thesession.mv_set_search USING btree (date
 
 
 --
--- TOC entry 4819 (class 1259 OID 606419)
+-- TOC entry 4829 (class 1259 OID 606419)
 -- Name: ix_mv_set_search_first_mode; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7639,7 +12067,7 @@ CREATE INDEX ix_mv_set_search_first_mode ON thesession.mv_set_search USING btree
 
 
 --
--- TOC entry 4820 (class 1259 OID 606420)
+-- TOC entry 4830 (class 1259 OID 606420)
 -- Name: ix_mv_set_search_first_type; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7647,7 +12075,7 @@ CREATE INDEX ix_mv_set_search_first_type ON thesession.mv_set_search USING btree
 
 
 --
--- TOC entry 4821 (class 1259 OID 606421)
+-- TOC entry 4831 (class 1259 OID 606421)
 -- Name: ix_mv_set_search_is_repeated; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7655,7 +12083,7 @@ CREATE INDEX ix_mv_set_search_is_repeated ON thesession.mv_set_search USING btre
 
 
 --
--- TOC entry 4822 (class 1259 OID 606422)
+-- TOC entry 4832 (class 1259 OID 606422)
 -- Name: ix_mv_set_search_last_mode; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7663,7 +12091,7 @@ CREATE INDEX ix_mv_set_search_last_mode ON thesession.mv_set_search USING btree 
 
 
 --
--- TOC entry 4823 (class 1259 OID 606423)
+-- TOC entry 4833 (class 1259 OID 606423)
 -- Name: ix_mv_set_search_last_type; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7671,7 +12099,7 @@ CREATE INDEX ix_mv_set_search_last_type ON thesession.mv_set_search USING btree 
 
 
 --
--- TOC entry 4824 (class 1259 OID 621334)
+-- TOC entry 4834 (class 1259 OID 621334)
 -- Name: ix_mv_set_search_member_date; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7679,7 +12107,7 @@ CREATE INDEX ix_mv_set_search_member_date ON thesession.mv_set_search USING btre
 
 
 --
--- TOC entry 4825 (class 1259 OID 621335)
+-- TOC entry 4835 (class 1259 OID 621335)
 -- Name: ix_mv_set_search_member_date_multitune; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7687,7 +12115,7 @@ CREATE INDEX ix_mv_set_search_member_date_multitune ON thesession.mv_set_search 
 
 
 --
--- TOC entry 4826 (class 1259 OID 606424)
+-- TOC entry 4836 (class 1259 OID 606424)
 -- Name: ix_mv_set_search_member_id; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7695,7 +12123,7 @@ CREATE INDEX ix_mv_set_search_member_id ON thesession.mv_set_search USING btree 
 
 
 --
--- TOC entry 4827 (class 1259 OID 621336)
+-- TOC entry 4837 (class 1259 OID 621336)
 -- Name: ix_mv_set_search_member_signature; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7703,7 +12131,7 @@ CREATE INDEX ix_mv_set_search_member_signature ON thesession.mv_set_search USING
 
 
 --
--- TOC entry 4828 (class 1259 OID 606425)
+-- TOC entry 4838 (class 1259 OID 606425)
 -- Name: ix_mv_set_search_tune_count; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7711,7 +12139,7 @@ CREATE INDEX ix_mv_set_search_tune_count ON thesession.mv_set_search USING btree
 
 
 --
--- TOC entry 4829 (class 1259 OID 606426)
+-- TOC entry 4839 (class 1259 OID 606426)
 -- Name: ix_mv_set_search_username; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7719,7 +12147,7 @@ CREATE INDEX ix_mv_set_search_username ON thesession.mv_set_search USING btree (
 
 
 --
--- TOC entry 4783 (class 1259 OID 532937)
+-- TOC entry 4793 (class 1259 OID 532937)
 -- Name: mv_collection_overlap_c1_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7727,7 +12155,7 @@ CREATE INDEX mv_collection_overlap_c1_idx ON thesession.mv_collection_overlap US
 
 
 --
--- TOC entry 4784 (class 1259 OID 532938)
+-- TOC entry 4794 (class 1259 OID 532938)
 -- Name: mv_collection_overlap_c2_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7735,7 +12163,7 @@ CREATE INDEX mv_collection_overlap_c2_idx ON thesession.mv_collection_overlap US
 
 
 --
--- TOC entry 4785 (class 1259 OID 532936)
+-- TOC entry 4795 (class 1259 OID 532936)
 -- Name: mv_collection_overlap_pair_uk; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7743,7 +12171,7 @@ CREATE UNIQUE INDEX mv_collection_overlap_pair_uk ON thesession.mv_collection_ov
 
 
 --
--- TOC entry 4962 (class 1259 OID 944414)
+-- TOC entry 4972 (class 1259 OID 944414)
 -- Name: mv_country_similarity_adjusted_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7751,7 +12179,7 @@ CREATE INDEX mv_country_similarity_adjusted_idx ON thesession.mv_country_similar
 
 
 --
--- TOC entry 4963 (class 1259 OID 944415)
+-- TOC entry 4973 (class 1259 OID 944415)
 -- Name: mv_country_similarity_cosine_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7759,7 +12187,7 @@ CREATE INDEX mv_country_similarity_cosine_idx ON thesession.mv_country_similarit
 
 
 --
--- TOC entry 4964 (class 1259 OID 944412)
+-- TOC entry 4974 (class 1259 OID 944412)
 -- Name: mv_country_similarity_country_a_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7767,7 +12195,7 @@ CREATE INDEX mv_country_similarity_country_a_idx ON thesession.mv_country_simila
 
 
 --
--- TOC entry 4965 (class 1259 OID 944413)
+-- TOC entry 4975 (class 1259 OID 944413)
 -- Name: mv_country_similarity_country_b_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7775,7 +12203,7 @@ CREATE INDEX mv_country_similarity_country_b_idx ON thesession.mv_country_simila
 
 
 --
--- TOC entry 4966 (class 1259 OID 944411)
+-- TOC entry 4976 (class 1259 OID 944411)
 -- Name: mv_country_similarity_uidx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7783,7 +12211,7 @@ CREATE UNIQUE INDEX mv_country_similarity_uidx ON thesession.mv_country_similari
 
 
 --
--- TOC entry 4948 (class 1259 OID 944342)
+-- TOC entry 4958 (class 1259 OID 944342)
 -- Name: mv_country_tune_popularity_country_count_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7791,7 +12219,7 @@ CREATE INDEX mv_country_tune_popularity_country_count_idx ON thesession.mv_count
 
 
 --
--- TOC entry 4949 (class 1259 OID 944341)
+-- TOC entry 4959 (class 1259 OID 944341)
 -- Name: mv_country_tune_popularity_country_lift_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7799,7 +12227,7 @@ CREATE INDEX mv_country_tune_popularity_country_lift_idx ON thesession.mv_countr
 
 
 --
--- TOC entry 4950 (class 1259 OID 944343)
+-- TOC entry 4960 (class 1259 OID 944343)
 -- Name: mv_country_tune_popularity_country_member_count_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7807,7 +12235,7 @@ CREATE INDEX mv_country_tune_popularity_country_member_count_idx ON thesession.m
 
 
 --
--- TOC entry 4951 (class 1259 OID 944349)
+-- TOC entry 4961 (class 1259 OID 944349)
 -- Name: mv_country_tune_popularity_country_meter_score_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7815,7 +12243,7 @@ CREATE INDEX mv_country_tune_popularity_country_meter_score_idx ON thesession.mv
 
 
 --
--- TOC entry 4952 (class 1259 OID 944350)
+-- TOC entry 4962 (class 1259 OID 944350)
 -- Name: mv_country_tune_popularity_country_mode_score_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7823,7 +12251,7 @@ CREATE INDEX mv_country_tune_popularity_country_mode_score_idx ON thesession.mv_
 
 
 --
--- TOC entry 4953 (class 1259 OID 944352)
+-- TOC entry 4963 (class 1259 OID 944352)
 -- Name: mv_country_tune_popularity_country_name_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7831,7 +12259,7 @@ CREATE INDEX mv_country_tune_popularity_country_name_idx ON thesession.mv_countr
 
 
 --
--- TOC entry 4954 (class 1259 OID 944340)
+-- TOC entry 4964 (class 1259 OID 944340)
 -- Name: mv_country_tune_popularity_country_score_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7839,7 +12267,7 @@ CREATE INDEX mv_country_tune_popularity_country_score_idx ON thesession.mv_count
 
 
 --
--- TOC entry 4955 (class 1259 OID 944348)
+-- TOC entry 4965 (class 1259 OID 944348)
 -- Name: mv_country_tune_popularity_country_type_score_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7847,7 +12275,7 @@ CREATE INDEX mv_country_tune_popularity_country_type_score_idx ON thesession.mv_
 
 
 --
--- TOC entry 4956 (class 1259 OID 944346)
+-- TOC entry 4966 (class 1259 OID 944346)
 -- Name: mv_country_tune_popularity_meter_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7855,7 +12283,7 @@ CREATE INDEX mv_country_tune_popularity_meter_idx ON thesession.mv_country_tune_
 
 
 --
--- TOC entry 4957 (class 1259 OID 944347)
+-- TOC entry 4967 (class 1259 OID 944347)
 -- Name: mv_country_tune_popularity_mode_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7863,7 +12291,7 @@ CREATE INDEX mv_country_tune_popularity_mode_idx ON thesession.mv_country_tune_p
 
 
 --
--- TOC entry 4958 (class 1259 OID 944351)
+-- TOC entry 4968 (class 1259 OID 944351)
 -- Name: mv_country_tune_popularity_name_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7871,7 +12299,7 @@ CREATE INDEX mv_country_tune_popularity_name_idx ON thesession.mv_country_tune_p
 
 
 --
--- TOC entry 4959 (class 1259 OID 944344)
+-- TOC entry 4969 (class 1259 OID 944344)
 -- Name: mv_country_tune_popularity_tune_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7879,7 +12307,7 @@ CREATE INDEX mv_country_tune_popularity_tune_idx ON thesession.mv_country_tune_p
 
 
 --
--- TOC entry 4960 (class 1259 OID 944345)
+-- TOC entry 4970 (class 1259 OID 944345)
 -- Name: mv_country_tune_popularity_type_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7887,7 +12315,7 @@ CREATE INDEX mv_country_tune_popularity_type_idx ON thesession.mv_country_tune_p
 
 
 --
--- TOC entry 4961 (class 1259 OID 944339)
+-- TOC entry 4971 (class 1259 OID 944339)
 -- Name: mv_country_tune_popularity_uidx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7895,7 +12323,7 @@ CREATE UNIQUE INDEX mv_country_tune_popularity_uidx ON thesession.mv_country_tun
 
 
 --
--- TOC entry 4972 (class 1259 OID 951640)
+-- TOC entry 4982 (class 1259 OID 951640)
 -- Name: mv_country_tune_signal_popularity_country_count_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7903,7 +12331,7 @@ CREATE INDEX mv_country_tune_signal_popularity_country_count_idx ON thesession.m
 
 
 --
--- TOC entry 4973 (class 1259 OID 951639)
+-- TOC entry 4983 (class 1259 OID 951639)
 -- Name: mv_country_tune_signal_popularity_country_score_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7911,7 +12339,7 @@ CREATE INDEX mv_country_tune_signal_popularity_country_score_idx ON thesession.m
 
 
 --
--- TOC entry 4974 (class 1259 OID 951641)
+-- TOC entry 4984 (class 1259 OID 951641)
 -- Name: mv_country_tune_signal_popularity_tune_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7919,7 +12347,7 @@ CREATE INDEX mv_country_tune_signal_popularity_tune_idx ON thesession.mv_country
 
 
 --
--- TOC entry 4975 (class 1259 OID 951638)
+-- TOC entry 4985 (class 1259 OID 951638)
 -- Name: mv_country_tune_signal_popularity_uidx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7927,7 +12355,7 @@ CREATE UNIQUE INDEX mv_country_tune_signal_popularity_uidx ON thesession.mv_coun
 
 
 --
--- TOC entry 4773 (class 1259 OID 482426)
+-- TOC entry 4783 (class 1259 OID 482426)
 -- Name: mv_member_set_activity_member_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7935,7 +12363,7 @@ CREATE INDEX mv_member_set_activity_member_idx ON thesession.mv_member_set_activ
 
 
 --
--- TOC entry 4774 (class 1259 OID 482437)
+-- TOC entry 4784 (class 1259 OID 482437)
 -- Name: mv_member_set_activity_member_period_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7943,7 +12371,7 @@ CREATE INDEX mv_member_set_activity_member_period_idx ON thesession.mv_member_se
 
 
 --
--- TOC entry 4775 (class 1259 OID 482425)
+-- TOC entry 4785 (class 1259 OID 482425)
 -- Name: mv_member_set_activity_period_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7951,7 +12379,7 @@ CREATE INDEX mv_member_set_activity_period_idx ON thesession.mv_member_set_activ
 
 
 --
--- TOC entry 4776 (class 1259 OID 482424)
+-- TOC entry 4786 (class 1259 OID 482424)
 -- Name: mv_member_set_activity_uq; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7959,7 +12387,7 @@ CREATE UNIQUE INDEX mv_member_set_activity_uq ON thesession.mv_member_set_activi
 
 
 --
--- TOC entry 4777 (class 1259 OID 482435)
+-- TOC entry 4787 (class 1259 OID 482435)
 -- Name: mv_member_set_summary_uq; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7967,7 +12395,7 @@ CREATE UNIQUE INDEX mv_member_set_summary_uq ON thesession.mv_member_set_summary
 
 
 --
--- TOC entry 4778 (class 1259 OID 482436)
+-- TOC entry 4788 (class 1259 OID 482436)
 -- Name: mv_member_set_summary_username_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7975,7 +12403,7 @@ CREATE INDEX mv_member_set_summary_username_idx ON thesession.mv_member_set_summ
 
 
 --
--- TOC entry 4967 (class 1259 OID 951617)
+-- TOC entry 4977 (class 1259 OID 951617)
 -- Name: mv_member_tune_signal_member_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7983,7 +12411,7 @@ CREATE INDEX mv_member_tune_signal_member_idx ON thesession.mv_member_tune_signa
 
 
 --
--- TOC entry 4968 (class 1259 OID 951620)
+-- TOC entry 4978 (class 1259 OID 951620)
 -- Name: mv_member_tune_signal_member_tune_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7991,7 +12419,7 @@ CREATE INDEX mv_member_tune_signal_member_tune_idx ON thesession.mv_member_tune_
 
 
 --
--- TOC entry 4969 (class 1259 OID 951618)
+-- TOC entry 4979 (class 1259 OID 951618)
 -- Name: mv_member_tune_signal_tune_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -7999,7 +12427,7 @@ CREATE INDEX mv_member_tune_signal_tune_idx ON thesession.mv_member_tune_signal 
 
 
 --
--- TOC entry 4970 (class 1259 OID 951621)
+-- TOC entry 4980 (class 1259 OID 951621)
 -- Name: mv_member_tune_signal_tune_member_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8007,7 +12435,7 @@ CREATE INDEX mv_member_tune_signal_tune_member_idx ON thesession.mv_member_tune_
 
 
 --
--- TOC entry 4971 (class 1259 OID 951619)
+-- TOC entry 4981 (class 1259 OID 951619)
 -- Name: mv_member_tune_signal_type_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8015,7 +12443,7 @@ CREATE INDEX mv_member_tune_signal_type_idx ON thesession.mv_member_tune_signal 
 
 
 --
--- TOC entry 4938 (class 1259 OID 919588)
+-- TOC entry 4948 (class 1259 OID 919588)
 -- Name: mv_static_recording_pages_recording_id_uidx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8023,7 +12451,7 @@ CREATE UNIQUE INDEX mv_static_recording_pages_recording_id_uidx ON thesession.mv
 
 
 --
--- TOC entry 4939 (class 1259 OID 919589)
+-- TOC entry 4949 (class 1259 OID 919589)
 -- Name: mv_static_recording_pages_slug_uidx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8031,7 +12459,7 @@ CREATE UNIQUE INDEX mv_static_recording_pages_slug_uidx ON thesession.mv_static_
 
 
 --
--- TOC entry 4756 (class 1259 OID 401928)
+-- TOC entry 4766 (class 1259 OID 401928)
 -- Name: mv_tune_names_uq; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8039,7 +12467,7 @@ CREATE UNIQUE INDEX mv_tune_names_uq ON thesession.mv_tune_names USING btree (tu
 
 
 --
--- TOC entry 4786 (class 1259 OID 540009)
+-- TOC entry 4796 (class 1259 OID 540009)
 -- Name: mv_tune_recording_artists_artist_key_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8047,7 +12475,7 @@ CREATE INDEX mv_tune_recording_artists_artist_key_idx ON thesession.mv_tune_reco
 
 
 --
--- TOC entry 4787 (class 1259 OID 540008)
+-- TOC entry 4797 (class 1259 OID 540008)
 -- Name: mv_tune_recording_artists_tune_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8055,7 +12483,7 @@ CREATE INDEX mv_tune_recording_artists_tune_idx ON thesession.mv_tune_recording_
 
 
 --
--- TOC entry 4788 (class 1259 OID 540082)
+-- TOC entry 4798 (class 1259 OID 540082)
 -- Name: mv_tune_recording_artists_tune_recording_count_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8063,7 +12491,7 @@ CREATE INDEX mv_tune_recording_artists_tune_recording_count_idx ON thesession.mv
 
 
 --
--- TOC entry 4789 (class 1259 OID 540007)
+-- TOC entry 4799 (class 1259 OID 540007)
 -- Name: mv_tune_recording_artists_uq; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8071,7 +12499,7 @@ CREATE UNIQUE INDEX mv_tune_recording_artists_uq ON thesession.mv_tune_recording
 
 
 --
--- TOC entry 4790 (class 1259 OID 540086)
+-- TOC entry 4800 (class 1259 OID 540086)
 -- Name: mv_tune_recording_detail_recording_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8079,7 +12507,7 @@ CREATE INDEX mv_tune_recording_detail_recording_idx ON thesession.mv_tune_record
 
 
 --
--- TOC entry 4791 (class 1259 OID 540085)
+-- TOC entry 4801 (class 1259 OID 540085)
 -- Name: mv_tune_recording_detail_tune_artist_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8087,7 +12515,7 @@ CREATE INDEX mv_tune_recording_detail_tune_artist_idx ON thesession.mv_tune_reco
 
 
 --
--- TOC entry 4792 (class 1259 OID 540084)
+-- TOC entry 4802 (class 1259 OID 540084)
 -- Name: mv_tune_recording_detail_tune_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8095,7 +12523,7 @@ CREATE INDEX mv_tune_recording_detail_tune_idx ON thesession.mv_tune_recording_d
 
 
 --
--- TOC entry 4793 (class 1259 OID 540083)
+-- TOC entry 4803 (class 1259 OID 540083)
 -- Name: mv_tune_recording_detail_uq; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8103,7 +12531,7 @@ CREATE UNIQUE INDEX mv_tune_recording_detail_uq ON thesession.mv_tune_recording_
 
 
 --
--- TOC entry 4757 (class 1259 OID 403721)
+-- TOC entry 4767 (class 1259 OID 403721)
 -- Name: mv_tune_set_transitions_source_rank_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8111,7 +12539,7 @@ CREATE INDEX mv_tune_set_transitions_source_rank_idx ON thesession.mv_tune_set_t
 
 
 --
--- TOC entry 4758 (class 1259 OID 403722)
+-- TOC entry 4768 (class 1259 OID 403722)
 -- Name: mv_tune_set_transitions_target_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8119,7 +12547,7 @@ CREATE INDEX mv_tune_set_transitions_target_idx ON thesession.mv_tune_set_transi
 
 
 --
--- TOC entry 4759 (class 1259 OID 403720)
+-- TOC entry 4769 (class 1259 OID 403720)
 -- Name: mv_tune_set_transitions_uq; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8127,7 +12555,7 @@ CREATE UNIQUE INDEX mv_tune_set_transitions_uq ON thesession.mv_tune_set_transit
 
 
 --
--- TOC entry 4752 (class 1259 OID 401915)
+-- TOC entry 4762 (class 1259 OID 401915)
 -- Name: mv_tune_transitions_source_count_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8135,7 +12563,7 @@ CREATE INDEX mv_tune_transitions_source_count_idx ON thesession.mv_tune_transiti
 
 
 --
--- TOC entry 4753 (class 1259 OID 401914)
+-- TOC entry 4763 (class 1259 OID 401914)
 -- Name: mv_tune_transitions_source_rank_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8143,7 +12571,7 @@ CREATE INDEX mv_tune_transitions_source_rank_idx ON thesession.mv_tune_transitio
 
 
 --
--- TOC entry 4754 (class 1259 OID 401916)
+-- TOC entry 4764 (class 1259 OID 401916)
 -- Name: mv_tune_transitions_target_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8151,7 +12579,7 @@ CREATE INDEX mv_tune_transitions_target_idx ON thesession.mv_tune_transitions US
 
 
 --
--- TOC entry 4755 (class 1259 OID 401913)
+-- TOC entry 4765 (class 1259 OID 401913)
 -- Name: mv_tune_transitions_uq; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8159,7 +12587,7 @@ CREATE UNIQUE INDEX mv_tune_transitions_uq ON thesession.mv_tune_transitions USI
 
 
 --
--- TOC entry 4940 (class 1259 OID 944230)
+-- TOC entry 4950 (class 1259 OID 944230)
 -- Name: naturalearth_countries_geom_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8167,7 +12595,7 @@ CREATE INDEX naturalearth_countries_geom_idx ON thesession.naturalearth_countrie
 
 
 --
--- TOC entry 4697 (class 1259 OID 340014)
+-- TOC entry 4707 (class 1259 OID 340014)
 -- Name: session_event_area_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8175,7 +12603,7 @@ CREATE INDEX session_event_area_idx ON thesession.session_event USING btree (are
 
 
 --
--- TOC entry 4698 (class 1259 OID 340013)
+-- TOC entry 4708 (class 1259 OID 340013)
 -- Name: session_event_country_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8183,7 +12611,7 @@ CREATE INDEX session_event_country_idx ON thesession.session_event USING btree (
 
 
 --
--- TOC entry 4699 (class 1259 OID 340017)
+-- TOC entry 4709 (class 1259 OID 340017)
 -- Name: session_event_dt_start_future_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8191,7 +12619,7 @@ CREATE INDEX session_event_dt_start_future_idx ON thesession.session_event USING
 
 
 --
--- TOC entry 4700 (class 1259 OID 340012)
+-- TOC entry 4710 (class 1259 OID 340012)
 -- Name: session_event_dt_start_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8199,7 +12627,7 @@ CREATE INDEX session_event_dt_start_idx ON thesession.session_event USING btree 
 
 
 --
--- TOC entry 4701 (class 1259 OID 341974)
+-- TOC entry 4711 (class 1259 OID 341974)
 -- Name: session_event_geom_gist_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8207,7 +12635,7 @@ CREATE INDEX session_event_geom_gist_idx ON thesession.session_event USING gist 
 
 
 --
--- TOC entry 4702 (class 1259 OID 340018)
+-- TOC entry 4712 (class 1259 OID 340018)
 -- Name: session_event_name_trgm_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8215,7 +12643,7 @@ CREATE INDEX session_event_name_trgm_idx ON thesession.session_event USING gin (
 
 
 --
--- TOC entry 4705 (class 1259 OID 340015)
+-- TOC entry 4715 (class 1259 OID 340015)
 -- Name: session_event_town_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8223,7 +12651,7 @@ CREATE INDEX session_event_town_idx ON thesession.session_event USING btree (tow
 
 
 --
--- TOC entry 4706 (class 1259 OID 340020)
+-- TOC entry 4716 (class 1259 OID 340020)
 -- Name: session_event_town_trgm_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8231,7 +12659,7 @@ CREATE INDEX session_event_town_trgm_idx ON thesession.session_event USING gin (
 
 
 --
--- TOC entry 4680 (class 1259 OID 482439)
+-- TOC entry 4690 (class 1259 OID 482439)
 -- Name: session_sets_raw_lower_username_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8239,7 +12667,7 @@ CREATE INDEX session_sets_raw_lower_username_idx ON thesession.session_sets_raw 
 
 
 --
--- TOC entry 4681 (class 1259 OID 482438)
+-- TOC entry 4691 (class 1259 OID 482438)
 -- Name: session_sets_raw_member_date_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8247,7 +12675,7 @@ CREATE INDEX session_sets_raw_member_date_idx ON thesession.session_sets_raw USI
 
 
 --
--- TOC entry 4682 (class 1259 OID 482440)
+-- TOC entry 4692 (class 1259 OID 482440)
 -- Name: session_sets_raw_member_username_date_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8255,7 +12683,7 @@ CREATE INDEX session_sets_raw_member_username_date_idx ON thesession.session_set
 
 
 --
--- TOC entry 4712 (class 1259 OID 391567)
+-- TOC entry 4722 (class 1259 OID 391567)
 -- Name: session_tune_alias_alias_lower_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8263,7 +12691,7 @@ CREATE INDEX session_tune_alias_alias_lower_idx ON thesession.session_tune_alias
 
 
 --
--- TOC entry 4717 (class 1259 OID 391570)
+-- TOC entry 4727 (class 1259 OID 391570)
 -- Name: session_tune_alias_unique_ci; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8271,7 +12699,7 @@ CREATE UNIQUE INDEX session_tune_alias_unique_ci ON thesession.session_tune_alia
 
 
 --
--- TOC entry 4718 (class 1259 OID 391566)
+-- TOC entry 4728 (class 1259 OID 391566)
 -- Name: session_tune_alias_unique_per_tune; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8279,7 +12707,7 @@ CREATE UNIQUE INDEX session_tune_alias_unique_per_tune ON thesession.session_tun
 
 
 --
--- TOC entry 4711 (class 1259 OID 378550)
+-- TOC entry 4721 (class 1259 OID 378550)
 -- Name: session_venue_web_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8287,7 +12715,7 @@ CREATE INDEX session_venue_web_idx ON thesession.session_venue USING btree (venu
 
 
 --
--- TOC entry 4719 (class 1259 OID 396478)
+-- TOC entry 4729 (class 1259 OID 396478)
 -- Name: sessions_address_trgm_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8295,7 +12723,7 @@ CREATE INDEX sessions_address_trgm_idx ON thesession.sessions USING gin (address
 
 
 --
--- TOC entry 4720 (class 1259 OID 396476)
+-- TOC entry 4730 (class 1259 OID 396476)
 -- Name: sessions_country_area_town_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8303,7 +12731,7 @@ CREATE INDEX sessions_country_area_town_idx ON thesession.sessions USING btree (
 
 
 --
--- TOC entry 4721 (class 1259 OID 396473)
+-- TOC entry 4731 (class 1259 OID 396473)
 -- Name: sessions_country_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8311,7 +12739,7 @@ CREATE INDEX sessions_country_idx ON thesession.sessions USING btree (country);
 
 
 --
--- TOC entry 4722 (class 1259 OID 396479)
+-- TOC entry 4732 (class 1259 OID 396479)
 -- Name: sessions_geom_gist_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8319,7 +12747,7 @@ CREATE INDEX sessions_geom_gist_idx ON thesession.sessions USING gist (geom);
 
 
 --
--- TOC entry 4723 (class 1259 OID 396475)
+-- TOC entry 4733 (class 1259 OID 396475)
 -- Name: sessions_name_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8327,7 +12755,7 @@ CREATE INDEX sessions_name_idx ON thesession.sessions USING btree (name);
 
 
 --
--- TOC entry 4724 (class 1259 OID 396477)
+-- TOC entry 4734 (class 1259 OID 396477)
 -- Name: sessions_name_trgm_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8335,7 +12763,7 @@ CREATE INDEX sessions_name_trgm_idx ON thesession.sessions USING gin (name publi
 
 
 --
--- TOC entry 4727 (class 1259 OID 396474)
+-- TOC entry 4737 (class 1259 OID 396474)
 -- Name: sessions_town_idx; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8343,7 +12771,7 @@ CREATE INDEX sessions_town_idx ON thesession.sessions USING btree (town);
 
 
 --
--- TOC entry 4855 (class 1259 OID 799772)
+-- TOC entry 4865 (class 1259 OID 799772)
 -- Name: ux_mv_artist_name_search_artist_name; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8351,7 +12779,7 @@ CREATE UNIQUE INDEX ux_mv_artist_name_search_artist_name ON thesession.mv_artist
 
 
 --
--- TOC entry 4859 (class 1259 OID 799947)
+-- TOC entry 4869 (class 1259 OID 799947)
 -- Name: ux_mv_artist_pathway_related_artists_unique; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8359,7 +12787,7 @@ CREATE UNIQUE INDEX ux_mv_artist_pathway_related_artists_unique ON thesession.mv
 
 
 --
--- TOC entry 4864 (class 1259 OID 799839)
+-- TOC entry 4874 (class 1259 OID 799839)
 -- Name: ux_mv_artist_transition_evidence_unique; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8367,7 +12795,7 @@ CREATE UNIQUE INDEX ux_mv_artist_transition_evidence_unique ON thesession.mv_art
 
 
 --
--- TOC entry 4852 (class 1259 OID 799877)
+-- TOC entry 4862 (class 1259 OID 799877)
 -- Name: ux_mv_artist_transition_features_unique; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8375,7 +12803,7 @@ CREATE UNIQUE INDEX ux_mv_artist_transition_features_unique ON thesession.mv_art
 
 
 --
--- TOC entry 4888 (class 1259 OID 951120)
+-- TOC entry 4898 (class 1259 OID 951120)
 -- Name: ux_mv_melody_2bar_fragment_ngrams_fragment_pos; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8383,7 +12811,7 @@ CREATE UNIQUE INDEX ux_mv_melody_2bar_fragment_ngrams_fragment_pos ON thesession
 
 
 --
--- TOC entry 4882 (class 1259 OID 807414)
+-- TOC entry 4892 (class 1259 OID 807414)
 -- Name: ux_mv_melody_2bar_fragments_fragment; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8391,7 +12819,7 @@ CREATE UNIQUE INDEX ux_mv_melody_2bar_fragments_fragment ON thesession.mv_melody
 
 
 --
--- TOC entry 4923 (class 1259 OID 889531)
+-- TOC entry 4933 (class 1259 OID 889531)
 -- Name: ux_mv_melody_2bar_fragments_v5_fragment; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8399,7 +12827,7 @@ CREATE UNIQUE INDEX ux_mv_melody_2bar_fragments_v5_fragment ON thesession.mv_mel
 
 
 --
--- TOC entry 4890 (class 1259 OID 807762)
+-- TOC entry 4900 (class 1259 OID 807762)
 -- Name: ux_mv_melody_2bar_ngram_stats_interval; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8407,7 +12835,7 @@ CREATE UNIQUE INDEX ux_mv_melody_2bar_ngram_stats_interval ON thesession.mv_melo
 
 
 --
--- TOC entry 4817 (class 1259 OID 605376)
+-- TOC entry 4827 (class 1259 OID 605376)
 -- Name: ux_mv_mode_set_transitions_source_target; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8415,7 +12843,7 @@ CREATE UNIQUE INDEX ux_mv_mode_set_transitions_source_target ON thesession.mv_mo
 
 
 --
--- TOC entry 4873 (class 1259 OID 800351)
+-- TOC entry 4883 (class 1259 OID 800351)
 -- Name: ux_mv_recording_set_search_recording_track; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8423,7 +12851,7 @@ CREATE UNIQUE INDEX ux_mv_recording_set_search_recording_track ON thesession.mv_
 
 
 --
--- TOC entry 4830 (class 1259 OID 606427)
+-- TOC entry 4840 (class 1259 OID 606427)
 -- Name: ux_mv_set_search_tuneset; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8431,7 +12859,7 @@ CREATE UNIQUE INDEX ux_mv_set_search_tuneset ON thesession.mv_set_search USING b
 
 
 --
--- TOC entry 4772 (class 1259 OID 574822)
+-- TOC entry 4782 (class 1259 OID 574822)
 -- Name: ux_mv_set_signatures_signature; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8439,7 +12867,7 @@ CREATE UNIQUE INDEX ux_mv_set_signatures_signature ON thesession.mv_set_signatur
 
 
 --
--- TOC entry 4861 (class 1259 OID 796952)
+-- TOC entry 4871 (class 1259 OID 796952)
 -- Name: ux_mv_setting_bookmarkers_bookmarker_setting; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8447,7 +12875,7 @@ CREATE UNIQUE INDEX ux_mv_setting_bookmarkers_bookmarker_setting ON thesession.m
 
 
 --
--- TOC entry 4868 (class 1259 OID 799920)
+-- TOC entry 4878 (class 1259 OID 799920)
 -- Name: ux_mv_transition_artist_overlap_unique; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8455,7 +12883,7 @@ CREATE UNIQUE INDEX ux_mv_transition_artist_overlap_unique ON thesession.mv_tran
 
 
 --
--- TOC entry 4918 (class 1259 OID 947922)
+-- TOC entry 4928 (class 1259 OID 947922)
 -- Name: ux_mv_tune_name_search_unique_row; Type: INDEX; Schema: thesession; Owner: folkguitar
 --
 
@@ -8463,7 +12891,7 @@ CREATE UNIQUE INDEX ux_mv_tune_name_search_unique_row ON thesession.mv_tune_name
 
 
 --
--- TOC entry 4993 (class 2620 OID 339891)
+-- TOC entry 5008 (class 2620 OID 339891)
 -- Name: session_tune_popularity_raw trg_generate_session_slug; Type: TRIGGER; Schema: thesession; Owner: folkguitar
 --
 
@@ -8471,7 +12899,7 @@ CREATE TRIGGER trg_generate_session_slug BEFORE INSERT OR UPDATE ON thesession.s
 
 
 --
--- TOC entry 4996 (class 2620 OID 436200)
+-- TOC entry 5011 (class 2620 OID 436200)
 -- Name: session_member trg_session_member_updated; Type: TRIGGER; Schema: thesession; Owner: folkguitar
 --
 
@@ -8479,7 +12907,7 @@ CREATE TRIGGER trg_session_member_updated BEFORE UPDATE ON thesession.session_me
 
 
 --
--- TOC entry 4992 (class 2620 OID 339908)
+-- TOC entry 5007 (class 2620 OID 339908)
 -- Name: session_tunes_raw trg_slug_session_tunes_raw; Type: TRIGGER; Schema: thesession; Owner: folkguitar
 --
 
@@ -8487,7 +12915,7 @@ CREATE TRIGGER trg_slug_session_tunes_raw BEFORE INSERT OR UPDATE OF name ON the
 
 
 --
--- TOC entry 4995 (class 2620 OID 339898)
+-- TOC entry 5010 (class 2620 OID 339898)
 -- Name: session_set_items_raw trg_slug_set_items; Type: TRIGGER; Schema: thesession; Owner: folkguitar
 --
 
@@ -8495,7 +12923,7 @@ CREATE TRIGGER trg_slug_set_items BEFORE INSERT OR UPDATE OF name ON thesession.
 
 
 --
--- TOC entry 4994 (class 2620 OID 339896)
+-- TOC entry 5009 (class 2620 OID 339896)
 -- Name: session_tune_popularity_raw trg_slug_tune_popularity; Type: TRIGGER; Schema: thesession; Owner: folkguitar
 --
 
@@ -8503,7 +12931,7 @@ CREATE TRIGGER trg_slug_tune_popularity BEFORE INSERT OR UPDATE OF name ON these
 
 
 --
--- TOC entry 4990 (class 2606 OID 399786)
+-- TOC entry 5005 (class 2606 OID 399786)
 -- Name: tune_collection_item fk_collection; Type: FK CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -8512,7 +12940,7 @@ ALTER TABLE ONLY thesession.tune_collection_item
 
 
 --
--- TOC entry 4991 (class 2606 OID 588962)
+-- TOC entry 5006 (class 2606 OID 588962)
 -- Name: session_member_tunebook fk_member; Type: FK CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -8521,7 +12949,7 @@ ALTER TABLE ONLY thesession.session_member_tunebook
 
 
 --
--- TOC entry 4989 (class 2606 OID 376301)
+-- TOC entry 5004 (class 2606 OID 376301)
 -- Name: session_event_comment session_event_comment_event_id_fkey; Type: FK CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -8530,7 +12958,7 @@ ALTER TABLE ONLY thesession.session_event_comment
 
 
 --
--- TOC entry 4988 (class 2606 OID 291023)
+-- TOC entry 5003 (class 2606 OID 291023)
 -- Name: session_set_items_raw session_set_items_raw_tuneset_fkey; Type: FK CONSTRAINT; Schema: thesession; Owner: folkguitar
 --
 
@@ -8538,11 +12966,11 @@ ALTER TABLE ONLY thesession.session_set_items_raw
     ADD CONSTRAINT session_set_items_raw_tuneset_fkey FOREIGN KEY (tuneset) REFERENCES thesession.session_sets_raw(tuneset) ON DELETE CASCADE;
 
 
--- Completed on 2026-07-12 14:20:19
+-- Completed on 2026-07-18 21:19:53
 
 --
 -- PostgreSQL database dump complete
 --
 
-\unrestrict 62Okatk4b6MIOMvH5gczR9F6ZaVUDaJLTDLByi334Qn2siYA1FRxcmzGxcur6GL
+\unrestrict W9hriDSQZZnDrCyEADjVKCIitKgZSAdTK6oxPoYCI53SC2mlH4r6Xak1nKBv1vm
 
